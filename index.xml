@@ -42,12 +42,85 @@ for human regulatory DNA, and open a new global perspective on the architecture 
 &lt;p&gt;Material available for download:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;DHS Index and Vocabulary &lt;a href=&#34;https://www.meuleman.org/DHS_Index_and_Vocabulary_hg38_WM20190703.txt.gz&#34;&gt;(tsv, ~3.6M DHSs + annotation, 90MB)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;733 biosample metadata (&lt;a href=&#34;https://www.meuleman.org/DHS_Index_and_Vocabulary_metadata.html&#34;&gt;html&lt;/a&gt;,
+&lt;li&gt;&lt;p&gt;DHS Index and Vocabulary of ~3.6M DHSs (&lt;a href=&#34;https://www.meuleman.org/DHS_Index_and_Vocabulary_hg38_WM20190703.txt.gz&#34;&gt;tsv&lt;/a&gt;, hg38)&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Column&lt;/th&gt;
+&lt;th&gt;Example&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;seqname&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;chr1&lt;/td&gt;
+&lt;td&gt;Chromosome&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;start&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;1782520&lt;/td&gt;
+&lt;td&gt;Start position&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;end&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;1782770&lt;/td&gt;
+&lt;td&gt;End position&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;identifier&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;1.10643&lt;/td&gt;
+&lt;td&gt;Unique identifier (chr#.position%)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;mean_signal&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;1.030869481&lt;/td&gt;
+&lt;td&gt;Mean DNase-seq signal per biosample (&amp;ldquo;confidence score&amp;rdquo;)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;numsamples&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;54&lt;/td&gt;
+&lt;td&gt;Number of biosamples with a DHS&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;summit&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;1782650&lt;/td&gt;
+&lt;td&gt;Estimated DHS summit position&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;core_start&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;1782590&lt;/td&gt;
+&lt;td&gt;Start position of core-region&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;core_end&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;1782710&lt;/td&gt;
+&lt;td&gt;End position of core-region&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;component&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Digestive&lt;/td&gt;
+&lt;td&gt;Main DHS Vocabulary component&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;733 biosample metadata (&lt;a href=&#34;https://www.meuleman.org/DHS_Index_and_Vocabulary_metadata.html&#34;&gt;html&lt;/a&gt;,
 &lt;a href=&#34;https://www.meuleman.org/DHS_Index_and_Vocabulary_metadata.pdf&#34;&gt;pdf&lt;/a&gt;,
 &lt;a href=&#34;https://www.meuleman.org/DHS_Index_and_Vocabulary_metadata.tsv&#34;&gt;tsv&lt;/a&gt;,
 &lt;a href=&#34;https://www.meuleman.org/DHS_Index_and_Vocabulary_metadata.xlsx&#34;&gt;xlsx&lt;/a&gt;,
-&lt;a href=&#34;https://docs.google.com/spreadsheets/d/1B9WKRwXUr8h_frEyh5Zt09oZbnejYIM_LciBcNrZ6Ew/edit?usp=sharing&#34; target=&#34;_blank&#34;&gt;Google spreadsheet&lt;/a&gt;)&lt;/li&gt;
+&lt;a href=&#34;https://docs.google.com/spreadsheets/d/1B9WKRwXUr8h_frEyh5Zt09oZbnejYIM_LciBcNrZ6Ew/edit?usp=sharing&#34; target=&#34;_blank&#34;&gt;Google spreadsheet&lt;/a&gt;)&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Work with Sasha Muratov, John Stamatoyannopoulos and others.&lt;/p&gt;

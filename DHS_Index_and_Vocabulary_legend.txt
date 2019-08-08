@@ -1,0 +1,15 @@
+Column		Example		Description
+-------------------------------------------------------------------------------------------------------
+seqname		chr1		Chromosome
+start		1782520		Start position
+end		1782770		End position
+identifier	1.10643		Unique identifier (chr#.position%)
+mean_signal	1.030869481	Mean DNase-seq signal across biosamples with a DHS ("confidence score")
+numsamples	54		Number of biosamples with a DHS
+summit		1782650		Estimated DHS summit position
+core_start	1782590		Start position of core-region containing 95% of per-biosample summits
+core_end	1782710		End position of core-region containing 95% of per-biosample summits
+component	Digestive	Main DHS Vocabulary component
+
+
+
