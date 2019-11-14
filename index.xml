@@ -122,7 +122,7 @@ for human regulatory DNA, and open a new global perspective on the architecture 
 &lt;a href=&#34;https://www.meuleman.org/DHS_Index_and_Vocabulary_metadata.xlsx&#34;&gt;xlsx&lt;/a&gt;,
 &lt;a href=&#34;https://docs.google.com/spreadsheets/d/1B9WKRwXUr8h_frEyh5Zt09oZbnejYIM_LciBcNrZ6Ew/edit?usp=sharing&#34; target=&#34;_blank&#34;&gt;Google spreadsheet&lt;/a&gt;)&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;Presence/absence matrix (&lt;a href=&#34;https://drive.google.com/uc?export=download&amp;amp;id=1Rjh1qCC8Vl5vGk5_dnF1rSO_hRSc1gds&#34; target=&#34;_blank&#34;&gt;R sparse Matrix format&lt;/a&gt;, &lt;a href=&#34;https://drive.google.com/open?id=1EEMEybzf2uZIl_bxLDiNBD6dtCzs1ZBJ&#34; target=&#34;_blank&#34;&gt;Matrix Market format&lt;/a&gt;), &lt;a href=&#34;https://drive.google.com/uc?export=download&amp;amp;id=1Nel7wWOWhWn40Yv7eaQFwvpMcQHBNtJ2&#34; target=&#34;_blank&#34;&gt;raw text format&lt;/a&gt;)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Presence/absence matrix (&lt;a href=&#34;https://drive.google.com/uc?export=download&amp;amp;id=1Rjh1qCC8Vl5vGk5_dnF1rSO_hRSc1gds&#34; target=&#34;_blank&#34;&gt;R sparse Matrix format&lt;/a&gt;, &lt;a href=&#34;https://drive.google.com/open?id=1EEMEybzf2uZIl_bxLDiNBD6dtCzs1ZBJ&#34; target=&#34;_blank&#34;&gt;Matrix Market format&lt;/a&gt;, &lt;a href=&#34;https://drive.google.com/uc?export=download&amp;amp;id=1Nel7wWOWhWn40Yv7eaQFwvpMcQHBNtJ2&#34; target=&#34;_blank&#34;&gt;raw text format&lt;/a&gt;)&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Columns correspond to rows in biosample metadata, rows correspond to DHS Index elements (both in order).
