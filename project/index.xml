@@ -41,7 +41,7 @@ for human regulatory DNA, and open a new global perspective on the architecture 
 &lt;p&gt;Material available for download:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;DHS Index and Vocabulary of ~3.6M DHSs (&lt;a href=&#34;https://www.meuleman.org/DHS_Index_and_Vocabulary_hg38_WM20190703.txt.gz&#34;&gt;tsv&lt;/a&gt;, hg38)&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;DHS Index and Vocabulary&lt;/strong&gt; of ~3.6M DHSs (&lt;a href=&#34;https://www.meuleman.org/DHS_Index_and_Vocabulary_hg38_WM20190703.txt.gz&#34;&gt;tsv&lt;/a&gt;, hg38)&lt;/p&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -115,21 +115,26 @@ for human regulatory DNA, and open a new global perspective on the architecture 
 &lt;/tbody&gt;
 &lt;/table&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;733 biosample metadata (&lt;a href=&#34;https://www.meuleman.org/DHS_Index_and_Vocabulary_metadata.html&#34;&gt;html&lt;/a&gt;,
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;733 biosample metadata&lt;/strong&gt; (&lt;a href=&#34;https://www.meuleman.org/DHS_Index_and_Vocabulary_metadata.html&#34;&gt;html&lt;/a&gt;,
 &lt;a href=&#34;https://www.meuleman.org/DHS_Index_and_Vocabulary_metadata.pdf&#34;&gt;pdf&lt;/a&gt;,
 &lt;a href=&#34;https://www.meuleman.org/DHS_Index_and_Vocabulary_metadata.tsv&#34;&gt;tsv&lt;/a&gt;,
 &lt;a href=&#34;https://www.meuleman.org/DHS_Index_and_Vocabulary_metadata.xlsx&#34;&gt;xlsx&lt;/a&gt;,
 &lt;a href=&#34;https://docs.google.com/spreadsheets/d/1B9WKRwXUr8h_frEyh5Zt09oZbnejYIM_LciBcNrZ6Ew/edit?usp=sharing&#34; target=&#34;_blank&#34;&gt;Google spreadsheet&lt;/a&gt;)&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;Presence/absence matrix (&lt;a href=&#34;https://drive.google.com/uc?export=download&amp;amp;id=1Rjh1qCC8Vl5vGk5_dnF1rSO_hRSc1gds&#34; target=&#34;_blank&#34;&gt;R sparse Matrix format&lt;/a&gt;, &lt;a href=&#34;https://drive.google.com/open?id=1EEMEybzf2uZIl_bxLDiNBD6dtCzs1ZBJ&#34; target=&#34;_blank&#34;&gt;Matrix Market format&lt;/a&gt;, &lt;a href=&#34;https://drive.google.com/uc?export=download&amp;amp;id=1Nel7wWOWhWn40Yv7eaQFwvpMcQHBNtJ2&#34; target=&#34;_blank&#34;&gt;raw text format&lt;/a&gt;)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;DHS-by-biosample matrices&lt;/strong&gt;&lt;br /&gt;
+Rows correspond to DHS Index elements, columns correspond to rows in biosample metadata (both in order).&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Presence/absence matrix (&lt;a href=&#34;https://drive.google.com/uc?export=download&amp;amp;id=1Rjh1qCC8Vl5vGk5_dnF1rSO_hRSc1gds&#34; target=&#34;_blank&#34;&gt;R sparse Matrix format&lt;/a&gt;, &lt;a href=&#34;https://drive.google.com/open?id=1EEMEybzf2uZIl_bxLDiNBD6dtCzs1ZBJ&#34; target=&#34;_blank&#34;&gt;Matrix Market format&lt;/a&gt;, &lt;a href=&#34;https://drive.google.com/uc?export=download&amp;amp;id=1Nel7wWOWhWn40Yv7eaQFwvpMcQHBNtJ2&#34; target=&#34;_blank&#34;&gt;raw text format&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Signal matrix (&lt;a href=&#34;https://drive.google.com/uc?export=download&amp;amp;id=1Nwl2eOu-YVabqFAvC3cfy64sD9PqmKQ-&#34; target=&#34;_blank&#34;&gt;R sparse Matrix format&lt;/a&gt;, &lt;a href=&#34;https://drive.google.com/uc?export=download&amp;amp;id=16wbuNmHnwsek3USWM04nR535vPavNZka&#34; target=&#34;_blank&#34;&gt;raw text format&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Columns correspond to rows in biosample metadata, rows correspond to DHS Index elements (both in order).
-&lt;div style=&#34;text-align: right&#34;&gt;
-&lt;a href=&#34;https://doi.org/10.1101/822510&#34; target=&#34;_blank&#34;&gt;Meuleman &lt;em&gt;et al.&lt;/em&gt;, bioRxiv (2019)&lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;!--&lt;div style=&#34;text-align: right&#34;&gt;--&gt;
 
-&lt;p&gt;Work with Sasha Muratov, John Stamatoyannopoulos and others.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://doi.org/10.1101/822510&#34; target=&#34;_blank&#34;&gt;Meuleman &lt;em&gt;et al.&lt;/em&gt;, bioRxiv (2019)&lt;/a&gt;
+&lt;!--&lt;/div&gt;--&gt;&lt;br /&gt;
+Work with Sasha Muratov, John Stamatoyannopoulos and others.&lt;/p&gt;
 </description>
     </item>
     
