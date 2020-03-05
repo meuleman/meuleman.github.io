@@ -1,218 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on </title>
+    <title>Projects | meuleman.org</title>
     <link>https://www.meuleman.org/project/</link>
-    <description>Recent content in Projects on </description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
-    <language>en-us</language>
-    
-	    <atom:link href="https://www.meuleman.org/project/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Annotated regulatory Index</title>
-      <link>https://www.meuleman.org/project/dhsindex/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.meuleman.org/project/dhsindex/</guid>
-      <description>&lt;p&gt;Regulatory information encoded in the human genome is activated by sequence-specific DNA binding factors,
-creating focal alterations in chromatin structure that are hypersensitive to DNase I.
-We created deep reference maps of DNase I hypersensitive sites (DHSs) from
-733 human biosamples encompassing 439 cell and tissue types and states,
-and integrated these to delineate and numerically index ~3.6 million DHSs encoded within the human genome,
-providing a common coordinate system for regulatory DNA.&lt;/p&gt;
-
-&lt;p&gt;We find that the scale of cell and tissue states sampled exposes
-a large degree of stereotyped actuation of large sets of elements,
-signaling the operation of distinct genome-scale regulatory programs.
-These actuation patterns of individual elements can be captured comprehensively
-by a simple regulatory vocabulary reflecting their dominant program.
-This vocabulary, in turn, enables regulatory annotation of both protein-coding genes
-and the vast array of well-defined but poorly-characterized non-coding RNA genes.&lt;/p&gt;
-
-&lt;p&gt;Finally, we find that regulatory vocabularies open new avenues for systematically
-interpreting non-coding genetic variation, and substantially empower the
-connection of disease-associated variation with specific cell and tissue states.&lt;/p&gt;
-
-&lt;p&gt;Taken together, our results provide a common and extensible coordinate system and vocabulary
-for human regulatory DNA, and open a new global perspective on the architecture of human gene regulation.&lt;/p&gt;
-
-&lt;p&gt;Material available for download:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;DHS Index and Vocabulary&lt;/strong&gt; of ~3.6M DHSs (&lt;a href=&#34;https://www.meuleman.org/DHS_Index_and_Vocabulary_hg38_WM20190703.txt.gz&#34;&gt;tsv&lt;/a&gt;, hg38)&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Column&lt;/th&gt;
-&lt;th&gt;Example&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;seqname&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;chr1&lt;/td&gt;
-&lt;td&gt;Chromosome&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;start&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;1782520&lt;/td&gt;
-&lt;td&gt;Start position&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;end&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;1782770&lt;/td&gt;
-&lt;td&gt;End position&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;identifier&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;1.10643&lt;/td&gt;
-&lt;td&gt;Unique identifier (chr#.position%)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;mean_signal&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;1.030869481&lt;/td&gt;
-&lt;td&gt;Mean DNase-seq signal per biosample (&amp;ldquo;confidence score&amp;rdquo;)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;numsamples&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;54&lt;/td&gt;
-&lt;td&gt;Number of biosamples with a DHS&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;summit&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;1782650&lt;/td&gt;
-&lt;td&gt;Estimated DHS summit position&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;core_start&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;1782590&lt;/td&gt;
-&lt;td&gt;Start position of core-region&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;core_end&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;1782710&lt;/td&gt;
-&lt;td&gt;End position of core-region&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;component&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Digestive&lt;/td&gt;
-&lt;td&gt;Main DHS Vocabulary component&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;733 biosample metadata&lt;/strong&gt; (&lt;a href=&#34;https://www.meuleman.org/DHS_Index_and_Vocabulary_metadata.html&#34;&gt;html&lt;/a&gt;,
-&lt;a href=&#34;https://www.meuleman.org/DHS_Index_and_Vocabulary_metadata.pdf&#34;&gt;pdf&lt;/a&gt;,
-&lt;a href=&#34;https://www.meuleman.org/DHS_Index_and_Vocabulary_metadata.tsv&#34;&gt;tsv&lt;/a&gt;,
-&lt;a href=&#34;https://www.meuleman.org/DHS_Index_and_Vocabulary_metadata.xlsx&#34;&gt;xlsx&lt;/a&gt;,
-&lt;a href=&#34;https://docs.google.com/spreadsheets/d/1B9WKRwXUr8h_frEyh5Zt09oZbnejYIM_LciBcNrZ6Ew/edit?usp=sharing&#34; target=&#34;_blank&#34;&gt;Google spreadsheet&lt;/a&gt;)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;DHS-by-biosample matrices&lt;/strong&gt;&lt;br /&gt;
-Rows correspond to DHS Index elements, columns correspond to rows in biosample metadata (both in order).&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Presence/absence matrix (&lt;a href=&#34;https://drive.google.com/uc?export=download&amp;amp;id=1Rjh1qCC8Vl5vGk5_dnF1rSO_hRSc1gds&#34; target=&#34;_blank&#34;&gt;R sparse Matrix format&lt;/a&gt;, &lt;a href=&#34;https://drive.google.com/open?id=1EEMEybzf2uZIl_bxLDiNBD6dtCzs1ZBJ&#34; target=&#34;_blank&#34;&gt;Matrix Market format&lt;/a&gt;, &lt;a href=&#34;https://drive.google.com/uc?export=download&amp;amp;id=1Nel7wWOWhWn40Yv7eaQFwvpMcQHBNtJ2&#34; target=&#34;_blank&#34;&gt;raw text format&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Signal matrix (&lt;a href=&#34;https://drive.google.com/uc?export=download&amp;amp;id=1Nwl2eOu-YVabqFAvC3cfy64sD9PqmKQ-&#34; target=&#34;_blank&#34;&gt;R sparse Matrix format&lt;/a&gt;, &lt;a href=&#34;https://drive.google.com/uc?export=download&amp;amp;id=16wbuNmHnwsek3USWM04nR535vPavNZka&#34; target=&#34;_blank&#34;&gt;raw text format&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;!--&lt;div style=&#34;text-align: right&#34;&gt;--&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://doi.org/10.1101/822510&#34; target=&#34;_blank&#34;&gt;Meuleman &lt;em&gt;et al.&lt;/em&gt;, bioRxiv (2019)&lt;/a&gt;
-&lt;!--&lt;/div&gt;--&gt;&lt;br /&gt;
-Work with Sasha Muratov, John Stamatoyannopoulos and others.&lt;/p&gt;
-</description>
-    </item>
+      <atom:link href="https://www.meuleman.org/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Projects</title>
+      <link>https://www.meuleman.org/project/</link>
+    </image>
     
     <item>
-      <title>Data saliency － epilogos</title>
-      <link>https://www.meuleman.org/project/epilogos/</link>
+      <title>Chasing Corona</title>
+      <link>https://www.meuleman.org/project/chasingcorona/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.meuleman.org/project/epilogos/</guid>
-      <description>&lt;p&gt;DNA is organized in the cell nucleus by way of a chromatin structure, which is shaped and maintained by many chromatin marks, such as histone tail modifications (e.g., H3K4me1), transcription factors (e.g., GATA1) and chromatin modifiers (e.g., EZH2).
-The genome-wide occurrence of such chromatin marks can be captured using assays such as Chromatin Immunoprecipitation Sequencing (ChIP-Seq).
-Chromatin states describe the combinatorial occurrence of multiple chromatin marks, defined using software such as ChromHMM and Segway.&lt;/p&gt;
-
-&lt;p&gt;Chromatin states across 100s of biosamples can capture the dynamics of chromatin marks.
-Although this provides clues to the function of genomic regions, it results in large datasets that remain hard to navigate.&lt;/p&gt;
-
-&lt;p&gt;By modeling the information content, we transform multi-biosample chromatin state data into intuitive readouts called epilogos.
-This process is analogous to how motif logos are derived from DNA or protein sequence alignments, and opens up new possibilities for studying chromatin mark dynamics in large genome-wide datasets.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.epilogos.net&#34; target=&#34;_blank&#34;&gt;Start using epilogos now!&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Chromatin state maps</title>
-      <link>https://www.meuleman.org/project/roadmap/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.meuleman.org/project/roadmap/</guid>
-      <description>&lt;p&gt;The reference human genome sequence set the stage for studies of genetic variation and its association with human disease, but up until 2015 epigenomic studies lacked a similar reference.
-To address this need, we generated the largest collection of human epigenomes for primary cells and tissues to date.&lt;/p&gt;
-
-&lt;p&gt;We performed an integrative analysis of 111 reference human epigenomes generated as part of the programme,
-profiled for histone modification patterns, DNA accessibility, DNA methylation and RNA expression.
-Focusing on histone tail modifications, we defined extensive chromatin state models and maps.
-By integrating these maps with chromatin accessibility data obtained from DNase-seq experiments, we established global maps of regulatory elements.&lt;/p&gt;
-
-&lt;p&gt;We showed that disease- and trait-associated genetic variation is preferentially localized in tissue-specific regulatory elements,
-revealing biologically relevant cell types for diverse human traits, and providing a resource for interpreting the molecular basis of human disease.&lt;/p&gt;
-
-&lt;p&gt;Taken together, our results demonstrated the central role of epigenomic information for understanding gene regulation, cellular differentiation and human disease.
-&lt;div style=&#34;text-align: right&#34;&gt;
-&lt;a href=&#34;https://doi.org/10.1038/nature14248&#34; target=&#34;_blank&#34;&gt;Kundaje, Meuleman, Ernst, Bilenky &lt;em&gt;et al.&lt;/em&gt;, &lt;strong&gt;Nature&lt;/strong&gt; (2015)&lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;Work with Anshul Kundaje, Manolis Kellis, and others.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Lamina Associated Domains</title>
-      <link>https://www.meuleman.org/project/lamina/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.meuleman.org/project/lamina/</guid>
-      <description>&lt;p&gt;By studying which regions of the human genome come into contact with the nuclear periphery,
-we demonstrated that the genome is divided into large, discrete domains.
-These domains are units of chromosome organisation within the nucleus, and we named them Lamina Associated Domains (LADs).
-&lt;div style=&#34;text-align: right&#34;&gt;
-&lt;a href=&#34;https://doi.org/10.1038/nature06947&#34; target=&#34;_blank&#34;&gt;Guelen &lt;em&gt;et al.&lt;/em&gt;, &lt;strong&gt;Nature&lt;/strong&gt; (2008)&lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;To better understand the (re)organization of the genome through cell differentiation, we extended our study to a mouse differentiation model.
-By studying the dynamics during differentiation, we found that lamina-genome interactions are widely involved in the
-control of gene expression programs during lineage commitment and terminal differentiation.
-&lt;div style=&#34;text-align: right&#34;&gt;
-&lt;a href=&#34;https://doi.org/10.1016/j.molcel.2010.03.016&#34; target=&#34;_blank&#34;&gt;Peric-Hupkes, Meuleman &lt;em&gt;et al.&lt;/em&gt;, &lt;strong&gt;Mol. Cell&lt;/strong&gt; (2010)&lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;Despite these dynamics, we find that the majority of lamina-genome interactions are constitutive across cell types.
-Moreover, the genome-wide patterning of constitutive LADs is highly conserved between human and mouse,
-and can be largely predicted based on DNA sequence content only.
-This suggests that LADs collectively encode a basic `backbone&amp;rsquo; structure for organizing chromosomes.
-&lt;div style=&#34;text-align: right&#34;&gt;
-&lt;a href=&#34;https://doi.org/10.1101/gr.141028.112&#34; target=&#34;_blank&#34;&gt;Meuleman, Peric-Hupkes &lt;em&gt;et al.&lt;/em&gt;, &lt;strong&gt;Genome Res&lt;/strong&gt;. (2013)&lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;Work with Daan Peric-Hupkes, Bas van Steensel, and others.&lt;/p&gt;
+      <guid>https://www.meuleman.org/project/chasingcorona/</guid>
+      <description>&lt;p&gt;TODO&lt;/p&gt;
 </description>
     </item>
     
