@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects | meuleman.org</title>
-    <link>meuleman.github.org/project/</link>
-      <atom:link href="meuleman.github.org/project/index.xml" rel="self" type="application/rss+xml" />
+    <link>meuleman.github.io/project/</link>
+      <atom:link href="meuleman.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Projects</title>
-      <link>meuleman.github.org/project/</link>
+      <link>meuleman.github.io/project/</link>
     </image>
     
     <item>
       <title>Chasing Corona</title>
-      <link>meuleman.github.org/project/chasingcorona/</link>
+      <link>meuleman.github.io/project/chasingcorona/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>meuleman.github.org/project/chasingcorona/</guid>
+      <guid>meuleman.github.io/project/chasingcorona/</guid>
       <description>&lt;p&gt;TODO&lt;/p&gt;
 </description>
     </item>

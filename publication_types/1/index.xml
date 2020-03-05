@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>1 | meuleman.org</title>
-    <link>meuleman.github.org/publication_types/1/</link>
-      <atom:link href="meuleman.github.org/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
+    <link>meuleman.github.io/publication_types/1/</link>
+      <atom:link href="meuleman.github.io/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
     <description>1</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2006 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>1</title>
-      <link>meuleman.github.org/publication_types/1/</link>
+      <link>meuleman.github.io/publication_types/1/</link>
     </image>
     
     <item>
       <title>Construction of correlation networks with explicit time-slices using time-lagged, variable interval standard and partial correlation coefficients</title>
-      <link>meuleman.github.org/publication/meuleman-2006-construction/</link>
+      <link>meuleman.github.io/publication/meuleman-2006-construction/</link>
       <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
-      <guid>meuleman.github.org/publication/meuleman-2006-construction/</guid>
+      <guid>meuleman.github.io/publication/meuleman-2006-construction/</guid>
       <description></description>
     </item>
     

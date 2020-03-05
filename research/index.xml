@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Researches | meuleman.org</title>
-    <link>meuleman.github.org/research/</link>
-      <atom:link href="meuleman.github.org/research/index.xml" rel="self" type="application/rss+xml" />
+    <link>meuleman.github.io/research/</link>
+      <atom:link href="meuleman.github.io/research/index.xml" rel="self" type="application/rss+xml" />
     <description>Researches</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Researches</title>
-      <link>meuleman.github.org/research/</link>
+      <link>meuleman.github.io/research/</link>
     </image>
     
     <item>
       <title>Annotated regulatory Index</title>
-      <link>meuleman.github.org/research/dhsindex/</link>
+      <link>meuleman.github.io/research/dhsindex/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>meuleman.github.org/research/dhsindex/</guid>
+      <guid>meuleman.github.io/research/dhsindex/</guid>
       <description>&lt;p&gt;Regulatory information encoded in the human genome is activated by sequence-specific DNA binding factors,
 creating focal alterations in chromatin structure that are hypersensitive to DNase I.
 We created deep reference maps of DNase I hypersensitive sites (DHSs) from
@@ -39,7 +39,7 @@ for human regulatory DNA, and open a new global perspective on the architecture 
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;DHS Index and Vocabulary&lt;/strong&gt; of ~3.6M DHSs (
-&lt;a href=&#34;meuleman.github.org/DHS_Index_and_Vocabulary_hg38_WM20190703.txt.gz&#34;&gt;tsv&lt;/a&gt;, hg38)&lt;/p&gt;
+&lt;a href=&#34;meuleman.github.io/DHS_Index_and_Vocabulary_hg38_WM20190703.txt.gz&#34;&gt;tsv&lt;/a&gt;, hg38)&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -104,13 +104,13 @@ for human regulatory DNA, and open a new global perspective on the architecture 
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;733 biosample metadata&lt;/strong&gt; (
-&lt;a href=&#34;meuleman.github.org/DHS_Index_and_Vocabulary_metadata.html&#34;&gt;html&lt;/a&gt;,
+&lt;a href=&#34;meuleman.github.io/DHS_Index_and_Vocabulary_metadata.html&#34;&gt;html&lt;/a&gt;,
 
-&lt;a href=&#34;meuleman.github.org/DHS_Index_and_Vocabulary_metadata.pdf&#34;&gt;pdf&lt;/a&gt;,
+&lt;a href=&#34;meuleman.github.io/DHS_Index_and_Vocabulary_metadata.pdf&#34;&gt;pdf&lt;/a&gt;,
 
-&lt;a href=&#34;meuleman.github.org/DHS_Index_and_Vocabulary_metadata.tsv&#34;&gt;tsv&lt;/a&gt;,
+&lt;a href=&#34;meuleman.github.io/DHS_Index_and_Vocabulary_metadata.tsv&#34;&gt;tsv&lt;/a&gt;,
 
-&lt;a href=&#34;meuleman.github.org/DHS_Index_and_Vocabulary_metadata.xlsx&#34;&gt;xlsx&lt;/a&gt;,
+&lt;a href=&#34;meuleman.github.io/DHS_Index_and_Vocabulary_metadata.xlsx&#34;&gt;xlsx&lt;/a&gt;,
 
 &lt;a href=&#34;https://docs.google.com/spreadsheets/d/1B9WKRwXUr8h_frEyh5Zt09oZbnejYIM_LciBcNrZ6Ew/edit?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google spreadsheet&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
@@ -136,9 +136,9 @@ Work with Sasha Muratov, John Stamatoyannopoulos and others.&lt;/p&gt;
     
     <item>
       <title>Data saliency － epilogos</title>
-      <link>meuleman.github.org/research/epilogos/</link>
+      <link>meuleman.github.io/research/epilogos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>meuleman.github.org/research/epilogos/</guid>
+      <guid>meuleman.github.io/research/epilogos/</guid>
       <description>&lt;p&gt;DNA is organized in the cell nucleus by way of a chromatin structure, which is shaped and maintained by many chromatin marks, such as histone tail modifications (e.g., H3K4me1), transcription factors (e.g., GATA1) and chromatin modifiers (e.g., EZH2).
 The genome-wide occurrence of such chromatin marks can be captured using assays such as Chromatin Immunoprecipitation Sequencing (ChIP-Seq).
 Chromatin states describe the combinatorial occurrence of multiple chromatin marks, defined using software such as ChromHMM and Segway.&lt;/p&gt;
@@ -153,9 +153,9 @@ This process is analogous to how motif logos are derived from DNA or protein seq
     
     <item>
       <title>Chromatin state maps</title>
-      <link>meuleman.github.org/research/roadmap/</link>
+      <link>meuleman.github.io/research/roadmap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>meuleman.github.org/research/roadmap/</guid>
+      <guid>meuleman.github.io/research/roadmap/</guid>
       <description>&lt;p&gt;The reference human genome sequence set the stage for studies of genetic variation and its association with human disease, but up until 2015 epigenomic studies lacked a similar reference.
 To address this need, we generated the largest collection of human epigenomes for primary cells and tissues to date.&lt;/p&gt;
 &lt;p&gt;We performed an integrative analysis of 111 reference human epigenomes generated as part of the programme,
@@ -173,9 +173,9 @@ Work with Anshul Kundaje, Manolis Kellis, and others.&lt;/p&gt;
     
     <item>
       <title>Lamina Associated Domains</title>
-      <link>meuleman.github.org/research/lamina/</link>
+      <link>meuleman.github.io/research/lamina/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>meuleman.github.org/research/lamina/</guid>
+      <guid>meuleman.github.io/research/lamina/</guid>
       <description>&lt;p&gt;By studying which regions of the human genome come into contact with the nuclear periphery,
 we demonstrated that the genome is divided into large, discrete domains.
 These domains are units of chromosome organisation within the nucleus, and we named them Lamina Associated Domains (LADs).&lt;br&gt;

@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Recent &amp; Upcoming Talks | meuleman.org</title>
-    <link>meuleman.github.org/talk/</link>
-      <atom:link href="meuleman.github.org/talk/index.xml" rel="self" type="application/rss+xml" />
+    <link>meuleman.github.io/talk/</link>
+      <atom:link href="meuleman.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
     <description>Recent &amp; Upcoming Talks</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Recent &amp; Upcoming Talks</title>
-      <link>meuleman.github.org/talk/</link>
+      <link>meuleman.github.io/talk/</link>
     </image>
     
   </channel>
