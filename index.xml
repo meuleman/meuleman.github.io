@@ -139,11 +139,60 @@ Work with Sasha Muratov, John Stamatoyannopoulos and others.&lt;/p&gt;
       <link>https://www.meuleman.org/project/chasingcorona/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.meuleman.org/project/chasingcorona/</guid>
-      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+      <description>&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;DISCLAIMER&lt;/strong&gt;: I am not a virologist or epidemiologist &amp;ndash; I realize there are &lt;em&gt;many&lt;/em&gt; caveats to interpreting these data.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;The top 9 countries in terms of percentage of the population confirmed to be affected by the COVID-19 coronavirus are shown below&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;,
+along with a world-wide estimate.
+This figure gets automatically regenerated as new data becomes available.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://raw.githubusercontent.com/meuleman/ChasingCorona/master/percentage_population_confirmed_top9_min50_latest.png&#34; data-caption=&#34;% of per-country population that are confirmed cases&#34;&gt;
+
+
+  &lt;img src=&#34;https://raw.githubusercontent.com/meuleman/ChasingCorona/master/percentage_population_confirmed_top9_min50_latest.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; class=&#34;numbered&#34;&gt;
+    % of per-country population that are confirmed cases
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;COVID-19 cases are extremely underreported and as such these estimates should be taken with a rather large grain of salt.&lt;/p&gt;
+&lt;p&gt;However, the shape of these curves might still provide meaningful information about
+different patterns of viral infection progression and containment between countries,
+in particular when multiple countries show similar patterns.
+Some countries are seemingly reaching a level of containment (plateau),
+whereas others are still growing rapidly, even exponentially.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;ll be interesting, albeit disheartening, to see how these curves evolve over the coming weeks and months.&lt;/p&gt;
+&lt;h3 id=&#34;background&#34;&gt;Background&lt;/h3&gt;
 &lt;p&gt;The recent (February 2020) outbreak of the COVID-19 corona virus prompted an impressively
 rapid and joint response of epidemiologists, geneticists, software developers and data analysts.
 This has resulted in a number of insightful web-based dashboard tools to track and
-better understand the movements of this virus for specific regions, countries and throughout the world&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;:
+better understand the movements of this virus for specific regions, countries and throughout the world&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;:
 
 
 
@@ -272,127 +321,25 @@ requires two things: 1) the numbers behind these dashboards and 2) estimates of 
 And the World Bank provides 
 &lt;a href=&#34;https://data.worldbank.org/indicator/SP.POP.TOTL&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;population count estimates&lt;/a&gt;
 for over 250 countries world-wide.&lt;/p&gt;
-&lt;p&gt;Combined&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;, these datasets open up an alternative view of the COVID-19 situation,
+&lt;p&gt;Combined&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;, these datasets open up an alternative view of the COVID-19 situation,
 in terms of the percentage of per-country populations (confirmed to be) affected by the virus.
 All code, data and resulting figures are available through this 
 &lt;a href=&#34;https://github.com/meuleman/ChasingCorona&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub repository&lt;/a&gt;,
 and are updated on a near-daily basis.&lt;/p&gt;
-&lt;h3 id=&#34;results&#34;&gt;Results&lt;/h3&gt;
-&lt;div class=&#34;alert alert-warning&#34;&gt;
-  &lt;div&gt;
-    &lt;strong&gt;DISCLAIMER&lt;/strong&gt;: I am not a virologist or epidemiologist &amp;ndash; I realize there are &lt;em&gt;many&lt;/em&gt; caveats to interpreting these data.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;The top 9 countries in terms of percentage of the population confirmed to be affected are shown below&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;,
-along with a world-wide estimate.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://raw.githubusercontent.com/meuleman/ChasingCorona/master/percentage_population_confirmed_top9_min50_latest.png&#34; data-caption=&#34;% of per-country population that are confirmed cases&#34;&gt;
-
-
-  &lt;img src=&#34;https://raw.githubusercontent.com/meuleman/ChasingCorona/master/percentage_population_confirmed_top9_min50_latest.png&#34; alt=&#34;&#34;  &gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; class=&#34;numbered&#34;&gt;
-    % of per-country population that are confirmed cases
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-&lt;/p&gt;
-&lt;p&gt;As this figure gets automatically regenerated as new data becomes available,
-it is hard to say anything meaningful that generalizes across time.
-Except maybe that there are visible differences in the shapes of these curves,
-with some countries seemingly reaching a level of containment (plateau),
-whereas others still growing rapidly.&lt;/p&gt;
-&lt;h3 id=&#34;interpretation&#34;&gt;Interpretation&lt;/h3&gt;
-&lt;p&gt;Although viruses know no (country) boundaries,
-different countries &amp;ndash; and their governments and infrastructures &amp;ndash; have wide ranging approaches for
-dealing with the COVID-19 situation, not in the least regarding access to testing facilities.
-Cases of COVID-19 infection are typically vastly underreported and so the
-exact percentages should be taken with a rather large grain of salt.&lt;/p&gt;
-&lt;p&gt;That said, the shape of these curves might still provide meaningful information about
-different patterns of viral infection progression and containment between countries.&lt;/p&gt;
-&lt;!--
-- [x] Write math example
-- [x] Write diagram example
-- [ ] Can we use the shape of 
---&gt;
-&lt;!--
-Normalize the number of cases / deaths / recoveries by the regional population, calculate derivatives over time and report sharp increases/deviations.
---&gt;
-&lt;!--
-### Other developments
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://www.meuleman.org/project/chasingcorona/dashboards_special/dashboard_Singapore_graph_hu2cc384526feabd3f6356098153c8797a_190352_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;Singapore COVID-19 dashboard&#34;&gt;
-
-
-  &lt;img data-src=&#34;https://www.meuleman.org/project/chasingcorona/dashboards_special/dashboard_Singapore_graph_hu2cc384526feabd3f6356098153c8797a_190352_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;626&#34; height=&#34;624&#34;&gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption&gt;
-    Singapore COVID-19 dashboard
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
-Genetic tracing: https://nextstrain.org/ncov
---&gt;
 &lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;COVID-19 ArcGIS Hub: &lt;a href=&#34;https://coronavirus-disasterresponse.hub.arcgis.com/&#34;&gt;https://coronavirus-disasterresponse.hub.arcgis.com/&lt;/a&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Currently included countries have a minimum of 50 cases, to prevent highly unstable percentages. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;There were a few minor caveats to this processing step, mostly due to mismatched country name nomenclature and/or recognition. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;COVID-19 ArcGIS Hub: &lt;a href=&#34;https://coronavirus-disasterresponse.hub.arcgis.com/&#34;&gt;https://coronavirus-disasterresponse.hub.arcgis.com/&lt;/a&gt; &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Included countries have a minimum of 50 cases, to prevent highly unstable percentages. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;There were a few minor caveats to this processing step, mostly due to mismatched country name nomenclature and/or recognition. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;

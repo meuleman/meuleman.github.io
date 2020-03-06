@@ -273,7 +273,7 @@
   <meta property="twitter:image" content="https://www.meuleman.org/project/chasingcorona/featured.png"><meta property="og:locale" content="en-us">
   
     
-    <meta property="article:modified_time" content="2020-03-05T23:56:04-08:00">
+    <meta property="article:modified_time" content="2020-03-06T10:37:34-08:00">
   
 
   
@@ -304,7 +304,7 @@
   ],
   
   "datePublished": "0001-01-01T00:00:00Z",
-  "dateModified": "2020-03-05T23:56:04-08:00",
+  "dateModified": "2020-03-06T10:37:34-08:00",
   
   "author": {
     "@type": "Person",
@@ -625,7 +625,7 @@
           Last updated on
       
     
-    Mar 5, 2020
+    Mar 6, 2020
   </span>
   
 
@@ -665,11 +665,60 @@
   <div class="article-container">
 
     <div class="article-style">
-      <h3 id="introduction">Introduction</h3>
+      <div class="alert alert-warning">
+  <div>
+    <strong>DISCLAIMER</strong>: I am not a virologist or epidemiologist &ndash; I realize there are <em>many</em> caveats to interpreting these data.
+  </div>
+</div>
+<p>The top 9 countries in terms of percentage of the population confirmed to be affected by the COVID-19 coronavirus are shown below<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>,
+along with a world-wide estimate.
+This figure gets automatically regenerated as new data becomes available.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="https://raw.githubusercontent.com/meuleman/ChasingCorona/master/percentage_population_confirmed_top9_min50_latest.png" data-caption="% of per-country population that are confirmed cases">
+
+
+  <img src="https://raw.githubusercontent.com/meuleman/ChasingCorona/master/percentage_population_confirmed_top9_min50_latest.png" alt=""  >
+</a>
+
+
+  
+  
+  <figcaption data-pre="Figure " data-post=":" class="numbered">
+    % of per-country population that are confirmed cases
+  </figcaption>
+
+
+</figure>
+</p>
+<p>COVID-19 cases are extremely underreported and as such these estimates should be taken with a rather large grain of salt.</p>
+<p>However, the shape of these curves might still provide meaningful information about
+different patterns of viral infection progression and containment between countries,
+in particular when multiple countries show similar patterns.
+Some countries are seemingly reaching a level of containment (plateau),
+whereas others are still growing rapidly, even exponentially.</p>
+<p>It&rsquo;ll be interesting, albeit disheartening, to see how these curves evolve over the coming weeks and months.</p>
+<h3 id="background">Background</h3>
 <p>The recent (February 2020) outbreak of the COVID-19 corona virus prompted an impressively
 rapid and joint response of epidemiologists, geneticists, software developers and data analysts.
 This has resulted in a number of insightful web-based dashboard tools to track and
-better understand the movements of this virus for specific regions, countries and throughout the world<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>:
+better understand the movements of this virus for specific regions, countries and throughout the world<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>:
 
 
 
@@ -798,127 +847,25 @@ requires two things: 1) the numbers behind these dashboards and 2) estimates of 
 And the World Bank provides 
 <a href="https://data.worldbank.org/indicator/SP.POP.TOTL" target="_blank" rel="noopener">population count estimates</a>
 for over 250 countries world-wide.</p>
-<p>Combined<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>, these datasets open up an alternative view of the COVID-19 situation,
+<p>Combined<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>, these datasets open up an alternative view of the COVID-19 situation,
 in terms of the percentage of per-country populations (confirmed to be) affected by the virus.
 All code, data and resulting figures are available through this 
 <a href="https://github.com/meuleman/ChasingCorona" target="_blank" rel="noopener">GitHub repository</a>,
 and are updated on a near-daily basis.</p>
-<h3 id="results">Results</h3>
-<div class="alert alert-warning">
-  <div>
-    <strong>DISCLAIMER</strong>: I am not a virologist or epidemiologist &ndash; I realize there are <em>many</em> caveats to interpreting these data.
-  </div>
-</div>
-<p>The top 9 countries in terms of percentage of the population confirmed to be affected are shown below<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>,
-along with a world-wide estimate.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-<figure>
-
-
-  <a data-fancybox="" href="https://raw.githubusercontent.com/meuleman/ChasingCorona/master/percentage_population_confirmed_top9_min50_latest.png" data-caption="% of per-country population that are confirmed cases">
-
-
-  <img src="https://raw.githubusercontent.com/meuleman/ChasingCorona/master/percentage_population_confirmed_top9_min50_latest.png" alt=""  >
-</a>
-
-
-  
-  
-  <figcaption data-pre="Figure " data-post=":" class="numbered">
-    % of per-country population that are confirmed cases
-  </figcaption>
-
-
-</figure>
-</p>
-<p>As this figure gets automatically regenerated as new data becomes available,
-it is hard to say anything meaningful that generalizes across time.
-Except maybe that there are visible differences in the shapes of these curves,
-with some countries seemingly reaching a level of containment (plateau),
-whereas others still growing rapidly.</p>
-<h3 id="interpretation">Interpretation</h3>
-<p>Although viruses know no (country) boundaries,
-different countries &ndash; and their governments and infrastructures &ndash; have wide ranging approaches for
-dealing with the COVID-19 situation, not in the least regarding access to testing facilities.
-Cases of COVID-19 infection are typically vastly underreported and so the
-exact percentages should be taken with a rather large grain of salt.</p>
-<p>That said, the shape of these curves might still provide meaningful information about
-different patterns of viral infection progression and containment between countries.</p>
-<!--
-- [x] Write math example
-- [x] Write diagram example
-- [ ] Can we use the shape of 
--->
-<!--
-Normalize the number of cases / deaths / recoveries by the regional population, calculate derivatives over time and report sharp increases/deviations.
--->
-<!--
-### Other developments
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-<figure>
-
-
-  <a data-fancybox="" href="/project/chasingcorona/dashboards_special/dashboard_Singapore_graph_hu2cc384526feabd3f6356098153c8797a_190352_2000x2000_fit_lanczos_2.png" data-caption="Singapore COVID-19 dashboard">
-
-
-  <img data-src="/project/chasingcorona/dashboards_special/dashboard_Singapore_graph_hu2cc384526feabd3f6356098153c8797a_190352_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="626" height="624">
-</a>
-
-
-  
-  
-  <figcaption>
-    Singapore COVID-19 dashboard
-  </figcaption>
-
-
-</figure>
-
-Genetic tracing: https://nextstrain.org/ncov
--->
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p>COVID-19 ArcGIS Hub: <a href="https://coronavirus-disasterresponse.hub.arcgis.com/">https://coronavirus-disasterresponse.hub.arcgis.com/</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Currently included countries have a minimum of 50 cases, to prevent highly unstable percentages. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2" role="doc-endnote">
-<p>There were a few minor caveats to this processing step, mostly due to mismatched country name nomenclature and/or recognition. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>COVID-19 ArcGIS Hub: <a href="https://coronavirus-disasterresponse.hub.arcgis.com/">https://coronavirus-disasterresponse.hub.arcgis.com/</a> <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3" role="doc-endnote">
-<p>Included countries have a minimum of 50 cases, to prevent highly unstable percentages. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>There were a few minor caveats to this processing step, mostly due to mismatched country name nomenclature and/or recognition. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
