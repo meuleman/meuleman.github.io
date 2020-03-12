@@ -190,6 +190,12 @@ whereas others are still growing rapidly, even exponentially.&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;ll be interesting, albeit disheartening, to see how these curves evolve over the coming weeks and months.
 More figures are available at this 
 &lt;a href=&#34;https://github.com/meuleman/ChasingCorona&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub repository&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    This is an &lt;a href=&#34;https://medium.com/@tomaspueyo/coronavirus-act-today-or-people-will-die-f4d3d9cd99ca&#34;&gt;excellent overview&lt;/a&gt;
+of the current COVID-19 situation and the need to act immediately.  Please read it.
+  &lt;/div&gt;
+&lt;/div&gt;
 &lt;h3 id=&#34;background&#34;&gt;Background&lt;/h3&gt;
 &lt;p&gt;The recent (February 2020) outbreak of the COVID-19 corona virus prompted an impressively
 rapid and joint response of epidemiologists, geneticists, software developers and data analysts.
@@ -317,9 +323,9 @@ In particular, I wanted to know what these numbers meant in terms of the fractio
 &lt;h3 id=&#34;approach&#34;&gt;Approach&lt;/h3&gt;
 &lt;p&gt;Normalizing the number of confirmed COVID-19 cases per country with per-country population estimates
 requires two things: 1) the numbers behind these dashboards and 2) estimates of per-country population counts.&lt;/p&gt;
-&lt;p&gt;Luckily the folks at JHU have freely made available their meticulously curated datasets through a
-
-&lt;a href=&#34;https://github.com/CSSEGISandData/COVID-19&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub repository&lt;/a&gt;, which they continue to update on a daily basis.
+&lt;p&gt;Luckily the folks at JHU have freely 
+&lt;a href=&#34;https://github.com/CSSEGISandData/COVID-19&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;made available&lt;/a&gt;
+their meticulously curated datasets, which they continue to update on a daily basis.
 And the World Bank provides 
 &lt;a href=&#34;https://data.worldbank.org/indicator/SP.POP.TOTL&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;population count estimates&lt;/a&gt;
 for over 250 countries world-wide.&lt;/p&gt;
