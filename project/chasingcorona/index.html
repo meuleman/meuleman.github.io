@@ -691,7 +691,7 @@ This figure gets regenerated as new data becomes available.
 <figure>
 
 
-  <a data-fancybox="" href="https://raw.githubusercontent.com/meuleman/ChasingCorona/master/PNG_figures/percentage_population_confirmed_top20_min100_latest.png" data-caption="% of per-country population that are confirmed cases">
+  <a data-fancybox="" href="https://raw.githubusercontent.com/meuleman/ChasingCorona/master/PNG_figures/percentage_population_confirmed_top20_min100_latest.png" data-caption="Percent of per-country population that are confirmed cases, shown for the top 20 countries and world-wide. Percentages shown on the right are for the most recent date indicated.">
 
 
   <img src="https://raw.githubusercontent.com/meuleman/ChasingCorona/master/PNG_figures/percentage_population_confirmed_top20_min100_latest.png" alt=""  >
@@ -701,32 +701,106 @@ This figure gets regenerated as new data becomes available.
   
   
   <figcaption data-pre="Figure " data-post=":" class="numbered">
-    % of per-country population that are confirmed cases
+    Percent of per-country population that are confirmed cases, shown for the top 20 countries and world-wide. Percentages shown on the right are for the most recent date indicated.
   </figcaption>
 
 
 </figure>
 </p>
-<p>COVID-19 cases are extremely underreported and as such these estimates should be taken with a rather large grain of salt.</p>
-<p>However, the shape of these curves might still provide meaningful information about
-different patterns of viral infection progression and containment between countries,
-in particular when multiple countries show similar patterns.
-Some countries are seemingly reaching a level of containment (plateau),
-whereas others are still growing rapidly, even exponentially.</p>
-<p>It&rsquo;ll be interesting, albeit disheartening, to see how these curves evolve over the coming weeks and months.
+<p>COVID-19 cases are extremely underreported and as such these estimates should be taken with a rather large grain of salt.
+Because the increase of new confirmed cases happens exponentially, it often makes more sense to show these numbers on a logarithmic scale:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="https://raw.githubusercontent.com/meuleman/ChasingCorona/master/PNG_figures/percentage_population_confirmed_top20_min100_log_latest.png" data-caption="Percent of per-country population that are confirmed cases (log scale), shown for the top 20 countries and world-wide. Percentages shown on the right are for the most recent date indicated.">
+
+
+  <img src="https://raw.githubusercontent.com/meuleman/ChasingCorona/master/PNG_figures/percentage_population_confirmed_top20_min100_log_latest.png" alt=""  >
+</a>
+
+
+  
+  
+  <figcaption data-pre="Figure " data-post=":" class="numbered">
+    Percent of per-country population that are confirmed cases (log scale), shown for the top 20 countries and world-wide. Percentages shown on the right are for the most recent date indicated.
+  </figcaption>
+
+
+</figure>
+</p>
+<p>The shape of these curves might provide meaningful information about different patterns of viral infection progression and containment between countries,
+in particular when multiple countries show similar patterns.</p>
+
+
+
+<p>Indeed, perhaps more relevant than the number of confirmed cases &ndash; or percentage of population affected &ndash; is how fast the virus spreads.
+One way to visualize this is to estimate the slope of the exponential curves over time and express this in terms of percent daily new confirmed cases<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+
+  <a data-fancybox="" href="https://raw.githubusercontent.com/meuleman/ChasingCorona/master/PNG_figures/percentage_daily_change_10days_cases_confirmed_top20_latest.png" data-caption="Percent daily new confirmed cases, estimated in 10 day intervals. Data not shown for intervals with 10 cases or less. Percentages on the right are for the most recent date indicated and include 95% confidence interval ranges.">
+
+
+  <img src="https://raw.githubusercontent.com/meuleman/ChasingCorona/master/PNG_figures/percentage_daily_change_10days_cases_confirmed_top20_latest.png" alt=""  >
+</a>
+
+
+  
+  
+  <figcaption data-pre="Figure " data-post=":" class="numbered">
+    Percent daily new confirmed cases, estimated in 10 day intervals. Data not shown for intervals with 10 cases or less. Percentages on the right are for the most recent date indicated and include 95% confidence interval ranges.
+  </figcaption>
+
+
+</figure>
+</p>
+<p>This figure shows that several countries seem to have reached (near) containment (e.g China, South Korea).
+while others are still showing a rapid increase of new confirmed cases (e.g. USA).
+Interestingly, the data for several countries are suggestive of an initial slowdown of growth (e.g. Germany, France).</p>
+<p>It&rsquo;ll be interesting, and generally disheartening, to see how these curves evolve over the coming weeks and months.
 More figures are available at this 
 <a href="https://github.com/meuleman/ChasingCorona" target="_blank" rel="noopener">GitHub repository</a>.</p>
 <div class="alert alert-note">
   <div>
     This is an <a href="https://medium.com/@tomaspueyo/coronavirus-act-today-or-people-will-die-f4d3d9cd99ca">excellent overview</a>
-of the current COVID-19 situation and the need to act immediately.  Please read it.
+of the current COVID-19 situation and the need to act immediately.
   </div>
 </div>
 <h3 id="background">Background</h3>
 <p>The recent (February 2020) outbreak of the COVID-19 corona virus prompted an impressively
 rapid and joint response of epidemiologists, geneticists, software developers and data analysts.
 This has resulted in a number of insightful web-based dashboard tools to track and
-better understand the movements of this virus for specific regions, countries and throughout the world<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>:
+better understand the movements of this virus for specific regions, countries and throughout the world<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>:
 
 
 
@@ -855,7 +929,7 @@ their meticulously curated datasets, which they continue to update on a daily ba
 And the World Bank provides 
 <a href="https://data.worldbank.org/indicator/SP.POP.TOTL" target="_blank" rel="noopener">population count estimates</a>
 for over 250 countries world-wide.</p>
-<p>Combined<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>, these datasets open up an alternative view of the COVID-19 situation,
+<p>Combined<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>, these datasets open up an alternative view of the COVID-19 situation,
 in terms of the percentage of per-country populations (confirmed to be) affected by the virus.
 All code, data and resulting figures are available through this 
 <a href="https://github.com/meuleman/ChasingCorona" target="_blank" rel="noopener">GitHub repository</a>,
@@ -870,10 +944,13 @@ and are updated on a near-daily basis.</p>
 <p>To prevent highly unstable percentages, currently included countries have a minimum of 100 cases and a population of at least 100000. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2" role="doc-endnote">
-<p>COVID-19 ArcGIS Hub: <a href="https://coronavirus-disasterresponse.hub.arcgis.com/">https://coronavirus-disasterresponse.hub.arcgis.com/</a> <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Estimates are based on 10 day intervals. To prevent highly unstable estimates, data is only shown for periods in which there where more than 10 confirmed cases in a given country, over an entire 10 day interval. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3" role="doc-endnote">
-<p>There were a few minor caveats to this processing step, mostly due to mismatched country name nomenclature and/or recognition. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>COVID-19 ArcGIS Hub: <a href="https://coronavirus-disasterresponse.hub.arcgis.com/">https://coronavirus-disasterresponse.hub.arcgis.com/</a> <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>There were a few minor caveats to this processing step, mostly due to mismatched country name nomenclature and/or recognition. <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
