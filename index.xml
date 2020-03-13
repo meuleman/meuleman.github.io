@@ -259,9 +259,43 @@ One way to visualize this is to estimate the slope of the exponential curves ove
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;This figure shows that several countries seem to have reached (near) containment (e.g China, South Korea).
-while others are still showing a rapid increase of new confirmed cases (e.g. USA).
-Interestingly, the data for several countries are suggestive of an initial slowdown of growth (e.g. Germany, France).&lt;/p&gt;
-&lt;p&gt;It&amp;rsquo;ll be interesting, and generally disheartening, to see how these curves evolve over the coming weeks and months.
+while others are still showing a rapid increase of new confirmed cases.
+This can further be generalized across all countries and regions with sufficient data points, as such:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://raw.githubusercontent.com/meuleman/ChasingCorona/master/PNG_figures/percentage_daily_change_10days_cases_confirmed_ALL_fromBeginning_latest.png&#34; data-caption=&#34;Percent daily new confirmed cases, estimated in 10 day intervals. Panel on the right shows highest and current growth numbers, including 95% confidence interval ranges.&#34;&gt;
+
+
+  &lt;img src=&#34;https://raw.githubusercontent.com/meuleman/ChasingCorona/master/PNG_figures/percentage_daily_change_10days_cases_confirmed_ALL_fromBeginning_latest.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; class=&#34;numbered&#34;&gt;
+    Percent daily new confirmed cases, estimated in 10 day intervals. Panel on the right shows highest and current growth numbers, including 95% confidence interval ranges.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;ll be interesting, and generally disheartening, to see how these figures evolve over the coming weeks and months.
 More figures are available at this 
 &lt;a href=&#34;https://github.com/meuleman/ChasingCorona&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub repository&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
