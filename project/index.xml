@@ -17,7 +17,8 @@
       <link>https://www.meuleman.org/project/chasingcorona/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.meuleman.org/project/chasingcorona/</guid>
-      <description>&lt;div class=&#34;alert alert-warning&#34;&gt;
+      <description>&lt;h3 id=&#34;visualizing-covid-19-coronavirus-impact-and-spread&#34;&gt;Visualizing COVID-19 coronavirus impact and spread&lt;/h3&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
   &lt;div&gt;
     &lt;strong&gt;DISCLAIMER&lt;/strong&gt;: I am not a virologist or epidemiologist &amp;ndash; I realize there are &lt;em&gt;many&lt;/em&gt; caveats to interpreting these data.
   &lt;/div&gt;
@@ -137,7 +138,7 @@ One way to visualize this is to estimate the slope of the exponential curves ove
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;This figure shows that several countries seem to have reached (near) containment (e.g China, South Korea).
-while others remain showing a rapid increase of new confirmed cases.
+while others remain to show a rapid increase of new confirmed cases.
 This growth over time can be further generalized across all countries and regions with sufficient data points, as such:
 
 
