@@ -189,12 +189,12 @@ in particular when multiple countries show similar patterns.&lt;/p&gt;
 &lt;h4 id=&#34;daily-growth-of-newly-confirmed-cases&#34;&gt;Daily growth of newly confirmed cases&lt;/h4&gt;
 &lt;p&gt;More relevant than the number of confirmed cases &amp;ndash; or percentage of population affected &amp;ndash; is how fast the virus spreads.
 One way to visualize this is to estimate the slope of the exponential curves (Figure 1b) over set time intervals and derive the daily percental increase of newly confirmed cases&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;It is important to emphasize that over the course of time many countries have revised their testing strategies, which will artificially influence these growth numbers&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;It is important to emphasize that over the course of time many countries have revised their testing strategies, which will artificially influence these growth numbers.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;ll be interesting, and generally disheartening, to see how these figures evolve over the coming weeks and months.&lt;/p&gt;
 &lt;p&gt;More figures and details are available at this 
 &lt;a href=&#34;https://github.com/meuleman/ChasingCorona&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub repository&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;background&#34;&gt;Background&lt;/h3&gt;
-&lt;p&gt;The recent (February 2020) outbreak of the COVID-19 corona virus prompted an impressively
+&lt;p&gt;The outbreak of the COVID-19 corona virus prompted an impressively
 rapid and joint response of epidemiologists, geneticists, software developers and data analysts.
 This has resulted in a number of insightful web-based dashboard tools to track and
 better understand the movements of this virus for specific regions, countries and throughout the world&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;:
