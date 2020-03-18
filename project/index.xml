@@ -66,7 +66,41 @@ along with a world-wide average.
 in particular when multiple countries show similar patterns.&lt;/p&gt;
 &lt;h4 id=&#34;daily-growth-of-newly-confirmed-cases&#34;&gt;Daily growth of newly confirmed cases&lt;/h4&gt;
 &lt;p&gt;More relevant than the number of confirmed cases &amp;ndash; or percentage of population affected &amp;ndash; is how fast the virus spreads.
-One way to visualize this is to estimate the slope of the exponential curves (Figure 1b) over set time intervals and derive the daily percental increase of newly confirmed cases&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+One way to visualize this is to estimate the slope of the exponential curves (Figure 1b) over set time intervals and derive the daily percental increase of newly confirmed cases&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://raw.githubusercontent.com/meuleman/ChasingCorona/master/PNG_figures/percentage_daily_change_10days_cases_confirmed_ALL_fromBeginning_latest.png&#34; data-caption=&#34;Percent daily growth of newly confirmed cases, estimated using 10 day intervals. Panel on the right shows highest and current growth numbers, including 95% confidence interval ranges.&#34;&gt;
+
+
+  &lt;img src=&#34;https://raw.githubusercontent.com/meuleman/ChasingCorona/master/PNG_figures/percentage_daily_change_10days_cases_confirmed_ALL_fromBeginning_latest.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; class=&#34;numbered&#34;&gt;
+    Percent daily growth of newly confirmed cases, estimated using 10 day intervals. Panel on the right shows highest and current growth numbers, including 95% confidence interval ranges.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;It is important to emphasize that over the course of time many countries have revised their testing strategies, which will artificially influence these growth numbers.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;ll be interesting, and generally disheartening, to see how these figures evolve over the coming weeks and months.&lt;/p&gt;
 &lt;p&gt;More figures and details are available at this 
@@ -219,41 +253,7 @@ and are updated on a near-daily basis.&lt;/p&gt;
 &lt;p&gt;To prevent highly unstable percentages, currently included countries have a minimum of 100 cases and a population of at least 100000. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Estimates are based on 10 day intervals. To prevent unstable estimates, data is only shown for periods in which there were more than 10 confirmed cases in a given country, over an entire 10 day interval.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://raw.githubusercontent.com/meuleman/ChasingCorona/master/PNG_figures/percentage_daily_change_10days_cases_confirmed_ALL_fromBeginning_latest.png&#34; data-caption=&#34;Percent daily growth of newly confirmed cases, estimated using 10 day intervals. Panel on the right shows highest and current growth numbers, including 95% confidence interval ranges.&#34;&gt;
-
-
-  &lt;img src=&#34;https://raw.githubusercontent.com/meuleman/ChasingCorona/master/PNG_figures/percentage_daily_change_10days_cases_confirmed_ALL_fromBeginning_latest.png&#34; alt=&#34;&#34;  &gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; class=&#34;numbered&#34;&gt;
-    Percent daily growth of newly confirmed cases, estimated using 10 day intervals. Panel on the right shows highest and current growth numbers, including 95% confidence interval ranges.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
- &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Estimates are based on 10 day intervals. To prevent unstable estimates, data is only shown for periods in which there were more than 10 confirmed cases in a given country, over an entire 10 day interval. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
 &lt;p&gt;COVID-19 ArcGIS Hub: &lt;a href=&#34;https://coronavirus-disasterresponse.hub.arcgis.com/&#34;&gt;https://coronavirus-disasterresponse.hub.arcgis.com/&lt;/a&gt; &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
