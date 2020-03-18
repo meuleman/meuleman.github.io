@@ -207,7 +207,7 @@ One way to visualize this is to estimate the slope of the exponential curves (Fi
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://raw.githubusercontent.com/meuleman/ChasingCorona/master/PNG_figures/percentage_daily_change_10days_cases_confirmed_ALL_fromBeginning_latest.png&#34; data-caption=&#34;Percent daily growth of newly confirmed cases, estimated using 10 day intervals. Panel on the right shows highest and current growth numbers, including 95% confidence interval ranges.&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://raw.githubusercontent.com/meuleman/ChasingCorona/master/PNG_figures/percentage_daily_change_10days_cases_confirmed_ALL_fromBeginning_latest.png&#34; data-caption=&#34;Percent daily growth of newly confirmed cases, estimated using intervals of the 10 previous days. Panel on the right shows highest and current growth numbers, including 95% confidence interval ranges.&#34;&gt;
 
 
   &lt;img src=&#34;https://raw.githubusercontent.com/meuleman/ChasingCorona/master/PNG_figures/percentage_daily_change_10days_cases_confirmed_ALL_fromBeginning_latest.png&#34; alt=&#34;&#34;  &gt;
@@ -217,7 +217,7 @@ One way to visualize this is to estimate the slope of the exponential curves (Fi
   
   
   &lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; class=&#34;numbered&#34;&gt;
-    Percent daily growth of newly confirmed cases, estimated using 10 day intervals. Panel on the right shows highest and current growth numbers, including 95% confidence interval ranges.
+    Percent daily growth of newly confirmed cases, estimated using intervals of the 10 previous days. Panel on the right shows highest and current growth numbers, including 95% confidence interval ranges.
   &lt;/figcaption&gt;
 
 
