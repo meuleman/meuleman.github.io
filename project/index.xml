@@ -25,7 +25,8 @@
 &lt;/div&gt;
 &lt;p&gt;The figures below get regenerated as new data becomes available.&lt;/p&gt;
 &lt;h4 id=&#34;percentage-of-population-that-are-confirmed-cases&#34;&gt;Percentage of population that are confirmed cases&lt;/h4&gt;
-&lt;p&gt;The top 20 countries in terms of percentage of the population confirmed to be affected by the COVID-19 coronavirus are shown below&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;,
+&lt;p&gt;&lt;sub&gt;&lt;sup&gt;(First version: Feb 28, 2020)&lt;/sup&gt;&lt;/sub&gt;&lt;br&gt;
+The top 20 countries in terms of percentage of the population confirmed to be affected by the COVID-19 coronavirus are shown below&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;,
 along with a world-wide average.
 
 
@@ -65,7 +66,8 @@ along with a world-wide average.
 &lt;p&gt;Yet, the shape of these curves might provide meaningful information about different patterns of viral infection progression and containment between countries,
 in particular when multiple countries show similar patterns.&lt;/p&gt;
 &lt;h4 id=&#34;daily-growth-of-newly-confirmed-cases&#34;&gt;Daily growth of newly confirmed cases&lt;/h4&gt;
-&lt;p&gt;More relevant than the number of confirmed cases &amp;ndash; or percentage of population affected &amp;ndash; is how fast the virus spreads.
+&lt;p&gt;&lt;sub&gt;&lt;sup&gt;(First version: Mar 02, 2020)&lt;/sup&gt;&lt;/sub&gt;&lt;br&gt;
+More relevant than the number of confirmed cases &amp;ndash; or percentage of population affected &amp;ndash; is how fast the virus spreads.
 One way to visualize this is to estimate the slope of the exponential curves (Figure 1b) over set time intervals and derive the daily percental increase of newly confirmed cases&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.
 
 
@@ -102,6 +104,48 @@ One way to visualize this is to estimate the slope of the exponential curves (Fi
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;It is important to emphasize that over the course of time many countries have revised their testing strategies, which will artificially influence these growth numbers.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h4 id=&#34;percentage-of-population-that-has-died-of-covid-19&#34;&gt;Percentage of population that has died of COVID-19&lt;/h4&gt;
+&lt;p&gt;&lt;sub&gt;&lt;sup&gt;(First version: Mar 26, 2020)&lt;/sup&gt;&lt;/sub&gt;&lt;br&gt;
+By the end of March, the number of deaths from COVID-19 had risen to a level that
+made it possible to show growth curves in a similar manner as done for confirmed cases above.
+The number of deaths from COVID-19 is arguably a more reliable metric for population-wide impact,
+as it suffers less from the absence of systematic and/or asymptomatic testing.&lt;/p&gt;
+&lt;p&gt;The top 20 countries in terms of percentage of the population that has died from of COVID-19 are shown below&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;,
+along with a world-wide average.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://raw.githubusercontent.com/meuleman/ChasingCorona/master/PNG_figures/percentage_population_deaths_top20_min25_fromMar01_latest.png&#34; data-caption=&#34;Percent of per-country population that has died of COVID-19, shown for the top 20 countries and world-wide. Percentages shown on the right are for the most recent date indicated. Due to the exponential nature of these numbers, data are shown on a linear (a) and logarithmic (b) scale.&#34;&gt;
+
+
+  &lt;img src=&#34;https://raw.githubusercontent.com/meuleman/ChasingCorona/master/PNG_figures/percentage_population_deaths_top20_min25_fromMar01_latest.png&#34; alt=&#34;&#34;  &gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; class=&#34;numbered&#34;&gt;
+    Percent of per-country population that has died of COVID-19, shown for the top 20 countries and world-wide. Percentages shown on the right are for the most recent date indicated. Due to the exponential nature of these numbers, data are shown on a linear (a) and logarithmic (b) scale.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;ll be interesting, and generally disheartening, to see how these figures evolve over the coming weeks and months.&lt;/p&gt;
 &lt;p&gt;More figures and details are available at this 
 &lt;a href=&#34;https://github.com/meuleman/ChasingCorona&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub repository&lt;/a&gt;.&lt;/p&gt;
@@ -109,7 +153,7 @@ One way to visualize this is to estimate the slope of the exponential curves (Fi
 &lt;p&gt;The outbreak of the COVID-19 corona virus prompted an impressively
 rapid and joint response of epidemiologists, geneticists, software developers and data analysts.
 This has resulted in a number of insightful web-based dashboard tools to track and
-better understand the movements of this virus for specific regions, countries and throughout the world&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;:
+better understand the movements of this virus for specific regions, countries and throughout the world&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;:
 
 
 
@@ -238,7 +282,7 @@ their meticulously curated datasets, which they continue to update on a daily ba
 And the World Bank provides 
 &lt;a href=&#34;https://data.worldbank.org/indicator/SP.POP.TOTL&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;population count estimates&lt;/a&gt;
 for over 250 countries world-wide.&lt;/p&gt;
-&lt;p&gt;Combined&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;, these datasets open up an alternative view of the COVID-19 situation,
+&lt;p&gt;Combined&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;, these datasets open up an alternative view of the COVID-19 situation,
 in terms of the percentage of per-country populations (confirmed to be) affected by the virus.
 All code, data and resulting figures are available through this 
 &lt;a href=&#34;https://github.com/meuleman/ChasingCorona&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub repository&lt;/a&gt;,
@@ -256,10 +300,13 @@ and are updated on a near-daily basis.&lt;/p&gt;
 &lt;p&gt;Estimates are based on 10 day intervals. To prevent unstable estimates, data is only shown for periods in which there were more than 10 confirmed cases in a given country, over an entire 10 day interval. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;COVID-19 ArcGIS Hub: &lt;a href=&#34;https://coronavirus-disasterresponse.hub.arcgis.com/&#34;&gt;https://coronavirus-disasterresponse.hub.arcgis.com/&lt;/a&gt; &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;To prevent highly unstable percentages, currently included countries have a minimum of 25 deaths and a population of at least 100000. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;There were a few minor caveats to this processing step, mostly due to mismatched country name nomenclature and/or recognition. &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;COVID-19 ArcGIS Hub: &lt;a href=&#34;https://coronavirus-disasterresponse.hub.arcgis.com/&#34;&gt;https://coronavirus-disasterresponse.hub.arcgis.com/&lt;/a&gt; &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:5&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;There were a few minor caveats to this processing step, mostly due to mismatched country name nomenclature and/or recognition. &lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
