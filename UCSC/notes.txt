@@ -1,0 +1,9 @@
+https://gb1.altiusinstitute.org/cgi-bin/hgTracks?db=hg38&position=chrX:48748339-48843242&hubUrl=http://stampipe0.altiusinstitute.org/projects/Wouter/pipeline/DHS_tracks/hub.txt&AltiusProdDHS1K=dense&AltiusProdDHS10K=dense&AltiusProdDHS1K_sel=1&AltiusProdDHS10K_sel=1&guidelines=off&centerLabels=off&udcTimeout=1
+
+https://gb1.altiusinstitute.org/cgi-bin/hgTracks?db=hg38&position=chrX:48748339-48843242&hubUrl=http://stampipe0.altiusinstitute.org/projects/Wouter/pipeline/DHS_tracks/hub.txt&guidelines=off&centerLabels=off&udcTimeout=1
+
+
+guidelines=<on/off>             // vertical blue guidlines
+hgt.labelWidth=<number>         // left label section width
+pix=<number>                    // browser width
+centerLabels=<on/off>           // hide/show longLabels

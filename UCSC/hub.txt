@@ -1,0 +1,5 @@
+hub DHSTrackhub
+shortLabel Index and biological spectrum of accessible DNA elements in the human genome
+longLabel Index and biological spectrum of accessible DNA elements in the human genome
+genomesFile genomes.txt
+email meuleman@gmail.com
