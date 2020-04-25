@@ -3,7 +3,7 @@ visibility pack
 shortLabel DHS Index
 longLabel Vocabulary-annotated Index DHSs
 labelOnFeature on
-bigDataUrl https://github.com/meuleman/meuleman.org/raw/master/static/UCSC/masterlist_DHSs_733samples_WM20180608_all_NEWSCALE_colorMax.bb
+bigDataUrl https://github.com/meuleman/meuleman.github.io/raw/master/UCSC/masterlist_DHSs_733samples_WM20180608_all_NEWSCALE_colorMax.bb
 itemRgb on
 exonNumbers off
 viewUi on
