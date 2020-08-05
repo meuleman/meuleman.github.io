@@ -128,7 +128,7 @@ Rows correspond to DHS Index elements, columns correspond to rows in biosample m
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://doi.org/10.1038/s41586-020-2559-3&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Meuleman &lt;em&gt;et al.&lt;/em&gt;, Nature (2020)&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://doi.org/10.1038/s41586-020-2559-3&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Meuleman &lt;em&gt;et al.&lt;/em&gt;, &lt;strong&gt;Nature&lt;/strong&gt; (2020)&lt;/a&gt;&lt;br&gt;
 Work with Sasha Muratov, John Stamatoyannopoulos and others.&lt;/p&gt;
 </description>
     </item>
@@ -506,6 +506,14 @@ This suggests that LADs collectively encode a basic `backbone&amp;rsquo; structu
       <link>https://www.meuleman.org/publication/meuleman-2020-index/</link>
       <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
       <guid>https://www.meuleman.org/publication/meuleman-2020-index/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Global reference mapping of human transcription factor footprints</title>
+      <link>https://www.meuleman.org/publication/vierstra-2020-footprints/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://www.meuleman.org/publication/vierstra-2020-footprints/</guid>
       <description></description>
     </item>
     
