@@ -102,6 +102,12 @@ and provide a new global perspective on the architecture of human gene regulatio
 &lt;/table&gt;
 &lt;/li&gt;
 &lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Data browsers&lt;/strong&gt; (
+&lt;a href=&#34;https://index.altius.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Altius browser&lt;/a&gt;,
+
+&lt;a href=&#34;https://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&amp;amp;hubUrl=https://resources.altius.org/~meuleman/DHS_Index_tracks/hub.txt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;UCSC browser tracks&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
 &lt;p&gt;&lt;strong&gt;733 biosample metadata&lt;/strong&gt; (
 &lt;a href=&#34;https://www.meuleman.org/DHS_Index_and_Vocabulary_metadata.html&#34;&gt;html&lt;/a&gt;,
 
