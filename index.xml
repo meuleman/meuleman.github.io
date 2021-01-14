@@ -265,11 +265,18 @@ Work with Sasha Muratov, John Stamatoyannopoulos and others.&lt;/p&gt;
           return function (data, name) {
             const blob = new Blob(data, { type: biosampleAssetContentType }); 
             const url = window.URL.createObjectURL(blob);
+            const clickHandler = (ev) =&gt; {
+              setTimeout(() =&gt; {
+                window.URL.revokeObjectURL(url);
+                this.removeEventListener(&#39;click&#39;, clickHandler);
+                document.body.removeChild(a);
+              }, 150);
+              return false;
+            };
+            a.addEventListener(&#39;click&#39;, clickHandler, false);
             a.href = url;
             a.download = name;
             a.click();
-            window.URL.revokeObjectURL(url);
-            document.body.removeChild(a);
           };
         }());
         saveBlobToFile([data], biosampleAssetFilename);
@@ -333,11 +340,18 @@ Work with Sasha Muratov, John Stamatoyannopoulos and others.&lt;/p&gt;
           return function (data, name) {
             const blob = new Blob(data, { type: componentAssetContentType }); 
             const url = window.URL.createObjectURL(blob);
+            const clickHandler = (ev) =&gt; {
+              setTimeout(() =&gt; {
+                window.URL.revokeObjectURL(url);
+                this.removeEventListener(&#39;click&#39;, clickHandler);
+                document.body.removeChild(a);
+              }, 150);
+              return false;
+            };
+            a.addEventListener(&#39;click&#39;, clickHandler, false);
             a.href = url;
             a.download = name;
             a.click();
-            window.URL.revokeObjectURL(url);
-            document.body.removeChild(a);
           };
         }());
         saveBlobToFile([data], componentAssetFilename);
