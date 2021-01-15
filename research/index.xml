@@ -138,8 +138,10 @@ Rows correspond to DHS Index elements, columns correspond to rows in biosample m
 &lt;li&gt;&lt;strong&gt;Per-biosample and per-component data&lt;/strong&gt;
 &lt;ul&gt;
   &lt;li&gt;DHS Index elements found in specific biosamples:&lt;br&gt;
+  &lt;sup&gt;Column `biosample_signal` reports the normalized DNase-seq signal for the individual biosample.&lt;br&gt;&lt;/sup&gt;
   &lt;div id=&#34;systems_parent&#34; style=&#34;display:inline-block;&#34;/&gt;
   &lt;li&gt;DHS Index elements annotated with specific DHS components:&lt;br&gt;
+  &lt;sup&gt;By default, each DHS is annotated with a single (dominant) component only. DHSs may occur in biosamples of other components too! Refer to the data matrices listed above for the full picture.&lt;br&gt;&lt;/sup&gt;
   &lt;div id=&#34;components_parent&#34; style=&#34;display:inline-block;&#34;/&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
