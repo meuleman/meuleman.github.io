@@ -219,7 +219,7 @@
          'event_label': url,
          'transport_type': 'beacon',
          'event_callback': function () {
-           if (target !== '_blank') {
+           if ((target !== '_blank')  && (!url.startsWith("blob")) {
              document.location = url;
            }
          }
