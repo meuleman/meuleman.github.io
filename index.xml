@@ -585,7 +585,8 @@ better understand the movements of this virus for specific regions, countries an
   
 
   
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;p&gt;One of the more comprehensive instances in terms of world-wide coverage is a
 
 &lt;a href=&#34;https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;dashboard&lt;/a&gt;
@@ -892,6 +893,274 @@ This suggests that LADs collectively encode a basic `backbone&amp;rsquo; structu
       <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
       <guid>https://www.meuleman.org/publication/meuleman-2006-construction/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Chromatin heightmaps</title>
+      <link>https://www.meuleman.org/rayrender/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.meuleman.org/rayrender/</guid>
+      <description>&lt;p&gt;Came here via Twitter, looking for &amp;ldquo;NFTs&amp;rdquo;? Is this an April Fools joke? Probably.&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Want to explore the EpiMap data in more (or less) detail?&lt;br&gt;&lt;br&gt;Interactive visualization of chromatin state tracks for all 833 biosamples, summarizing ~5,000 genome-wide datasets: &lt;a href=&#34;https://t.co/de1jbR3N4D&#34;&gt;https://t.co/de1jbR3N4D&lt;/a&gt; &lt;a href=&#34;https://t.co/58ZEKSX6q7&#34;&gt;https://t.co/58ZEKSX6q7&lt;/a&gt; &lt;a href=&#34;https://t.co/GW4EGso68T&#34;&gt;pic.twitter.com/GW4EGso68T&lt;/a&gt;&lt;/p&gt;&amp;mdash; Wouter Meuleman (@nameluem) &lt;a href=&#34;https://twitter.com/nameluem/status/1358778107386355713?ref_src=twsrc%5Etfw&#34;&gt;February 8, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;h3 id=&#34;visualization-of-multi-modal-chromatin-data&#34;&gt;Visualization of multi-modal chromatin data&lt;/h3&gt;
+&lt;p&gt;Shown are heightmap renderings of chromatin data on single human chromosomes,
+based on thousands of genomic datasets of various data modalities, namely:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;chromatin states (ChIP-seq, epilogos scores)&lt;/li&gt;
+&lt;li&gt;chromatin accessibility (DNase-seq)&lt;/li&gt;
+&lt;li&gt;chromosome conformation (Hi-C)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Centromeres and other unmapped regions are shown by way of &amp;ldquo;lakes&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Do you like this kind of stuff and want to see more? Click here:
+&lt;a href=&#34;https://twitter.com/nameluem?ref_src=twsrc%5Etfw&#34; class=&#34;twitter-follow-button&#34; data-show-count=&#34;false&#34;&gt;Follow @nameluem&lt;/a&gt;&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+  
+  
+
+
+&lt;div class=&#34;gallery&#34;&gt;
+
+  
+  
+  
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr01.png&#34; &gt;
+  &lt;img data-src=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr01_hu0c9d05c71e532e0fc69bbb821ec7052b_3308501_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;338&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr02.png&#34; &gt;
+  &lt;img data-src=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr02_hubc26a12c3357ce46cba2ca674c33089c_3831824_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;338&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr03.png&#34; &gt;
+  &lt;img data-src=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr03_hub07e8ebe07f20b2d922ee706a9a8f7a9_5437492_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;338&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr04.png&#34; &gt;
+  &lt;img data-src=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr04_hu74be0cda4763e93344a48cb6ae5ed3b2_5366525_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;338&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr05.png&#34; &gt;
+  &lt;img data-src=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr05_hu1fbaf8dd9047a6015b13baed2c5739a3_4225643_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;338&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr06.png&#34; &gt;
+  &lt;img data-src=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr06_huc37aa0b5f978d66e6c709fd459201c64_2705815_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;338&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr07.png&#34; &gt;
+  &lt;img data-src=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr07_hu04c2fa65638d1d38ef68bbe65877737a_4648978_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;338&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr08.png&#34; &gt;
+  &lt;img data-src=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr08_hu80ef5119ab7bd1898f448f8ee2001100_3541987_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;338&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr09.png&#34; &gt;
+  &lt;img data-src=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr09_hub87bd5ef3418262ff8d53184e0fbcfd0_5126370_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;338&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr10.png&#34; &gt;
+  &lt;img data-src=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr10_hue503651ec1f6b2a1cbf48653a806bb54_4754923_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;338&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr11.png&#34; &gt;
+  &lt;img data-src=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr11_huef0c5d6b4196f293103c8aab7e3303d8_3138522_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;338&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr12.png&#34; &gt;
+  &lt;img data-src=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr12_huecd557dac8da26cae841a9eba19a880b_806721_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;338&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr13.png&#34; &gt;
+  &lt;img data-src=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr13_hu32c47750e5c8c809e79e2401d6353306_600019_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;338&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr14.png&#34; &gt;
+  &lt;img data-src=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr14_hu2d3700efe46394877b597c002e2f297e_589320_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;338&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr15.png&#34; &gt;
+  &lt;img data-src=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr15_hueca3d31cf0e1658d2b978eaa894e34f9_958022_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;338&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr16.png&#34; &gt;
+  &lt;img data-src=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr16_huee7609c7a4c3f2e2a8755fee4db68bcd_503528_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;338&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr17.png&#34; &gt;
+  &lt;img data-src=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr17_huc1093b26e945c39be24a2c66d642d639_773098_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;338&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr18.png&#34; &gt;
+  &lt;img data-src=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr18_hu01cca66c66d26eda979b28f5cca838ce_1020954_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;338&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr19.png&#34; &gt;
+  &lt;img data-src=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr19_hu69f3c34919d49c88ed5924f2814ef7f3_724139_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;338&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr20.png&#34; &gt;
+  &lt;img data-src=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr20_huccb61e67e8bcacd70a0036a8f95205fb_924920_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;338&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr21.png&#34; &gt;
+  &lt;img data-src=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr21_hua88c6ea4119a6515eae3d3309a11bcc3_505224_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;338&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr22.png&#34; &gt;
+  &lt;img data-src=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chr22_hud454089b22d050393cd0fb7d44e01609_559192_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;338&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chrX.png&#34; &gt;
+  &lt;img data-src=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chrX_hu67561971b0b5bacb007c7f3c78d83793_599791_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;338&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chrY.png&#34; &gt;
+  &lt;img data-src=&#34;https://www.meuleman.org/rayrender/perChrom/thumbnail_chrY_huefd903fb2f2a7431d41b90f6ddba5b1e_261307_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;338&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/rayrender/perChrom/zzzpixel_FFFFFF-0.png&#34; &gt;
+  &lt;img data-src=&#34;https://www.meuleman.org/rayrender/perChrom/zzzpixel_FFFFFF-0_hu4cbfbfa08b9663a92b0a5ededa1c0449_68_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;190&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+
+  
+&lt;/div&gt;
+
+</description>
     </item>
     
   </channel>
