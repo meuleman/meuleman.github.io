@@ -857,7 +857,7 @@ Work with Sasha Muratov, John Stamatoyannopoulos and others.</p>
       //const biosampleAssetFilename = `${biosampleBits.rawBiosampleName}.${biosampleBits.dsNumber}.txt`; // change file extension from .txt to .txt.gz, if sending gzipped files
       const biosampleAssetContentType = "application/x-gzip"; 
       const biosampleAssetFilename = `${biosampleBits.rawBiosampleName}__${biosampleBits.dsNumber}.txt.gz`; 
-      const urlProxyURL = "https://epilogos.altius.org:9001/";
+      const urlProxyURL = "https://meuleman-proxy.altius.org:9001/";
       const dataURL = encodeURIComponent("https://resources.altius.org/~meuleman/DHS_Index_downloads/biosamples/" + biosampleAssetFilename);
       fetch(urlProxyURL + dataURL, {
         method: 'GET',
@@ -932,7 +932,7 @@ Work with Sasha Muratov, John Stamatoyannopoulos and others.</p>
       //const componentAssetFilename = `${componentsDatasets[component].safe}.txt`; // change file extension from .txt to .txt.gz, if sending gzipped files
       const componentAssetContentType = "application/x-gzip"; 
       const componentAssetFilename = `${componentsDatasets[component].safe}.txt.gz`;
-      const urlProxyURL = "https://epilogos.altius.org:9001/";
+      const urlProxyURL = "https://meuleman-proxy.altius.org:9001/";
       const dataURL = encodeURIComponent("https://resources.altius.org/~meuleman/DHS_Index_downloads/components/" + componentAssetFilename);
       fetch(urlProxyURL + dataURL, {
         method: 'GET',
