@@ -214,13 +214,15 @@
   }
 
   function trackOutboundLink(url, target) {
-    const urlIsBlob = url.toString().startsWith("blob");
-    const triggerCallback = ((!urlIsBlob) && (target !== '_blank'));
     gtag('event', 'click', {
          'event_category': 'outbound',
-         'event_label': (urlIsBlob) ? url.download : url,
+         'event_label': url,
          'transport_type': 'beacon',
-         'event_callback': (triggerCallback) ? function(){document.location = url;} : null
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
     });
     console.debug("Outbound link clicked: " + url);
   }
@@ -784,7 +786,8 @@
     
     <h1>Biography</h1>
 
-    <p>Wouter Meuleman&rsquo;s research focuses on how the regulatory genome is organized, and what the functional implications of this organization are.</p>
+    <p>Wouter Meuleman&rsquo;s research focuses on how the regulatory genome is organized, and what the functional implications of this organization are.
+His long term research goal is to make &ldquo;augmented genomics&rdquo; a reality: a new field in which the work of genome scientists is supplemented – not replaced! – by large-scale visualization and data-driven machine intelligence.</p>
 <p>Although technological developments have made it possible to construct genome-wide maps of regulatory elements
 across hundreds of human cellular conditions, the scale and complexity precludes routine utility of such maps.
 Wouter develops computational and machine learning approaches to reduce their complexity, while maximally retaining relevant information.</p>

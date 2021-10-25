@@ -214,13 +214,15 @@
   }
 
   function trackOutboundLink(url, target) {
-    const urlIsBlob = url.toString().startsWith("blob");
-    const triggerCallback = ((!urlIsBlob) && (target !== '_blank'));
     gtag('event', 'click', {
          'event_category': 'outbound',
-         'event_label': (urlIsBlob) ? url.download : url,
+         'event_label': url,
          'transport_type': 'beacon',
-         'event_callback': (triggerCallback) ? function(){document.location = url;} : null
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
     });
     console.debug("Outbound link clicked: " + url);
   }

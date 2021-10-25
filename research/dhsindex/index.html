@@ -214,13 +214,15 @@
   }
 
   function trackOutboundLink(url, target) {
-    const urlIsBlob = url.toString().startsWith("blob");
-    const triggerCallback = ((!urlIsBlob) && (target !== '_blank'));
     gtag('event', 'click', {
          'event_category': 'outbound',
-         'event_label': (urlIsBlob) ? url.download : url,
+         'event_label': url,
          'transport_type': 'beacon',
-         'event_callback': (triggerCallback) ? function(){document.location = url;} : null
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
     });
     console.debug("Outbound link clicked: " + url);
   }
@@ -271,7 +273,7 @@
   <meta property="twitter:image" content="https://www.meuleman.org/research/dhsindex/featured.jpg"><meta property="og:locale" content="en-us">
   
     
-    <meta property="article:modified_time" content="2021-01-15T11:54:49-08:00">
+    <meta property="article:modified_time" content="2021-06-30T18:16:54-07:00">
   
 
   
@@ -577,7 +579,7 @@
           Last updated on
       
     
-    Jan 15, 2021
+    Jun 30, 2021
   </span>
   
 
