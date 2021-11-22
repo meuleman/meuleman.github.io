@@ -13,6 +13,27 @@
     </image>
     
     <item>
+      <title>Synthetic DNA sequences</title>
+      <link>https://www.meuleman.org/research/synthseqs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.meuleman.org/research/synthseqs/</guid>
+      <description>&lt;p&gt;An important and largely unsolved problem in synthetic Biology is how to control gene expression levels by cellular programming.
+Endogenously, such control is achieved by way of regulatory elements such as promoters, enhancers and insulators.
+One of the main hallmarks of such elements is their accessibility to factors promoting transcription of cognate genes.
+To achieve cellular programming through the manipulation of regulatory elements, it is therefore desirable to dictate the accessibility patterns of elements across cellular conditions of interest.&lt;/p&gt;
+&lt;p&gt;We propose a fully data-driven framework for designing synthetic human sequence elements with predicted cell-context specific chromatin accessibility behavior.
+We apply a comprehensively annotated high-resolution map of accessible genomic elements as the basis for a training set to learn and apply the foundational rules regarding how regulatory elements are encoded in the human genome.
+This approach results in highly variable pools of synthetic sequences, not observed in nature.&lt;/p&gt;
+&lt;p&gt;We use a supervised adaptation strategy to evolve these sequences towards multiple pre-defined cellular contexts.
+We show that this tuning process not only retains characteristics of endogenous regulatory sequences, but often strengthens them through an increased abundance of relevant regulatory signals.&lt;/p&gt;
+&lt;p&gt;Our approach and its current results provide a foundation for subsequent experimental validation through the targeted integration of synthetic sequences in genomic loci in relevant cellular conditions.&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://github.com/meuleman/SynthSeqs&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Code available on GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Work with Peter Bromley.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Annotated regulatory Index</title>
       <link>https://www.meuleman.org/research/dhsindex/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
