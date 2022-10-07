@@ -76,9 +76,9 @@ This subset consists of fixed-length 200bp sequences selected from the total col
 based on their accessibility confidence level and relative specificity for individual DHS components.&lt;/p&gt;
 &lt;p&gt;Specifically, we have the following datasets available:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;training set:&lt;/strong&gt; 160k sequences, 10k per NMF component (&lt;a href=&#34;https://www.meuleman.org/train_all_classifier_light.csv.gz&#34;&gt;.csv.gz&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;validation set:&lt;/strong&gt; 16k sequences, 1k per NMF component (&lt;a href=&#34;https://www.meuleman.org/validation_all_classifier_light.csv.gz&#34;&gt;.csv.gz&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;test set:&lt;/strong&gt; 16k sequences, 1k per NMF component (&lt;a href=&#34;https://www.meuleman.org/test_all_classifier_light.csv.gz&#34;&gt;.csv.gz&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;training set:&lt;/strong&gt; 160k sequences, 10k per NMF component (chr3-chrY, &lt;a href=&#34;https://www.meuleman.org/train_all_classifier_light.csv.gz&#34;&gt;.csv.gz&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;validation set:&lt;/strong&gt; 16k sequences, 1k per NMF component (chr2 only, &lt;a href=&#34;https://www.meuleman.org/validation_all_classifier_light.csv.gz&#34;&gt;.csv.gz&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;test set:&lt;/strong&gt; 16k sequences, 1k per NMF component (chr1 only) &lt;a href=&#34;https://www.meuleman.org/test_all_classifier_light.csv.gz&#34;&gt;.csv.gz&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Each of these contains the genomic locations (human genome assembly hg38, first 3 columns) of accessible genome elements,
 their majority NMF component (column: &lt;code&gt;component&lt;/code&gt;, see legend figure above) as well as their 200bp nucleotide sequence (column: &lt;code&gt;raw_sequence&lt;/code&gt;).&lt;/p&gt;
