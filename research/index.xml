@@ -5,9 +5,9 @@
     <link>https://www.meuleman.org/research/</link>
       <atom:link href="https://www.meuleman.org/research/index.xml" rel="self" type="application/rss+xml" />
     <description>Researches</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
     <image>
-      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <url>https://www.meuleman.org/media/icon_hu71480909d25967012c4d0d13b5f985b7_57200_512x512_fill_lanczos_center_3.png</url>
       <title>Researches</title>
       <link>https://www.meuleman.org/research/</link>
     </image>
@@ -27,11 +27,123 @@ This approach results in highly variable pools of synthetic sequences, not obser
 &lt;p&gt;We use a supervised adaptation strategy to evolve these sequences towards multiple pre-defined cellular contexts.
 We show that this tuning process not only retains characteristics of endogenous regulatory sequences, but often strengthens them through an increased abundance of relevant regulatory signals.&lt;/p&gt;
 &lt;p&gt;Our approach and its current results provide a foundation for subsequent experimental validation through the targeted integration of synthetic sequences in genomic loci in relevant cellular conditions.&lt;/p&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://github.com/meuleman/SynthSeqs&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Code available on GitHub&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Work with Peter Bromley.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Work with Peter Bromley&lt;/strong&gt;&lt;/p&gt;
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/tLbXl2x6nxY?start=7547&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; 
   allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a name=&#34;material&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;material-available-for-download&#34;&gt;Material available for download&lt;/h2&gt;
+&lt;h3 id=&#34;code-base&#34;&gt;&lt;strong&gt;Code base&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;All code is available on &lt;a href=&#34;https://github.com/meuleman/SynthSeqs&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;curated-chromatin-accessibility-datasets&#34;&gt;&lt;strong&gt;Curated chromatin accessibility datasets&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;For this project we make use of a dataset of chromatin accessibility obtained across 733 human biosamples, containing more than 3.5 million DNase Hypersensitive Sites (DHSs).
+These data were previously published (&lt;a href=&#34;https://www.nature.com/articles/s41586-020-2559-3&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;paper&lt;/a&gt;) and are available &lt;a href=&#34;https://www.meuleman.org/research/dhsindex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;An important aspect of these data is an annotation of accessibile elements in terms of 16 &lt;em&gt;components&lt;/em&gt;,
+each corresponding to a different cellular context (e.g. &amp;lsquo;cardiac&amp;rsquo;, &amp;rsquo;neural&amp;rsquo;, &amp;rsquo;lymphoid&amp;rsquo;):&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;DHS component legend&#34; srcset=&#34;
+               /media/DHS_Vocabulary_components_WM20221007_hu3e206490677f480f3a01757800bdbab1_217268_0e4cf73c0684874f1160fb67402e6573.webp 400w,
+               /media/DHS_Vocabulary_components_WM20221007_hu3e206490677f480f3a01757800bdbab1_217268_8de9a1cf4420a68514bc9b174bedab48.webp 760w,
+               /media/DHS_Vocabulary_components_WM20221007_hu3e206490677f480f3a01757800bdbab1_217268_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://www.meuleman.org/media/DHS_Vocabulary_components_WM20221007_hu3e206490677f480f3a01757800bdbab1_217268_0e4cf73c0684874f1160fb67402e6573.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;651&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;To aid in efforts towards understanding and generating regulatory sequences,
+we curated a subset of these data and provide it to the wider community.
+This subset consists of fixed-length 200bp sequences selected from the total collection of 3.5M+ sequences
+based on their accessibility confidence level and relative specificity for individual DHS components.&lt;/p&gt;
+&lt;p&gt;Specifically, we have the following datasets available:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;training set:&lt;/strong&gt; 160k sequences, 10k per NMF component (&lt;a href=&#34;https://www.meuleman.org/train_all_classifier_light.csv.gz&#34;&gt;.csv.gz&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;validation set:&lt;/strong&gt; 16k sequences, 1k per NMF component (&lt;a href=&#34;https://www.meuleman.org/validation_all_classifier_light.csv.gz&#34;&gt;.csv.gz&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;test set:&lt;/strong&gt; 16k sequences, 1k per NMF component (&lt;a href=&#34;https://www.meuleman.org/test_all_classifier_light.csv.gz&#34;&gt;.csv.gz&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Each of these contains the genomic locations (human genome assembly hg38, first 3 columns) of accessible genome elements,
+their majority NMF component (column: &lt;code&gt;component&lt;/code&gt;, see legend figure above) as well as their 200bp nucleotide sequence (column: &lt;code&gt;raw_sequence&lt;/code&gt;).&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Column&lt;/th&gt;
+&lt;th&gt;Example&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;seqname&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;chr16&lt;/td&gt;
+&lt;td&gt;Chromosome&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;start&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;68843660&lt;/td&gt;
+&lt;td&gt;Start position&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;end&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;68843880&lt;/td&gt;
+&lt;td&gt;End position&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;DHS_width&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;220&lt;/td&gt;
+&lt;td&gt;Width of original DHS&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;summit&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;68843790&lt;/td&gt;
+&lt;td&gt;Position of center of mass of DHS&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;total_signal&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;122.770678&lt;/td&gt;
+&lt;td&gt;Sum of DNase-seq signal across biosamples&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;numsamples&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;61&lt;/td&gt;
+&lt;td&gt;Number of biosamples with the DHS&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;raw_sequence&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;GAGGCATTG&amp;hellip;&lt;/td&gt;
+&lt;td&gt;200bp extracted nucleotide sequence&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;component&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;Dominant DHS Vocabulary component&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;proportion&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;0.767371514&lt;/td&gt;
+&lt;td&gt;Proportion of NMF loadings in this component&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Please refer to the DHS Index &lt;a href=&#34;https://www.meuleman.org/research/dhsindex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;project page&lt;/a&gt; for more information and details on the full dataset.&lt;/p&gt;
 </description>
     </item>
     
@@ -57,13 +169,16 @@ Rather than being confined to a small number of distal elements or promoters,
 we find that genetic signals converge on congruently regulated sets of DHSs that decorate entire gene bodies.
 Together, our results create a universal, extensible coordinate system and vocabulary for human regulatory DNA marked by DHSs,
 and provide a new global perspective on the architecture of human gene regulation.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://doi.org/10.1038/s41586-020-2559-3&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Meuleman &lt;em&gt;et al.&lt;/em&gt;, &lt;strong&gt;Nature&lt;/strong&gt; (2020)&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;Work with Sasha Muratov, John Stamatoyannopoulos and others.&lt;/strong&gt;&lt;/p&gt;
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/VAHgGBSv3rU&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; 
   allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;p&gt;Material available for download:&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a name=&#34;material&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;material-available-for-download&#34;&gt;Material available for download&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;DHS Index and Vocabulary&lt;/strong&gt; of ~3.6M DHSs (
-&lt;a href=&#34;https://www.meuleman.org/DHS_Index_and_Vocabulary_hg38_WM20190703.txt.gz&#34;&gt;tsv&lt;/a&gt;, hg38)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;DHS Index and Vocabulary&lt;/strong&gt; of ~3.6M DHSs (&lt;a href=&#34;https://www.meuleman.org/DHS_Index_and_Vocabulary_hg38_WM20190703.txt.gz&#34;&gt;tsv&lt;/a&gt;, hg38)&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -127,40 +242,29 @@ and provide a new global perspective on the architecture of human gene regulatio
 &lt;/table&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Data browsers&lt;/strong&gt; (
-&lt;a href=&#34;https://index.altius.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Altius browser&lt;/a&gt;,
-
+&lt;p&gt;&lt;strong&gt;Data browsers&lt;/strong&gt; (&lt;a href=&#34;https://index.altius.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Altius browser&lt;/a&gt;,
 &lt;a href=&#34;https://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&amp;amp;hubUrl=https://resources.altius.org/~meuleman/DHS_Index_tracks/hub.txt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;UCSC browser tracks&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;733 biosample metadata&lt;/strong&gt; (
-&lt;a href=&#34;https://www.meuleman.org/DHS_Index_and_Vocabulary_metadata.html&#34;&gt;html&lt;/a&gt;,
-
+&lt;p&gt;&lt;strong&gt;733 biosample metadata&lt;/strong&gt; (&lt;a href=&#34;https://www.meuleman.org/DHS_Index_and_Vocabulary_metadata.html&#34;&gt;html&lt;/a&gt;,
 &lt;a href=&#34;https://www.meuleman.org/DHS_Index_and_Vocabulary_metadata.pdf&#34;&gt;pdf&lt;/a&gt;,
-
 &lt;a href=&#34;https://www.meuleman.org/DHS_Index_and_Vocabulary_metadata.tsv&#34;&gt;tsv&lt;/a&gt;,
-
 &lt;a href=&#34;https://www.meuleman.org/DHS_Index_and_Vocabulary_metadata.xlsx&#34;&gt;xlsx&lt;/a&gt;,
-
 &lt;a href=&#34;https://docs.google.com/spreadsheets/d/1B9WKRwXUr8h_frEyh5Zt09oZbnejYIM_LciBcNrZ6Ew/edit?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google spreadsheet&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;DHS-by-biosample matrices&lt;/strong&gt;&lt;br&gt;
 Rows correspond to DHS Index elements, columns correspond to rows in biosample metadata (both in order).&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Presence/absence matrix 
-&lt;a href=&#34;https://drive.google.com/uc?export=download&amp;amp;id=1Rjh1qCC8Vl5vGk5_dnF1rSO_hRSc1gds&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;(R sparse Matrix format&lt;/a&gt;, 
-&lt;a href=&#34;https://drive.google.com/open?id=1EEMEybzf2uZIl_bxLDiNBD6dtCzs1ZBJ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Matrix Market format&lt;/a&gt;, 
-&lt;a href=&#34;https://drive.google.com/uc?export=download&amp;amp;id=1Nel7wWOWhWn40Yv7eaQFwvpMcQHBNtJ2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;raw text format)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Signal matrix 
-&lt;a href=&#34;https://drive.google.com/uc?export=download&amp;amp;id=1Nwl2eOu-YVabqFAvC3cfy64sD9PqmKQ-&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;(R sparse Matrix format&lt;/a&gt;, 
-&lt;a href=&#34;https://drive.google.com/uc?export=download&amp;amp;id=16wbuNmHnwsek3USWM04nR535vPavNZka&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;raw text format)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Presence/absence matrix &lt;a href=&#34;https://drive.google.com/uc?export=download&amp;amp;id=1Rjh1qCC8Vl5vGk5_dnF1rSO_hRSc1gds&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;(R sparse Matrix format&lt;/a&gt;, &lt;a href=&#34;https://drive.google.com/open?id=1EEMEybzf2uZIl_bxLDiNBD6dtCzs1ZBJ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Matrix Market format&lt;/a&gt;, &lt;a href=&#34;https://drive.google.com/uc?export=download&amp;amp;id=1Nel7wWOWhWn40Yv7eaQFwvpMcQHBNtJ2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;raw text format)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Signal matrix &lt;a href=&#34;https://drive.google.com/uc?export=download&amp;amp;id=1Nwl2eOu-YVabqFAvC3cfy64sD9PqmKQ-&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;(R sparse Matrix format&lt;/a&gt;, &lt;a href=&#34;https://drive.google.com/uc?export=download&amp;amp;id=16wbuNmHnwsek3USWM04nR535vPavNZka&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;raw text format)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Per-biosample and per-component data&lt;/strong&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Per-biosample and per-component data&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;DHS Index elements found in specific biosamples:&lt;br&gt;
   &lt;sup&gt;Column `biosample_signal` reports the normalized DNase-seq signal for the individual biosample.&lt;br&gt;&lt;/sup&gt;
@@ -169,225 +273,222 @@ Rows correspond to DHS Index elements, columns correspond to rows in biosample m
   &lt;sup&gt;By default, each DHS is annotated with a single (dominant) component only. DHSs may occur in biosamples of other components too! Refer to the data matrices listed above for the full picture.&lt;br&gt;&lt;/sup&gt;
   &lt;div id=&#34;components_parent&#34; style=&#34;display:inline-block;&#34;/&gt;
 &lt;/ul&gt;
+&lt;script src=&#34;definitions.js&#34;&gt;&lt;/script&gt;
+&lt;script type=&#34;text/javascript&#34;&gt; 
+  // globals
+  let systems = [];
+  let biosamples = [];
+  const systemsParentId = &#34;systems_parent&#34;;
+  const systemsListId = &#34;systems_list&#34;;
+  const biosamplesListId = &#34;biosamples_list&#34;;
+  let components = [];
+  const componentsParentId = &#34;components_parent&#34;;
+  const componentsListId = &#34;components_list&#34;;
+
+  // --------------------------------------------
+  // Systems and biosamples menus
+  const systemsParent = document.getElementById(systemsParentId);
+  let systemsList = document.createElement(&#34;select&#34;);
+  systemsList.id = systemsListId;
+  systemsParent.appendChild(systemsList);
+  let systemOption = document.createElement(&#34;option&#34;);
+  systemOption.value = &#34;Reset&#34;;
+  systemOption.text = &#34;Select organ system of interest&#34;;
+  systemsList.appendChild(systemOption);
+  systems.push(systemOption.value);
+  const systemsKeys = Object.keys(systemsDatasets);
+  for (let i = 0; i &lt; systemsKeys.length; i++) {
+    //console.log(`systemsKeys[${i}] ${systemsKeys[i]}`)
+    const system = systemsKeys[i];
+    systemOption = document.createElement(&#34;option&#34;);
+    systemOption.value = system;
+    systemOption.text = system;
+    systemsList.appendChild(systemOption);
+    systems.push(system);
+  }
+  systemsList.options.selectedIndex = 0;
+  document.getElementById(systemsListId).onchange = function(e) { 
+    const selectedSystem = systems[this.options.selectedIndex];
+    if (this.options.selectedIndex &gt; 0) {
+      initializeBiosamplesFromSystemSelect(selectedSystem);
+    }
+    else {
+      deleteBiosamplesSelect()
+    }
+    document.getElementById(systemsListId).blur();
+  }
+
+  function deleteBiosamplesSelect() {
+    const biosamplesListId = &#34;biosamples_list&#34;;
+    const biosamplesListOld = document.querySelector(`#${biosamplesListId}`);
+    if (biosamplesListOld) {
+      biosamplesListOld.parentNode.removeChild(biosamplesListOld);
+      biosamples = []; // reset
+    }
+  }
+
+  function parseRawBiosampleString(biosample) {
+    const bits = biosample.split(&#34;__&#34;);
+    const humanReadableName = `${bits[0]} (${bits[1]})`;
+    return {
+      &#34;humanReadableName&#34; : humanReadableName,
+      &#34;rawBiosampleName&#34; : bits[0],
+      &#34;dsNumber&#34; : bits[1],
+    };
+  }
+
+  function initializeBiosamplesFromSystemSelect(system) {
+    const systemsParent = document.getElementById(&#34;systems_parent&#34;);
+    deleteBiosamplesSelect();
+    let biosamplesList = document.createElement(&#34;select&#34;);
+    biosamplesList.id = biosamplesListId;
+    systemsParent.appendChild(biosamplesList);
+    let biosampleOption = document.createElement(&#34;option&#34;);
+    biosampleOption.value = &#34;Reset&#34;;
+    biosampleOption.text = &#34;Select biosample of interest&#34;;
+    biosamplesList.appendChild(biosampleOption);
+    biosamples = [biosampleOption.value].concat(systemsDatasets[system])
+    for (let i = 1; i &lt; biosamples.length; i++) {
+      //console.log(`biosamples[${i}] ${biosamples[i]}`);
+      const biosample = biosamples[i];
+      const biosampleBits = parseRawBiosampleString(biosample);
+      biosampleOption = document.createElement(&#34;option&#34;);
+      biosampleOption.value = biosample;
+      biosampleOption.text = biosampleBits.humanReadableName;
+      biosamplesList.appendChild(biosampleOption);
+    }
+    biosamplesList.options.selectedIndex = 0;
+    biosamplesList.onchange = function(e) { 
+      const selectedBiosample = biosamples[this.options.selectedIndex];
+      if (this.options.selectedIndex &gt; 0) {
+        downloadBiosampleFile(selectedBiosample);
+      }
+      document.getElementById(biosamplesListId).blur();
+    }
+  }
+
+  function downloadBiosampleFile(biosample) {
+    console.log(`Downloading ${biosample}...`);
+    const biosampleBits = parseRawBiosampleString(biosample);
+    //const biosampleAssetContentType = &#34;text/plain&#34;; // change MIME type to &#34;application/x-gzip&#34;, if sending gzipped files
+    //const biosampleAssetFilename = `${biosampleBits.rawBiosampleName}.${biosampleBits.dsNumber}.txt`; // change file extension from .txt to .txt.gz, if sending gzipped files
+    const biosampleAssetContentType = &#34;application/x-gzip&#34;; 
+    const biosampleAssetFilename = `${biosampleBits.rawBiosampleName}__${biosampleBits.dsNumber}.txt.gz`; 
+    const urlProxyURL = &#34;https://meuleman-proxy.altius.org:9001/&#34;;
+    const dataURL = encodeURIComponent(&#34;https://resources.altius.org/~meuleman/DHS_Index_downloads/biosamples/&#34; + biosampleAssetFilename);
+    fetch(urlProxyURL + dataURL, {
+      method: &#39;GET&#39;,
+      headers: {
+        &#39;Content-Type&#39;: biosampleAssetContentType,
+      },
+    })
+    .then(response =&gt; response.blob())
+    .then(data =&gt; {
+      const saveBlobToFile = (function () {
+        const a = document.createElement(&#34;a&#34;);
+        document.body.appendChild(a);
+        a.style = &#34;display:none&#34;;
+        return function (data, name) {
+          const blob = new Blob(data, { type: biosampleAssetContentType }); 
+          const url = window.URL.createObjectURL(blob);
+          const clickHandler = (ev) =&gt; {
+            setTimeout(() =&gt; {
+              window.URL.revokeObjectURL(url);
+              this.removeEventListener(&#39;click&#39;, clickHandler);
+              document.body.removeChild(a);
+            }, 0);
+            return false;
+          };
+          a.addEventListener(&#39;click&#39;, clickHandler, false);
+          a.href = url;
+          a.download = name;
+          a.click();
+        };
+      }());
+      saveBlobToFile([data], biosampleAssetFilename);
+    })
+    .catch((error) =&gt; {
+      console.error(&#39;Error:&#39;, error);
+    });
+  }
+
+
+  // --------------------------------------------
+  // NMF components menu
+  const componentsParent = document.getElementById(componentsParentId);
+  let componentsList = document.createElement(&#34;select&#34;);
+  componentsList.id = componentsListId;
+  componentsParent.appendChild(componentsList);
+  let componentOption = document.createElement(&#34;option&#34;);
+  componentOption.value = &#34;Reset&#34;;
+  componentOption.text = &#34;Select component of interest&#34;;
+  componentsList.appendChild(componentOption);
+  components.push(componentOption.value);
+  const componentsKeys = Object.keys(componentsDatasets);
+  for (let i = 0; i &lt; componentsKeys.length; i++) {
+    //console.log(`componentsKeys[${i}] ${componentsKeys[i]}`)
+    const component = componentsKeys[i];
+    componentOption = document.createElement(&#34;option&#34;);
+    componentOption.value = componentsDatasets[component].safe;
+    componentOption.text = componentsDatasets[component].humanReadable;
+    componentsList.appendChild(componentOption);
+    components.push(component);
+  }
+  componentsList.options.selectedIndex = 0;
+  document.getElementById(componentsListId).onchange = function(e) { 
+    const selectedComponent = components[this.options.selectedIndex];
+    if (this.options.selectedIndex &gt; 0) {
+      downloadComponentFile(selectedComponent);
+    }
+    document.getElementById(componentsListId).blur();
+  }
+
+  function downloadComponentFile(component) {
+    console.log(`Downloading ${component}...`);
+    //const componentAssetContentType = &#34;text/plain&#34;; // change MIME type to &#34;application/x-gzip&#34;, if sending gzipped files
+    //const componentAssetFilename = `${componentsDatasets[component].safe}.txt`; // change file extension from .txt to .txt.gz, if sending gzipped files
+    const componentAssetContentType = &#34;application/x-gzip&#34;; 
+    const componentAssetFilename = `${componentsDatasets[component].safe}.txt.gz`;
+    const urlProxyURL = &#34;https://meuleman-proxy.altius.org:9001/&#34;;
+    const dataURL = encodeURIComponent(&#34;https://resources.altius.org/~meuleman/DHS_Index_downloads/components/&#34; + componentAssetFilename);
+    fetch(urlProxyURL + dataURL, {
+      method: &#39;GET&#39;,
+      headers: {
+        &#39;Content-Type&#39;: componentAssetContentType,
+      },
+    })
+    .then(response =&gt; response.blob())
+    .then(data =&gt; {
+      const saveBlobToFile = (function () {
+        const a = document.createElement(&#34;a&#34;);
+        document.body.appendChild(a);
+        a.style = &#34;display:none&#34;;
+        return function (data, name) {
+          const blob = new Blob(data, { type: componentAssetContentType }); 
+          const url = window.URL.createObjectURL(blob);
+          const clickHandler = (ev) =&gt; {
+            setTimeout(() =&gt; {
+              window.URL.revokeObjectURL(url);
+              this.removeEventListener(&#39;click&#39;, clickHandler);
+              document.body.removeChild(a);
+            }, 0);
+            return false;
+          };
+          a.addEventListener(&#39;click&#39;, clickHandler, false);
+          a.href = url;
+          a.download = name;
+          a.click();
+        };
+      }());
+      saveBlobToFile([data], componentAssetFilename);
+    })
+    .catch((error) =&gt; {
+      console.error(&#39;Error:&#39;, error);
+    });
+  }
+&lt;/script&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://doi.org/10.1038/s41586-020-2559-3&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Meuleman &lt;em&gt;et al.&lt;/em&gt;, &lt;strong&gt;Nature&lt;/strong&gt; (2020)&lt;/a&gt;&lt;br&gt;
-Work with Sasha Muratov, John Stamatoyannopoulos and others.&lt;/p&gt;
-  &lt;script src=&#34;definitions.js&#34;&gt;&lt;/script&gt;
-  &lt;script type=&#34;text/javascript&#34;&gt; 
-    // globals
-    let systems = [];
-    let biosamples = [];
-    const systemsParentId = &#34;systems_parent&#34;;
-    const systemsListId = &#34;systems_list&#34;;
-    const biosamplesListId = &#34;biosamples_list&#34;;
-    let components = [];
-    const componentsParentId = &#34;components_parent&#34;;
-    const componentsListId = &#34;components_list&#34;;
-    
-    // --------------------------------------------
-    // Systems and biosamples menus
-    const systemsParent = document.getElementById(systemsParentId);
-    let systemsList = document.createElement(&#34;select&#34;);
-    systemsList.id = systemsListId;
-    systemsParent.appendChild(systemsList);
-    let systemOption = document.createElement(&#34;option&#34;);
-    systemOption.value = &#34;Reset&#34;;
-    systemOption.text = &#34;Select organ system of interest&#34;;
-    systemsList.appendChild(systemOption);
-    systems.push(systemOption.value);
-    const systemsKeys = Object.keys(systemsDatasets);
-    for (let i = 0; i &lt; systemsKeys.length; i++) {
-      //console.log(`systemsKeys[${i}] ${systemsKeys[i]}`)
-      const system = systemsKeys[i];
-      systemOption = document.createElement(&#34;option&#34;);
-      systemOption.value = system;
-      systemOption.text = system;
-      systemsList.appendChild(systemOption);
-      systems.push(system);
-    }
-    systemsList.options.selectedIndex = 0;
-    document.getElementById(systemsListId).onchange = function(e) { 
-      const selectedSystem = systems[this.options.selectedIndex];
-      if (this.options.selectedIndex &gt; 0) {
-        initializeBiosamplesFromSystemSelect(selectedSystem);
-      }
-      else {
-        deleteBiosamplesSelect()
-      }
-      document.getElementById(systemsListId).blur();
-    }
-    
-    function deleteBiosamplesSelect() {
-      const biosamplesListId = &#34;biosamples_list&#34;;
-      const biosamplesListOld = document.querySelector(`#${biosamplesListId}`);
-      if (biosamplesListOld) {
-        biosamplesListOld.parentNode.removeChild(biosamplesListOld);
-        biosamples = []; // reset
-      }
-    }
-    
-    function parseRawBiosampleString(biosample) {
-      const bits = biosample.split(&#34;__&#34;);
-      const humanReadableName = `${bits[0]} (${bits[1]})`;
-      return {
-        &#34;humanReadableName&#34; : humanReadableName,
-        &#34;rawBiosampleName&#34; : bits[0],
-        &#34;dsNumber&#34; : bits[1],
-      };
-    }
-    
-    function initializeBiosamplesFromSystemSelect(system) {
-      const systemsParent = document.getElementById(&#34;systems_parent&#34;);
-      deleteBiosamplesSelect();
-      let biosamplesList = document.createElement(&#34;select&#34;);
-      biosamplesList.id = biosamplesListId;
-      systemsParent.appendChild(biosamplesList);
-      let biosampleOption = document.createElement(&#34;option&#34;);
-      biosampleOption.value = &#34;Reset&#34;;
-      biosampleOption.text = &#34;Select biosample of interest&#34;;
-      biosamplesList.appendChild(biosampleOption);
-      biosamples = [biosampleOption.value].concat(systemsDatasets[system])
-      for (let i = 1; i &lt; biosamples.length; i++) {
-        //console.log(`biosamples[${i}] ${biosamples[i]}`);
-        const biosample = biosamples[i];
-        const biosampleBits = parseRawBiosampleString(biosample);
-        biosampleOption = document.createElement(&#34;option&#34;);
-        biosampleOption.value = biosample;
-        biosampleOption.text = biosampleBits.humanReadableName;
-        biosamplesList.appendChild(biosampleOption);
-      }
-      biosamplesList.options.selectedIndex = 0;
-      biosamplesList.onchange = function(e) { 
-        const selectedBiosample = biosamples[this.options.selectedIndex];
-        if (this.options.selectedIndex &gt; 0) {
-          downloadBiosampleFile(selectedBiosample);
-        }
-        document.getElementById(biosamplesListId).blur();
-      }
-    }
-    
-    function downloadBiosampleFile(biosample) {
-      console.log(`Downloading ${biosample}...`);
-      const biosampleBits = parseRawBiosampleString(biosample);
-      //const biosampleAssetContentType = &#34;text/plain&#34;; // change MIME type to &#34;application/x-gzip&#34;, if sending gzipped files
-      //const biosampleAssetFilename = `${biosampleBits.rawBiosampleName}.${biosampleBits.dsNumber}.txt`; // change file extension from .txt to .txt.gz, if sending gzipped files
-      const biosampleAssetContentType = &#34;application/x-gzip&#34;; 
-      const biosampleAssetFilename = `${biosampleBits.rawBiosampleName}__${biosampleBits.dsNumber}.txt.gz`; 
-      const urlProxyURL = &#34;https://meuleman-proxy.altius.org:9001/&#34;;
-      const dataURL = encodeURIComponent(&#34;https://resources.altius.org/~meuleman/DHS_Index_downloads/biosamples/&#34; + biosampleAssetFilename);
-      fetch(urlProxyURL + dataURL, {
-        method: &#39;GET&#39;,
-        headers: {
-          &#39;Content-Type&#39;: biosampleAssetContentType,
-        },
-      })
-      .then(response =&gt; response.blob())
-      .then(data =&gt; {
-        const saveBlobToFile = (function () {
-          const a = document.createElement(&#34;a&#34;);
-          document.body.appendChild(a);
-          a.style = &#34;display:none&#34;;
-          return function (data, name) {
-            const blob = new Blob(data, { type: biosampleAssetContentType }); 
-            const url = window.URL.createObjectURL(blob);
-            const clickHandler = (ev) =&gt; {
-              setTimeout(() =&gt; {
-                window.URL.revokeObjectURL(url);
-                this.removeEventListener(&#39;click&#39;, clickHandler);
-                document.body.removeChild(a);
-              }, 0);
-              return false;
-            };
-            a.addEventListener(&#39;click&#39;, clickHandler, false);
-            a.href = url;
-            a.download = name;
-            a.click();
-          };
-        }());
-        saveBlobToFile([data], biosampleAssetFilename);
-      })
-      .catch((error) =&gt; {
-        console.error(&#39;Error:&#39;, error);
-      });
-    }
-
-
-    // --------------------------------------------
-    // NMF components menu
-    const componentsParent = document.getElementById(componentsParentId);
-    let componentsList = document.createElement(&#34;select&#34;);
-    componentsList.id = componentsListId;
-    componentsParent.appendChild(componentsList);
-    let componentOption = document.createElement(&#34;option&#34;);
-    componentOption.value = &#34;Reset&#34;;
-    componentOption.text = &#34;Select component of interest&#34;;
-    componentsList.appendChild(componentOption);
-    components.push(componentOption.value);
-    const componentsKeys = Object.keys(componentsDatasets);
-    for (let i = 0; i &lt; componentsKeys.length; i++) {
-      //console.log(`componentsKeys[${i}] ${componentsKeys[i]}`)
-      const component = componentsKeys[i];
-      componentOption = document.createElement(&#34;option&#34;);
-      componentOption.value = componentsDatasets[component].safe;
-      componentOption.text = componentsDatasets[component].humanReadable;
-      componentsList.appendChild(componentOption);
-      components.push(component);
-    }
-    componentsList.options.selectedIndex = 0;
-    document.getElementById(componentsListId).onchange = function(e) { 
-      const selectedComponent = components[this.options.selectedIndex];
-      if (this.options.selectedIndex &gt; 0) {
-        downloadComponentFile(selectedComponent);
-      }
-      document.getElementById(componentsListId).blur();
-    }
-    
-    function downloadComponentFile(component) {
-      console.log(`Downloading ${component}...`);
-      //const componentAssetContentType = &#34;text/plain&#34;; // change MIME type to &#34;application/x-gzip&#34;, if sending gzipped files
-      //const componentAssetFilename = `${componentsDatasets[component].safe}.txt`; // change file extension from .txt to .txt.gz, if sending gzipped files
-      const componentAssetContentType = &#34;application/x-gzip&#34;; 
-      const componentAssetFilename = `${componentsDatasets[component].safe}.txt.gz`;
-      const urlProxyURL = &#34;https://meuleman-proxy.altius.org:9001/&#34;;
-      const dataURL = encodeURIComponent(&#34;https://resources.altius.org/~meuleman/DHS_Index_downloads/components/&#34; + componentAssetFilename);
-      fetch(urlProxyURL + dataURL, {
-        method: &#39;GET&#39;,
-        headers: {
-          &#39;Content-Type&#39;: componentAssetContentType,
-        },
-      })
-      .then(response =&gt; response.blob())
-      .then(data =&gt; {
-        const saveBlobToFile = (function () {
-          const a = document.createElement(&#34;a&#34;);
-          document.body.appendChild(a);
-          a.style = &#34;display:none&#34;;
-          return function (data, name) {
-            const blob = new Blob(data, { type: componentAssetContentType }); 
-            const url = window.URL.createObjectURL(blob);
-            const clickHandler = (ev) =&gt; {
-              setTimeout(() =&gt; {
-                window.URL.revokeObjectURL(url);
-                this.removeEventListener(&#39;click&#39;, clickHandler);
-                document.body.removeChild(a);
-              }, 0);
-              return false;
-            };
-            a.addEventListener(&#39;click&#39;, clickHandler, false);
-            a.href = url;
-            a.download = name;
-            a.click();
-          };
-        }());
-        saveBlobToFile([data], componentAssetFilename);
-      })
-      .catch((error) =&gt; {
-        console.error(&#39;Error:&#39;, error);
-      });
-    }
-  &lt;/script&gt;
 </description>
     </item>
     
@@ -403,8 +504,7 @@ Chromatin states describe the combinatorial occurrence of multiple chromatin mar
 Although this provides clues to the function of genomic regions, it results in large datasets that remain hard to navigate.&lt;/p&gt;
 &lt;p&gt;By modeling the information content, we transform multi-biosample chromatin state data into intuitive readouts called epilogos.
 This process is analogous to how motif logos are derived from DNA or protein sequence alignments, and opens up new possibilities for studying chromatin mark dynamics in large genome-wide datasets.&lt;/p&gt;
-&lt;p&gt;
-&lt;a href=&#34;http://www.epilogos.net&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Start using epilogos now!&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.epilogos.net&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Start using epilogos now!&lt;/a&gt;&lt;/p&gt;
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/WMsvWqs9A5k&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; 
   allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
 </description>
@@ -424,8 +524,7 @@ By integrating these maps with chromatin accessibility data obtained from DNase-
 &lt;p&gt;We showed that disease- and trait-associated genetic variation is preferentially localized in tissue-specific regulatory elements,
 revealing biologically relevant cell types for diverse human traits, and providing a resource for interpreting the molecular basis of human disease.&lt;/p&gt;
 &lt;p&gt;Taken together, our results demonstrated the central role of epigenomic information for understanding gene regulation, cellular differentiation and human disease.&lt;/p&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://doi.org/10.1038/nature14248&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kundaje, Meuleman, Ernst, Bilenky &lt;em&gt;et al.&lt;/em&gt;, &lt;strong&gt;Nature&lt;/strong&gt; (2015)&lt;/a&gt;&lt;br&gt;
+&lt;p&gt;&lt;a href=&#34;https://doi.org/10.1038/nature14248&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kundaje, Meuleman, Ernst, Bilenky &lt;em&gt;et al.&lt;/em&gt;, &lt;strong&gt;Nature&lt;/strong&gt; (2015)&lt;/a&gt;&lt;br&gt;
 Work with Anshul Kundaje, Manolis Kellis, and others.&lt;/p&gt;
 </description>
     </item>
@@ -438,18 +537,15 @@ Work with Anshul Kundaje, Manolis Kellis, and others.&lt;/p&gt;
       <description>&lt;p&gt;By studying which regions of the human genome come into contact with the nuclear periphery,
 we demonstrated that the genome is divided into large, discrete domains.
 These domains are units of chromosome organisation within the nucleus, and we named them Lamina Associated Domains (LADs).&lt;br&gt;
-
 &lt;a href=&#34;https://doi.org/10.1038/nature06947&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Guelen &lt;em&gt;et al.&lt;/em&gt;, &lt;strong&gt;Nature&lt;/strong&gt; (2008)&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;To better understand the (re)organization of the genome through cell differentiation, we extended our study to a mouse differentiation model.
 By studying the dynamics during differentiation, we found that lamina-genome interactions are widely involved in the
 control of gene expression programs during lineage commitment and terminal differentiation.&lt;br&gt;
-
 &lt;a href=&#34;https://doi.org/10.1016/j.molcel.2010.03.016&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Peric-Hupkes, Meuleman &lt;em&gt;et al.&lt;/em&gt;, &lt;strong&gt;Mol. Cell&lt;/strong&gt; (2010)&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Despite these dynamics, we find that the majority of lamina-genome interactions are constitutive across cell types.
 Moreover, the genome-wide patterning of constitutive LADs is highly conserved between human and mouse,
 and can be largely predicted based on DNA sequence content only.
 This suggests that LADs collectively encode a basic `backbone&amp;rsquo; structure for organizing chromosomes.&lt;br&gt;
-
 &lt;a href=&#34;https://doi.org/10.1101/gr.141028.112&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Meuleman, Peric-Hupkes &lt;em&gt;et al.&lt;/em&gt;, &lt;strong&gt;Genome Res&lt;/strong&gt;. (2013)&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Work with Daan Peric-Hupkes, Bas van Steensel, and others.&lt;/p&gt;
 </description>

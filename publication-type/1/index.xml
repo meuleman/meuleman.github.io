@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1 | meuleman.org</title>
+    <link>https://www.meuleman.org/publication-type/1/</link>
+      <atom:link href="https://www.meuleman.org/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
+    <description>1</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2006 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://www.meuleman.org/media/icon_hu71480909d25967012c4d0d13b5f985b7_57200_512x512_fill_lanczos_center_3.png</url>
+      <title>1</title>
+      <link>https://www.meuleman.org/publication-type/1/</link>
+    </image>
+    
+    <item>
+      <title>Construction of correlation networks with explicit time-slices using time-lagged, variable interval standard and partial correlation coefficients</title>
+      <link>https://www.meuleman.org/publication/meuleman-2006-construction/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>https://www.meuleman.org/publication/meuleman-2006-construction/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

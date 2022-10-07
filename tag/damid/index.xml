@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DamID | meuleman.org</title>
+    <link>https://www.meuleman.org/tag/damid/</link>
+      <atom:link href="https://www.meuleman.org/tag/damid/index.xml" rel="self" type="application/rss+xml" />
+    <description>DamID</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <image>
+      <url>https://www.meuleman.org/media/icon_hu71480909d25967012c4d0d13b5f985b7_57200_512x512_fill_lanczos_center_3.png</url>
+      <title>DamID</title>
+      <link>https://www.meuleman.org/tag/damid/</link>
+    </image>
+    
+    <item>
+      <title>Lamina Associated Domains</title>
+      <link>https://www.meuleman.org/research/lamina/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.meuleman.org/research/lamina/</guid>
+      <description>&lt;p&gt;By studying which regions of the human genome come into contact with the nuclear periphery,
+we demonstrated that the genome is divided into large, discrete domains.
+These domains are units of chromosome organisation within the nucleus, and we named them Lamina Associated Domains (LADs).&lt;br&gt;
+&lt;a href=&#34;https://doi.org/10.1038/nature06947&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Guelen &lt;em&gt;et al.&lt;/em&gt;, &lt;strong&gt;Nature&lt;/strong&gt; (2008)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;To better understand the (re)organization of the genome through cell differentiation, we extended our study to a mouse differentiation model.
+By studying the dynamics during differentiation, we found that lamina-genome interactions are widely involved in the
+control of gene expression programs during lineage commitment and terminal differentiation.&lt;br&gt;
+&lt;a href=&#34;https://doi.org/10.1016/j.molcel.2010.03.016&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Peric-Hupkes, Meuleman &lt;em&gt;et al.&lt;/em&gt;, &lt;strong&gt;Mol. Cell&lt;/strong&gt; (2010)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Despite these dynamics, we find that the majority of lamina-genome interactions are constitutive across cell types.
+Moreover, the genome-wide patterning of constitutive LADs is highly conserved between human and mouse,
+and can be largely predicted based on DNA sequence content only.
+This suggests that LADs collectively encode a basic `backbone&amp;rsquo; structure for organizing chromosomes.&lt;br&gt;
+&lt;a href=&#34;https://doi.org/10.1101/gr.141028.112&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Meuleman, Peric-Hupkes &lt;em&gt;et al.&lt;/em&gt;, &lt;strong&gt;Genome Res&lt;/strong&gt;. (2013)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Work with Daan Peric-Hupkes, Bas van Steensel, and others.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

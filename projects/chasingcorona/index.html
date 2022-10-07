@@ -1,0 +1,1555 @@
+<!DOCTYPE html>
+<!-- This site was created with Wowchemy. https://www.wowchemy.com -->
+<!-- Last Published: October 7, 2022 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.16f785cdb553c8c4431db6775122af35.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css" integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.e5d7adca760216d3b7e28ea434e81f6f.css" />
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-141930958-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-141930958-1', {});
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Wouter Meuleman" />
+
+
+
+
+
+  
+
+<meta name="description" content="Daily-updated analysis of confirmed COVID-19 coronavirus cases across the world" />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://www.meuleman.org/projects/chasingcorona/" />
+<link rel="canonical" href="https://www.meuleman.org/projects/chasingcorona/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_hu71480909d25967012c4d0d13b5f985b7_57200_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_hu71480909d25967012c4d0d13b5f985b7_57200_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary_large_image" />
+
+  <meta property="twitter:site" content="@nameluem" />
+  <meta property="twitter:creator" content="@nameluem" />
+<meta property="twitter:image" content="https://www.meuleman.org/projects/chasingcorona/featured.png" />
+<meta property="og:site_name" content="meuleman.org" />
+<meta property="og:url" content="https://www.meuleman.org/projects/chasingcorona/" />
+<meta property="og:title" content="Chasing Corona | meuleman.org" />
+<meta property="og:description" content="Daily-updated analysis of confirmed COVID-19 coronavirus cases across the world" /><meta property="og:image" content="https://www.meuleman.org/projects/chasingcorona/featured.png" /><meta property="og:locale" content="en-us" />
+
+  
+  
+    <meta property="article:modified_time" content="2022-10-07T13:03:17-07:00">
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>Chasing Corona | meuleman.org</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="54ef6e53c027dd3fe99662e439f6f333" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.ec9d49ca50e4b80bdb08f0417a28ed84.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">meuleman.org</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">meuleman.org</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#research"><span>Research</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#featured"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/hiring"><b><span>Now Hiring!</span></b></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+            
+            <li class="nav-item d-none d-lg-inline-flex">
+              <a class="nav-link" href="https://twitter.com/nameluem" data-toggle="tooltip" data-placement="bottom" title="Follow me on Twitter" target="_blank" rel="noopener" aria-label="Follow me on Twitter">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Chasing Corona</h1>
+
+  
+  <p class="page-subtitle">2020</p>
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Oct 7, 2022
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h3 id="visualizing-covid-19-coronavirus-impact-and-spread">Visualizing COVID-19 coronavirus impact and spread</h3>
+<div class="alert alert-warning">
+  <div>
+    <strong>DISCLAIMER</strong>: I am not a virologist or epidemiologist &ndash; I realize there are <em>many</em> caveats to interpreting these data.
+  </div>
+</div>
+<div class="alert alert-note">
+  <div>
+    Between February 28th and April 12th, the figures below got regenerated on a daily basis.
+Many superior efforts have emerged since, and this website will no longer be updated.
+  </div>
+</div>
+<!---
+The figures below get regenerated as new data becomes available.
+-->
+<h4 id="percentage-of-population-that-are-confirmed-cases">Percentage of population that are confirmed cases</h4>
+<p><sub><sup>(First version: Feb 28, 2020)</sup></sub><br>
+The top 20 countries in terms of percentage of the population confirmed to be affected by the COVID-19 coronavirus are shown below<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>,
+along with a world-wide average.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-percent-of-per-country-population-confirmed-to-be-covid-19-cases-shown-for-the-top-20-countries-and-world-wide-percentages-shown-on-the-right-are-for-the-most-recent-date-indicated-due-to-the-exponential-nature-of-these-numbers-data-are-shown-on-a-linear-a-and-logarithmic-b-scale">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="https://raw.githubusercontent.com/meuleman/ChasingCorona/master/PNG_figures/percentage_population_confirmed_top20_min100_fromMar01_latest.png" alt="Percent of per-country population confirmed to be COVID-19 cases, shown for the top 20 countries and world-wide. Percentages shown on the right are for the most recent date indicated. Due to the exponential nature of these numbers, data are shown on a linear (a) and logarithmic (b) scale." loading="lazy" data-zoomable /></div>
+  </div><figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+      Percent of per-country population confirmed to be COVID-19 cases, shown for the top 20 countries and world-wide. Percentages shown on the right are for the most recent date indicated. Due to the exponential nature of these numbers, data are shown on a linear (a) and logarithmic (b) scale.
+    </figcaption></figure>
+</p>
+<p><em><strong>COVID-19 cases are severely underreported due to limited testing and as such these numbers are likely extreme underestimates.</strong></em></p>
+<p>Yet, the shape of these curves might provide meaningful information about different patterns of viral infection progression and containment between countries,
+in particular when multiple countries show similar patterns.</p>
+<h4 id="daily-growth-of-newly-confirmed-cases">Daily growth of newly confirmed cases</h4>
+<p><sub><sup>(First version: Mar 12, 2020)</sup></sub><br>
+More relevant than the number of confirmed cases &ndash; or percentage of population affected &ndash; is how fast the virus spreads.
+One way to visualize this is to estimate the slope of the exponential curves (Figure 1b) over set time intervals and derive the daily percental increase of newly confirmed cases<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-percent-daily-growth-of-newly-confirmed-cases-estimated-using-intervals-of-the-10-previous-days-panel-on-the-right-shows-highest-and-current-growth-numbers-including-95-confidence-interval-ranges">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="https://raw.githubusercontent.com/meuleman/ChasingCorona/master/PNG_figures/percentage_daily_change_10days_cases_confirmed_ALL_fromBeginning_latest.png" alt="Percent daily growth of newly confirmed cases, estimated using intervals of the 10 previous days. Panel on the right shows highest and current growth numbers, including 95% confidence interval ranges." loading="lazy" data-zoomable /></div>
+  </div><figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+      Percent daily growth of newly confirmed cases, estimated using intervals of the 10 previous days. Panel on the right shows highest and current growth numbers, including 95% confidence interval ranges.
+    </figcaption></figure>
+</p>
+<p><em><strong>It is important to emphasize that over the course of time many countries have revised their testing strategies, which will artificially influence these growth numbers.</strong></em></p>
+<h4 id="percentage-of-population-that-has-died-of-covid-19">Percentage of population that has died of COVID-19</h4>
+<p><sub><sup>(First version: Mar 26, 2020)</sup></sub><br>
+By the end of March, the number of deaths from COVID-19 had risen to a level that
+made it possible to show growth curves in a similar manner as done for confirmed cases above.
+The number of deaths from COVID-19 is arguably a more reliable metric for population-wide impact,
+as it suffers less from the absence of systematic and/or asymptomatic testing.</p>
+<p>The top 20 countries in terms of percentage of the population that has died from of COVID-19 are shown below<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>,
+along with a world-wide average.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-percent-of-per-country-population-that-has-died-of-covid-19-shown-for-the-top-20-countries-and-world-wide-percentages-shown-on-the-right-are-for-the-most-recent-date-indicated-due-to-the-exponential-nature-of-these-numbers-data-are-shown-on-a-linear-a-and-logarithmic-b-scale">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="https://raw.githubusercontent.com/meuleman/ChasingCorona/master/PNG_figures/percentage_population_deaths_top20_min25_fromMar01_latest.png" alt="Percent of per-country population that has died of COVID-19, shown for the top 20 countries and world-wide. Percentages shown on the right are for the most recent date indicated. Due to the exponential nature of these numbers, data are shown on a linear (a) and logarithmic (b) scale." loading="lazy" data-zoomable /></div>
+  </div><figcaption data-pre="Figure&nbsp;" data-post=":&nbsp;" class="numbered">
+      Percent of per-country population that has died of COVID-19, shown for the top 20 countries and world-wide. Percentages shown on the right are for the most recent date indicated. Due to the exponential nature of these numbers, data are shown on a linear (a) and logarithmic (b) scale.
+    </figcaption></figure>
+</p>
+<p>It&rsquo;ll be interesting, and generally disheartening, to see how these figures evolve over the coming weeks and months.</p>
+<p>More figures and details are available at this <a href="https://github.com/meuleman/ChasingCorona" target="_blank" rel="noopener">GitHub repository</a>.</p>
+<!---
+
+
+<div class="alert alert-note">
+  <div>
+    This is an <a href="https://medium.com/@tomaspueyo/coronavirus-act-today-or-people-will-die-f4d3d9cd99ca" target="_blank" rel="noopener">excellent overview</a>
+of the current COVID-19 situation and the need to act immediately.
+  </div>
+</div>
+
+-->
+<h3 id="background">Background</h3>
+<p>The outbreak of the COVID-19 corona virus prompted an impressively
+rapid and joint response of epidemiologists, geneticists, software developers and data analysts.
+This has resulted in a number of insightful web-based dashboard tools to track and
+better understand the movements of this virus for specific regions, countries and throughout the world<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="gallery-grid">
+
+  
+  
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  
+  
+  <div class="gallery-item gallery-item--medium">
+    <a data-fancybox="gallery-dashboards_examples" href="/media/albums/dashboards_examples/dashboard_earlyAlert.png" data-caption="&lt;a href=&#34;https://www.arcgis.com/apps/opsdashboard/index.html#/20bfbf89c8e74c0494c90b1ae0fa7b78&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Private company dashboard&lt;/a&gt;">
+      <img src="/media/albums/dashboards_examples/dashboard_earlyAlert_huba09fe3cfb659479bb3c4bec07290ae8_813456_750x750_fit_q75_h2_lanczos_3.webp" loading="lazy" alt="[Private company dashboard](https://www.arcgis.com/apps/opsdashboard/index.html#/20bfbf89c8e74c0494c90b1ae0fa7b78)" width="750" height="571">
+    </a>
+  </div>
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  
+  
+  <div class="gallery-item gallery-item--medium">
+    <a data-fancybox="gallery-dashboards_examples" href="/media/albums/dashboards_examples/dashboard_HongKong.png" data-caption="&lt;a href=&#34;https://chp-dashboard.geodata.gov.hk/covid-19/en.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hong Kong dashboard&lt;/a&gt;">
+      <img src="/media/albums/dashboards_examples/dashboard_HongKong_hu57d92d840ecda856fae5ab377e42bd00_1264592_750x750_fit_q75_h2_lanczos_3.webp" loading="lazy" alt="[Hong Kong dashboard](https://chp-dashboard.geodata.gov.hk/covid-19/en.html)" width="750" height="571">
+    </a>
+  </div>
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  
+  
+  <div class="gallery-item gallery-item--medium">
+    <a data-fancybox="gallery-dashboards_examples" href="/media/albums/dashboards_examples/dashboard_Italy.png" data-caption="&lt;a href=&#34;https://www.arcgis.com/apps/opsdashboard/index.html#/4f74fc222b7041cd9cc3c52e62af1b8c&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Italy dashboard&lt;/a&gt;">
+      <img src="/media/albums/dashboards_examples/dashboard_Italy_huc741e18856ea0914f77b55ce0aa80a46_2173758_750x750_fit_q75_h2_lanczos_3.webp" loading="lazy" alt="[Italy dashboard](https://www.arcgis.com/apps/opsdashboard/index.html#/4f74fc222b7041cd9cc3c52e62af1b8c)" width="750" height="571">
+    </a>
+  </div>
+  
+    
+    
+    
+    
+    
+      
+        
+      
+    
+  
+  
+  <div class="gallery-item gallery-item--medium">
+    <a data-fancybox="gallery-dashboards_examples" href="/media/albums/dashboards_examples/dashboard_Japan.png" data-caption="&lt;a href=&#34;https://www.arcgis.com/apps/opsdashboard/index.html#/641eba7fef234a47880e1e1dc4de85ce&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Japan dashboard&lt;/a&gt;">
+      <img src="/media/albums/dashboards_examples/dashboard_Japan_hue1c7dbdbbab13030e7c8c5a87279c750_559345_750x750_fit_q75_h2_lanczos_3.webp" loading="lazy" alt="[Japan dashboard](https://www.arcgis.com/apps/opsdashboard/index.html#/641eba7fef234a47880e1e1dc4de85ce)" width="750" height="571">
+    </a>
+  </div>
+  
+
+</div>
+</p>
+<p>One of the more comprehensive instances in terms of world-wide coverage is a
+<a href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6" target="_blank" rel="noopener">dashboard</a>
+provided by Johns Hopkins University (JHU), displaying counts of confirmed cases, deaths and recoveries:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-map-view-of-the-covid-19-dashboard-provided-by-the-johns-hopkins-university">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="Map view of the COVID-19 dashboard provided by the Johns Hopkins University" srcset="
+               /projects/chasingcorona/dashboards_special/dashboard_JHU_hu409f3dfb3d8d2814a8586e773c997439_231021_ad2f6e92d1d6ac68bbf30fc0f071bab5.webp 400w,
+               /projects/chasingcorona/dashboards_special/dashboard_JHU_hu409f3dfb3d8d2814a8586e773c997439_231021_d45fc9e7698f48f9db754a067eeacd01.webp 760w,
+               /projects/chasingcorona/dashboards_special/dashboard_JHU_hu409f3dfb3d8d2814a8586e773c997439_231021_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/projects/chasingcorona/dashboards_special/dashboard_JHU_hu409f3dfb3d8d2814a8586e773c997439_231021_ad2f6e92d1d6ac68bbf30fc0f071bab5.webp"
+               width="760"
+               height="512"
+               loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      Map view of the COVID-19 dashboard provided by the Johns Hopkins University
+    </figcaption></figure>
+</p>
+<p>What struck me about these dashboards is that although they provide reports on the absolute number of cases identified
+&ndash; some even provide in-depth information on <a href="https://co.vid19.sg/cases" target="_blank" rel="noopener">individual cases</a> &ndash;
+they lack a population-wide context.
+In particular, I wanted to know what these numbers meant in terms of the fraction of (per-country) populations affected.</p>
+<h3 id="approach">Approach</h3>
+<p>Normalizing the number of confirmed COVID-19 cases per country with per-country population estimates
+requires two things: 1) the numbers behind these dashboards and 2) estimates of per-country population counts.</p>
+<p>Luckily the folks at JHU have freely <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank" rel="noopener">made available</a>
+their meticulously curated datasets, which they continue to update on a daily basis.
+And the World Bank provides <a href="https://data.worldbank.org/indicator/SP.POP.TOTL" target="_blank" rel="noopener">population count estimates</a>
+for over 250 countries world-wide.</p>
+<p>Combined<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>, these datasets open up an alternative view of the COVID-19 situation,
+in terms of the percentage of per-country populations (confirmed to be) affected by the virus.
+All code, data and resulting figures are available through this <a href="https://github.com/meuleman/ChasingCorona" target="_blank" rel="noopener">GitHub repository</a>,
+and are updated on a near-daily basis.</p>
+<!---
+
+### Interpretation
+
+Although viruses know no (country) boundaries, 
+different countries -- and their governments and infrastructures -- have wide ranging approaches for 
+dealing with the COVID-19 situation, not in the least regarding access to testing facilities.
+Cases of COVID-19 infection are typically vastly underreported and so the 
+exact percentages should be taken with a rather large grain of salt.
+
+That said, the shape of these curves might still provide meaningful information about 
+different patterns of viral infection progression and containment between countries.
+
+- [x] Write math example
+- [x] Write diagram example
+- [ ] Can we use the shape of 
+
+Calculate derivatives over time and report sharp increases/deviations.
+
+### Other developments
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-singapore-covid-19-dashboard">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="Singapore COVID-19 dashboard" srcset="
+               /projects/chasingcorona/dashboards_special/dashboard_Singapore_graph_hu2cc384526feabd3f6356098153c8797a_190352_ba7133dda125edb854bd348ea60da85e.webp 400w,
+               /projects/chasingcorona/dashboards_special/dashboard_Singapore_graph_hu2cc384526feabd3f6356098153c8797a_190352_04af47744737e7394e639430dc1ea4cc.webp 760w,
+               /projects/chasingcorona/dashboards_special/dashboard_Singapore_graph_hu2cc384526feabd3f6356098153c8797a_190352_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/projects/chasingcorona/dashboards_special/dashboard_Singapore_graph_hu2cc384526feabd3f6356098153c8797a_190352_ba7133dda125edb854bd348ea60da85e.webp"
+               width="626"
+               height="624"
+               loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      Singapore COVID-19 dashboard
+    </figcaption></figure>
+
+Genetic tracing: https://nextstrain.org/ncov
+-->
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>To prevent highly unstable percentages, currently included countries have a minimum of 100 cases and a population of at least 100000.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>Estimates are based on 10 day intervals. To prevent unstable estimates, data is only shown for periods in which there were more than 10 confirmed cases in a given country, over an entire 10 day interval.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>To prevent highly unstable percentages, currently included countries have a minimum of 25 deaths and a population of at least 100000.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>COVID-19 ArcGIS Hub: <a href="https://coronavirus-disasterresponse.hub.arcgis.com/" target="_blank" rel="noopener">https://coronavirus-disasterresponse.hub.arcgis.com/</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5">
+<p>There were a few minor caveats to this processing step, mostly due to mismatched country name nomenclature and/or recognition.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://www.meuleman.org/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu535661bce2c742bf7a0f6a055ac0b6d1_1947397_270x270_fill_q75_lanczos_center.jpg" alt="Wouter Meuleman"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://www.meuleman.org/">Wouter Meuleman</a></h5>
+      <h6 class="card-subtitle"><font color="#000">Principal Investigator</font> <br> Altius Institute <br><br> <font color="#000">Affiliate Associate Professor</font> <br> University of Washington</h6>
+      <p class="card-text">My research interests include computational (epi)genomics, genome organization, and data visualization</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/nameluem" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=ZUj5GLoAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/meuleman" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/woutermeuleman/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/uploads/CV_Meuleman_WM20220125.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.d26509351aa0ff874abbee824e982e9b.js"></script>
+
+
+
+
+  
+
+  
+  
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous"></script>
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+
+  <script src="/js/wowchemy-headroom.db4755770454eb63685f8de785c0a172.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.e8ee06ba8371980ffde659871dd593b0.js"></script>
+
+
+
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
