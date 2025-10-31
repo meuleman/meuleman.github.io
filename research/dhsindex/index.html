@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Wowchemy. https://www.wowchemy.com -->
-<!-- Last Published: June 21, 2025 --><html lang="en-us" >
+<!-- Last Published: October 31, 2025 --><html lang="en-us" >
 
 
 <head>
@@ -357,7 +357,7 @@
 
   
   
-    <meta property="article:modified_time" content="2022-10-07T13:03:17-07:00">
+    <meta property="article:modified_time" content="2025-10-31T12:41:10&#43;01:00">
   
 
 
@@ -768,7 +768,7 @@
           Last updated on
       
     
-    Oct 7, 2022
+    Oct 31, 2025
   </span>
   
 
@@ -917,233 +917,234 @@ Rows correspond to DHS Index elements, columns correspond to rows in biosample m
 </li>
 </ul>
 <p></p>
-<ul>
-<li>
-<p><strong>Per-biosample and per-component data</strong></p>
-<ul>
-  <li>DHS Index elements found in specific biosamples:<br>
-  <sup>Column `biosample_signal` reports the normalized DNase-seq signal for the individual biosample.<br></sup>
-  <div id="systems_parent" style="display:inline-block;"/>
-  <li>DHS Index elements annotated with specific DHS components:<br>
-  <sup>By default, each DHS is annotated with a single (dominant) component only. DHSs may occur in biosamples of other components too! Refer to the data matrices listed above for the full picture.<br></sup>
-  <div id="components_parent" style="display:inline-block;"/>
-</ul>
-<script src="definitions.js"></script>
-<script type="text/javascript"> 
-  // globals
-  let systems = [];
-  let biosamples = [];
-  const systemsParentId = "systems_parent";
-  const systemsListId = "systems_list";
-  const biosamplesListId = "biosamples_list";
-  let components = [];
-  const componentsParentId = "components_parent";
-  const componentsListId = "components_list";
+<!--
+* **Per-biosample and per-component data**
+  <ul>
+    <li>DHS Index elements found in specific biosamples:<br>
+    <sup>Column `biosample_signal` reports the normalized DNase-seq signal for the individual biosample.<br></sup>
+    <div id="systems_parent" style="display:inline-block;"/>
+    <li>DHS Index elements annotated with specific DHS components:<br>
+    <sup>By default, each DHS is annotated with a single (dominant) component only. DHSs may occur in biosamples of other components too! Refer to the data matrices listed above for the full picture.<br></sup>
+    <div id="components_parent" style="display:inline-block;"/>
+  </ul>
 
-  // --------------------------------------------
-  // Systems and biosamples menus
-  const systemsParent = document.getElementById(systemsParentId);
-  let systemsList = document.createElement("select");
-  systemsList.id = systemsListId;
-  systemsParent.appendChild(systemsList);
-  let systemOption = document.createElement("option");
-  systemOption.value = "Reset";
-  systemOption.text = "Select organ system of interest";
-  systemsList.appendChild(systemOption);
-  systems.push(systemOption.value);
-  const systemsKeys = Object.keys(systemsDatasets);
-  for (let i = 0; i < systemsKeys.length; i++) {
-    //console.log(`systemsKeys[${i}] ${systemsKeys[i]}`)
-    const system = systemsKeys[i];
-    systemOption = document.createElement("option");
-    systemOption.value = system;
-    systemOption.text = system;
-    systemsList.appendChild(systemOption);
-    systems.push(system);
-  }
-  systemsList.options.selectedIndex = 0;
-  document.getElementById(systemsListId).onchange = function(e) { 
-    const selectedSystem = systems[this.options.selectedIndex];
-    if (this.options.selectedIndex > 0) {
-      initializeBiosamplesFromSystemSelect(selectedSystem);
-    }
-    else {
-      deleteBiosamplesSelect()
-    }
-    document.getElementById(systemsListId).blur();
-  }
 
-  function deleteBiosamplesSelect() {
+  <script src="definitions.js"></script>
+  <script type="text/javascript"> 
+    // globals
+    let systems = [];
+    let biosamples = [];
+    const systemsParentId = "systems_parent";
+    const systemsListId = "systems_list";
     const biosamplesListId = "biosamples_list";
-    const biosamplesListOld = document.querySelector(`#${biosamplesListId}`);
-    if (biosamplesListOld) {
-      biosamplesListOld.parentNode.removeChild(biosamplesListOld);
-      biosamples = []; // reset
+    let components = [];
+    const componentsParentId = "components_parent";
+    const componentsListId = "components_list";
+    
+    // --------------------------------------------
+    // Systems and biosamples menus
+    const systemsParent = document.getElementById(systemsParentId);
+    let systemsList = document.createElement("select");
+    systemsList.id = systemsListId;
+    systemsParent.appendChild(systemsList);
+    let systemOption = document.createElement("option");
+    systemOption.value = "Reset";
+    systemOption.text = "Select organ system of interest";
+    systemsList.appendChild(systemOption);
+    systems.push(systemOption.value);
+    const systemsKeys = Object.keys(systemsDatasets);
+    for (let i = 0; i < systemsKeys.length; i++) {
+      //console.log(`systemsKeys[${i}] ${systemsKeys[i]}`)
+      const system = systemsKeys[i];
+      systemOption = document.createElement("option");
+      systemOption.value = system;
+      systemOption.text = system;
+      systemsList.appendChild(systemOption);
+      systems.push(system);
     }
-  }
-
-  function parseRawBiosampleString(biosample) {
-    const bits = biosample.split("__");
-    const humanReadableName = `${bits[0]} (${bits[1]})`;
-    return {
-      "humanReadableName" : humanReadableName,
-      "rawBiosampleName" : bits[0],
-      "dsNumber" : bits[1],
-    };
-  }
-
-  function initializeBiosamplesFromSystemSelect(system) {
-    const systemsParent = document.getElementById("systems_parent");
-    deleteBiosamplesSelect();
-    let biosamplesList = document.createElement("select");
-    biosamplesList.id = biosamplesListId;
-    systemsParent.appendChild(biosamplesList);
-    let biosampleOption = document.createElement("option");
-    biosampleOption.value = "Reset";
-    biosampleOption.text = "Select biosample of interest";
-    biosamplesList.appendChild(biosampleOption);
-    biosamples = [biosampleOption.value].concat(systemsDatasets[system])
-    for (let i = 1; i < biosamples.length; i++) {
-      //console.log(`biosamples[${i}] ${biosamples[i]}`);
-      const biosample = biosamples[i];
-      const biosampleBits = parseRawBiosampleString(biosample);
-      biosampleOption = document.createElement("option");
-      biosampleOption.value = biosample;
-      biosampleOption.text = biosampleBits.humanReadableName;
-      biosamplesList.appendChild(biosampleOption);
-    }
-    biosamplesList.options.selectedIndex = 0;
-    biosamplesList.onchange = function(e) { 
-      const selectedBiosample = biosamples[this.options.selectedIndex];
+    systemsList.options.selectedIndex = 0;
+    document.getElementById(systemsListId).onchange = function(e) { 
+      const selectedSystem = systems[this.options.selectedIndex];
       if (this.options.selectedIndex > 0) {
-        downloadBiosampleFile(selectedBiosample);
+        initializeBiosamplesFromSystemSelect(selectedSystem);
       }
-      document.getElementById(biosamplesListId).blur();
+      else {
+        deleteBiosamplesSelect()
+      }
+      document.getElementById(systemsListId).blur();
     }
-  }
-
-  function downloadBiosampleFile(biosample) {
-    console.log(`Downloading ${biosample}...`);
-    const biosampleBits = parseRawBiosampleString(biosample);
-    //const biosampleAssetContentType = "text/plain"; // change MIME type to "application/x-gzip", if sending gzipped files
-    //const biosampleAssetFilename = `${biosampleBits.rawBiosampleName}.${biosampleBits.dsNumber}.txt`; // change file extension from .txt to .txt.gz, if sending gzipped files
-    const biosampleAssetContentType = "application/x-gzip"; 
-    const biosampleAssetFilename = `${biosampleBits.rawBiosampleName}__${biosampleBits.dsNumber}.txt.gz`; 
-    const urlProxyURL = "https://meuleman-proxy.altius.org:9001/";
-    const dataURL = encodeURIComponent("https://resources.altius.org/~meuleman/DHS_Index_downloads/biosamples/" + biosampleAssetFilename);
-    fetch(urlProxyURL + dataURL, {
-      method: 'GET',
-      headers: {
-        'Content-Type': biosampleAssetContentType,
-      },
-    })
-    .then(response => response.blob())
-    .then(data => {
-      const saveBlobToFile = (function () {
-        const a = document.createElement("a");
-        document.body.appendChild(a);
-        a.style = "display:none";
-        return function (data, name) {
-          const blob = new Blob(data, { type: biosampleAssetContentType }); 
-          const url = window.URL.createObjectURL(blob);
-          const clickHandler = (ev) => {
-            setTimeout(() => {
-              window.URL.revokeObjectURL(url);
-              this.removeEventListener('click', clickHandler);
-              document.body.removeChild(a);
-            }, 0);
-            return false;
+    
+    function deleteBiosamplesSelect() {
+      const biosamplesListId = "biosamples_list";
+      const biosamplesListOld = document.querySelector(`#${biosamplesListId}`);
+      if (biosamplesListOld) {
+        biosamplesListOld.parentNode.removeChild(biosamplesListOld);
+        biosamples = []; // reset
+      }
+    }
+    
+    function parseRawBiosampleString(biosample) {
+      const bits = biosample.split("__");
+      const humanReadableName = `${bits[0]} (${bits[1]})`;
+      return {
+        "humanReadableName" : humanReadableName,
+        "rawBiosampleName" : bits[0],
+        "dsNumber" : bits[1],
+      };
+    }
+    
+    function initializeBiosamplesFromSystemSelect(system) {
+      const systemsParent = document.getElementById("systems_parent");
+      deleteBiosamplesSelect();
+      let biosamplesList = document.createElement("select");
+      biosamplesList.id = biosamplesListId;
+      systemsParent.appendChild(biosamplesList);
+      let biosampleOption = document.createElement("option");
+      biosampleOption.value = "Reset";
+      biosampleOption.text = "Select biosample of interest";
+      biosamplesList.appendChild(biosampleOption);
+      biosamples = [biosampleOption.value].concat(systemsDatasets[system])
+      for (let i = 1; i < biosamples.length; i++) {
+        //console.log(`biosamples[${i}] ${biosamples[i]}`);
+        const biosample = biosamples[i];
+        const biosampleBits = parseRawBiosampleString(biosample);
+        biosampleOption = document.createElement("option");
+        biosampleOption.value = biosample;
+        biosampleOption.text = biosampleBits.humanReadableName;
+        biosamplesList.appendChild(biosampleOption);
+      }
+      biosamplesList.options.selectedIndex = 0;
+      biosamplesList.onchange = function(e) { 
+        const selectedBiosample = biosamples[this.options.selectedIndex];
+        if (this.options.selectedIndex > 0) {
+          downloadBiosampleFile(selectedBiosample);
+        }
+        document.getElementById(biosamplesListId).blur();
+      }
+    }
+    
+    function downloadBiosampleFile(biosample) {
+      console.log(`Downloading ${biosample}...`);
+      const biosampleBits = parseRawBiosampleString(biosample);
+      //const biosampleAssetContentType = "text/plain"; // change MIME type to "application/x-gzip", if sending gzipped files
+      //const biosampleAssetFilename = `${biosampleBits.rawBiosampleName}.${biosampleBits.dsNumber}.txt`; // change file extension from .txt to .txt.gz, if sending gzipped files
+      const biosampleAssetContentType = "application/x-gzip"; 
+      const biosampleAssetFilename = `${biosampleBits.rawBiosampleName}__${biosampleBits.dsNumber}.txt.gz`; 
+      const urlProxyURL = "https://meuleman-proxy.altius.org:9001/";
+      const dataURL = encodeURIComponent("https://resources.altius.org/~meuleman/DHS_Index_downloads/biosamples/" + biosampleAssetFilename);
+      fetch(urlProxyURL + dataURL, {
+        method: 'GET',
+        headers: {
+          'Content-Type': biosampleAssetContentType,
+        },
+      })
+      .then(response => response.blob())
+      .then(data => {
+        const saveBlobToFile = (function () {
+          const a = document.createElement("a");
+          document.body.appendChild(a);
+          a.style = "display:none";
+          return function (data, name) {
+            const blob = new Blob(data, { type: biosampleAssetContentType }); 
+            const url = window.URL.createObjectURL(blob);
+            const clickHandler = (ev) => {
+              setTimeout(() => {
+                window.URL.revokeObjectURL(url);
+                this.removeEventListener('click', clickHandler);
+                document.body.removeChild(a);
+              }, 0);
+              return false;
+            };
+            a.addEventListener('click', clickHandler, false);
+            a.href = url;
+            a.download = name;
+            a.click();
           };
-          a.addEventListener('click', clickHandler, false);
-          a.href = url;
-          a.download = name;
-          a.click();
-        };
-      }());
-      saveBlobToFile([data], biosampleAssetFilename);
-    })
-    .catch((error) => {
-      console.error('Error:', error);
-    });
-  }
+        }());
+        saveBlobToFile([data], biosampleAssetFilename);
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+    }
 
 
-  // --------------------------------------------
-  // NMF components menu
-  const componentsParent = document.getElementById(componentsParentId);
-  let componentsList = document.createElement("select");
-  componentsList.id = componentsListId;
-  componentsParent.appendChild(componentsList);
-  let componentOption = document.createElement("option");
-  componentOption.value = "Reset";
-  componentOption.text = "Select component of interest";
-  componentsList.appendChild(componentOption);
-  components.push(componentOption.value);
-  const componentsKeys = Object.keys(componentsDatasets);
-  for (let i = 0; i < componentsKeys.length; i++) {
-    //console.log(`componentsKeys[${i}] ${componentsKeys[i]}`)
-    const component = componentsKeys[i];
-    componentOption = document.createElement("option");
-    componentOption.value = componentsDatasets[component].safe;
-    componentOption.text = componentsDatasets[component].humanReadable;
+    // --------------------------------------------
+    // NMF components menu
+    const componentsParent = document.getElementById(componentsParentId);
+    let componentsList = document.createElement("select");
+    componentsList.id = componentsListId;
+    componentsParent.appendChild(componentsList);
+    let componentOption = document.createElement("option");
+    componentOption.value = "Reset";
+    componentOption.text = "Select component of interest";
     componentsList.appendChild(componentOption);
-    components.push(component);
-  }
-  componentsList.options.selectedIndex = 0;
-  document.getElementById(componentsListId).onchange = function(e) { 
-    const selectedComponent = components[this.options.selectedIndex];
-    if (this.options.selectedIndex > 0) {
-      downloadComponentFile(selectedComponent);
+    components.push(componentOption.value);
+    const componentsKeys = Object.keys(componentsDatasets);
+    for (let i = 0; i < componentsKeys.length; i++) {
+      //console.log(`componentsKeys[${i}] ${componentsKeys[i]}`)
+      const component = componentsKeys[i];
+      componentOption = document.createElement("option");
+      componentOption.value = componentsDatasets[component].safe;
+      componentOption.text = componentsDatasets[component].humanReadable;
+      componentsList.appendChild(componentOption);
+      components.push(component);
     }
-    document.getElementById(componentsListId).blur();
-  }
-
-  function downloadComponentFile(component) {
-    console.log(`Downloading ${component}...`);
-    //const componentAssetContentType = "text/plain"; // change MIME type to "application/x-gzip", if sending gzipped files
-    //const componentAssetFilename = `${componentsDatasets[component].safe}.txt`; // change file extension from .txt to .txt.gz, if sending gzipped files
-    const componentAssetContentType = "application/x-gzip"; 
-    const componentAssetFilename = `${componentsDatasets[component].safe}.txt.gz`;
-    const urlProxyURL = "https://meuleman-proxy.altius.org:9001/";
-    const dataURL = encodeURIComponent("https://resources.altius.org/~meuleman/DHS_Index_downloads/components/" + componentAssetFilename);
-    fetch(urlProxyURL + dataURL, {
-      method: 'GET',
-      headers: {
-        'Content-Type': componentAssetContentType,
-      },
-    })
-    .then(response => response.blob())
-    .then(data => {
-      const saveBlobToFile = (function () {
-        const a = document.createElement("a");
-        document.body.appendChild(a);
-        a.style = "display:none";
-        return function (data, name) {
-          const blob = new Blob(data, { type: componentAssetContentType }); 
-          const url = window.URL.createObjectURL(blob);
-          const clickHandler = (ev) => {
-            setTimeout(() => {
-              window.URL.revokeObjectURL(url);
-              this.removeEventListener('click', clickHandler);
-              document.body.removeChild(a);
-            }, 0);
-            return false;
+    componentsList.options.selectedIndex = 0;
+    document.getElementById(componentsListId).onchange = function(e) { 
+      const selectedComponent = components[this.options.selectedIndex];
+      if (this.options.selectedIndex > 0) {
+        downloadComponentFile(selectedComponent);
+      }
+      document.getElementById(componentsListId).blur();
+    }
+    
+    function downloadComponentFile(component) {
+      console.log(`Downloading ${component}...`);
+      //const componentAssetContentType = "text/plain"; // change MIME type to "application/x-gzip", if sending gzipped files
+      //const componentAssetFilename = `${componentsDatasets[component].safe}.txt`; // change file extension from .txt to .txt.gz, if sending gzipped files
+      const componentAssetContentType = "application/x-gzip"; 
+      const componentAssetFilename = `${componentsDatasets[component].safe}.txt.gz`;
+      const urlProxyURL = "https://meuleman-proxy.altius.org:9001/";
+      const dataURL = encodeURIComponent("https://resources.altius.org/~meuleman/DHS_Index_downloads/components/" + componentAssetFilename);
+      fetch(urlProxyURL + dataURL, {
+        method: 'GET',
+        headers: {
+          'Content-Type': componentAssetContentType,
+        },
+      })
+      .then(response => response.blob())
+      .then(data => {
+        const saveBlobToFile = (function () {
+          const a = document.createElement("a");
+          document.body.appendChild(a);
+          a.style = "display:none";
+          return function (data, name) {
+            const blob = new Blob(data, { type: componentAssetContentType }); 
+            const url = window.URL.createObjectURL(blob);
+            const clickHandler = (ev) => {
+              setTimeout(() => {
+                window.URL.revokeObjectURL(url);
+                this.removeEventListener('click', clickHandler);
+                document.body.removeChild(a);
+              }, 0);
+              return false;
+            };
+            a.addEventListener('click', clickHandler, false);
+            a.href = url;
+            a.download = name;
+            a.click();
           };
-          a.addEventListener('click', clickHandler, false);
-          a.href = url;
-          a.download = name;
-          a.click();
-        };
-      }());
-      saveBlobToFile([data], componentAssetFilename);
-    })
-    .catch((error) => {
-      console.error('Error:', error);
-    });
-  }
-</script>
-</li>
-</ul>
+        }());
+        saveBlobToFile([data], componentAssetFilename);
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+    }
+  </script>
+
+-->
 
     </div>
 
@@ -1191,7 +1192,7 @@ Rows correspond to DHS Index elements, columns correspond to rows in biosample m
 
     <div class="media-body">
       <h5 class="card-title"><a href="https://www.meuleman.org/">Wouter Meuleman</a></h5>
-      <h6 class="card-subtitle"><font color="#000">Principal Investigator</font> <br> Altius Institute <br><br> <font color="#000">Affiliate Associate Professor</font> <br> University of Washington</h6>
+      <h6 class="card-subtitle"><font color="#000">Affiliate Associate Professor</font> <br> University of Washington</h6>
       <p class="card-text">My research interests include computational (epi)genomics, genome organization, and data visualization</p>
       <ul class="network-icon" aria-hidden="true">
   
