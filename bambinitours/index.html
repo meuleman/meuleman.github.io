@@ -1,53 +1,311 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bambinitours is back! 2006 -> 2026</title>
   <style>
-    html, body { margin:0; height:100%; overflow:hidden; background:#000; }
-    img {
-      position:absolute; inset:0;
-      width:100%; height:100%; object-fit:cover;
-      opacity:0; transition:opacity 0.5s ease-in-out;
+    :root {
+      --accent: #e7ff70;
+      --accent-dark: #c3db52;
+      --text: #f5f5f5;
+      --muted: #aaa;
     }
-    img.active { opacity:1; }
-    /* Start overlay */
-    #gate {
-      position:fixed; inset:0; display:flex; align-items:center; justify-content:center;
-      background:rgba(0,0,0,0.8); color:#fff; font:16px/1.4 system-ui, sans-serif;
-      gap:16px; flex-direction:column;
+
+    html, body {
+      margin: 0;
+      height: 100%;
+      background: #000;
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
-    #gate button {
-      font:16px/1 system-ui, sans-serif; padding:12px 18px; border:0; border-radius:999px;
-      background:#fff; color:#000; cursor:pointer;
+
+    /* 2006 background slideshow */
+    #bambini-2006 {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
     }
-    #gate.hidden { display:none; }
+
+    #bambini-2006 img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    #bambini-2006 img.active {
+      opacity: 1;
+    }
+
+    /* Foreground 2026 panel (initially hidden) */
+    #content {
+      position: fixed;
+      top: 48px;
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 20px 16px 24px;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.96));
+      border-radius: 16px;
+      box-shadow: 0 22px 60px rgba(0,0,0,0.9);
+      overflow-y: auto;
+      display: none;
+      z-index: 9;
+    }
+
+    #content.visible {
+      display: block;
+    }
+
+    .section {
+      margin-top: 24px;
+    }
+
+    /* OG intro card */
+    #intro-2006 {
+      padding: 18px 16px;
+      border-radius: 12px;
+      background: rgba(0, 0, 0, 0.85);
+      border: 1px solid rgba(255,255,255,0.15);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+    }
+
+    #intro-2006 h1 {
+      font-size: 1.5rem;
+      margin: 0 0 8px;
+    }
+
+    #intro-2006 p {
+      margin: 0 0 8px;
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+
+    /* Small button that appears after a delay (bottom center) */
+    #top-banner {
+      position: fixed;
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%) translateY(140%);
+      display: block;
+      z-index: 10;
+      opacity: 0;
+      transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    #top-banner.visible {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    #top-banner button {
+      border: 0;
+      border-radius: 999px;
+      padding: 8px 16px;
+      background: var(--accent);
+      color: #000;
+      font-size: 0.85rem;
+      cursor: pointer;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.8);
+    }
+
+    /* 2026 layout styles reused */
+    .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 8px;
+      margin-top: 20px;
+    }
+
+    .hero-title {
+      font-size: clamp(1.8rem, 4vw, 2.3rem);
+      margin: 4px 0 8px;
+    }
+
+    .hero-sub {
+      margin: 0 0 20px;
+      /* color: var(--muted); */
+      font-size: 1.2rem;
+    }
+
+    .section h2 {
+      font-size: 1.15rem;
+      margin: 0 0 8px;
+    }
+
+    .section p {
+      margin: 0 0 8px;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .section ul {
+      margin: 4px 0 0 1.1em;
+      padding: 0;
+      list-style: disc;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      color: var(--muted);
+      margin-right: 6px;
+      margin-bottom: 4px;
+    }
+
+    .pill-callout {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(231,255,112,0.08);
+      border: 1px solid rgba(231,255,112,0.4);
+      font-size: 0.85rem;
+      margin-bottom: 8px;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      margin: 18px 0;
+    }
+
+    @media (min-width: 600px) {
+      #content {
+        padding: 24px 24px 28px;
+      }
+    }
   </style>
 </head>
 <body>
-  <!-- Background audio -->
-  <audio id="bg" preload="auto" loop playsinline>
-    <source src="satan_city.mp3" type="audio/mpeg">
-    <!-- Add other formats if you have them:
-    <source src="audio.ogg" type="audio/ogg"> -->
-  </audio>
+  <!-- 2006 background -->
+  <div id="bambini-2006">
+    <audio id="bg" preload="auto" loop playsinline>
+      <source src="satan_city.mp3" type="audio/mpeg">
+    </audio>
 
-  <!-- Images -->
-  <img src="2.png" class="active" alt="">
-  <img src="4.png" alt="">
-  <img src="6.png" alt="">
-
-  <!-- Autoplay gate (shown only if autoplay is blocked) -->
-  <div id="gate">
-    <button id="start">Tap to start</button>
+    <img src="2.png" class="active" alt="">
+    <img src="4.png" alt="">
+    <img src="6.png" alt="">
   </div>
 
+  <!-- Small button to open 2026 info -->
+  <div id="top-banner">
+    <button type="button" id="scroll-2026">Bambinitours 2026!</button>
+  </div>
+
+  <!-- Foreground 2026 panel: OG intro text + practical info -->
+  <main id="content">
+    <button type="button" id="close-2026" aria-label="Sluit 2026-info"
+            style="position:sticky;top:0;float:right;border:0;background:none;color:var(--muted);cursor:pointer;font-size:1.1rem;padding:2px 0 6px;">
+      ✕
+    </button>
+
+    <h1 id="hero-2026" class="hero-title">20 jaar Bambinitours!</h1>
+    <p class="hero-sub">
+      Ooit begonnen in 2006 op Terschelling, nu onder (partieel) nieuw Management terug in 2026!
+    </p>
+
+    <section class="section" aria-labelledby="sec-waarheen">
+      <h2 id="sec-waarheen">Waar gaan we heen?</h2>
+      <p>
+        We verblijven in groepsverblijf <strong>Pinksterbloem</strong> op het terrein van
+        <strong>Paasheuvelgroep Vierhouten</strong>, direct aan de Elspeetsche heide.
+      </p>
+      <ul>
+        <li>Midden in een bosrijk gebied met heide, speelveld en speelplas met strandje.</li>
+        <li>Eigen eet- en activiteitenruimte, recreatieruimte en binnenplaats met picknicktafels.</li>
+        <li>In de buurt van o.a. Klimbos Ermelo, Paleis het Loo en andere guitige uitjes.</li>
+      </ul>
+    </section>
+
+    <section class="section" aria-labelledby="sec-programma">
+      <h2 id="sec-programma">Wanneer & globaal programma</h2>
+      <p>
+        20 t/m 22 maart 2026
+      </p>
+      <ul>
+        <li><strong>Dag 1</strong>: aankomst (18:00), diner (18:30), borrelen.</li>
+        <li><strong>Dag 2</strong>: ontbijt, lunch, pre-borrel, Entertainment Programma, Luxe BBQ.</li>
+        <li><strong>Dag 3</strong>: ontbijt, lunch, opruimen en vertrek (voor 17:00).</li>
+      </ul>
+    </section>
+
+    <section class="section" aria-labelledby="sec-alleskunner">
+      <h2 id="sec-alleskunner">Het Bambini Entertainment Programma</h2>
+      <p>
+        Dit jaar spelen we een eigen versie van een voor sommigen wellicht bekend spel.
+        Denk aan veel kleine challenges, rare opdrachten en het risico dat je opeens iets wint
+        wat je nooit gewild hebt – of juist precies wel.
+        <br><br>
+        Hiervoor hebben we wel iedereens medewerking nodig!
+      </p>
+      <p class="pill-callout">
+        Neem per persoon één klein, ingepakt cadeautje mee!
+      </p>
+      <p><strong>Cadeautje‑regels:</strong></p>
+      <ul>
+        <li>Iets dat je al in huis hebt (geen nieuwe aankopen nodig).</li>
+        <li>Iets dat je eigenlijk niet weg wilt gooien, maar ook nooit gebruikt:
+            nutteloos‑handig of gewoon grappig.</li>
+        <li>Niet veel groter dan ongeveer een mok of een bal.</li>
+        <li>Ingepakt, zodat niemand ziet wat het is (creatief inpakken mag).</li>
+      </ul>
+    </section>
+
+    <section class="section" aria-labelledby="sec-meenemen">
+      <h2 id="sec-meenemen">Wat neem je mee?</h2>
+      <p>Er zijn maar liefst 42 bedden, maar ieder bed is uitgerust met alleen een matras en een kussen. Dus zelf even aanvullen:</p>
+      <ul>
+        <li>Slaapzak of dekbed.</li>
+        <li>Onder/Hoeslaken en kussensloop.</li>
+        <li>(Bad)handdoek(en).</li>
+        <li>Je cadeautje (ingepakt!).</li>
+        <li>theedoeken / handdoeken (niet iedereen!)</li>
+      </ul>
+    </section>
+
+    <section class="section" aria-labelledby="sec-route">
+      <h2 id="sec-route">Hoe kom je er?</h2>
+      <p>
+        Adres: <strong>'t Frusselt 32, 8076 RE Vierhouten</strong> (Paasheuvelgroep Vierhouten).
+      </p>
+    </section>
+
+    <section class="section" aria-labelledby="sec-contact">
+      <h2 id="sec-contact">Contact</h2>
+      <p>
+        Vragen? Neem contact op met het Bambinitours Management!
+      </p>
+    </section>
+  </main>
+
   <script>
-    const imgs = Array.from(document.querySelectorAll('img'));
+    const imgs = Array.from(document.querySelectorAll('#bambini-2006 img'));
     const audio = document.getElementById('bg');
-    const gate = document.getElementById('gate');
-    const startBtn = document.getElementById('start');
+    const banner = document.getElementById('top-banner');
+    const scroll2026Btn = document.getElementById('scroll-2026');
+    const hero2026 = document.getElementById('hero-2026');
+    const contentPanel = document.getElementById('content');
+    const close2026Btn = document.getElementById('close-2026');
 
     // Slideshow
     let idx = 0;
@@ -57,36 +315,59 @@
       imgs[idx].classList.add('active');
     }, 1000);
 
-    // Try autoplay; if blocked, show the gate
-    (async () => {
-      try {
-        // Some browsers require load() before play() when created paused
-        audio.load();
-        await audio.play();                 // may reject due to autoplay policy
-        gate.classList.add('hidden');       // success: hide gate
-      } catch (e) {
-        // Autoplay blocked: wait for user gesture
-        gate.classList.remove('hidden');
-      }
-    })();
+    let bannerTimerId = null;
 
-    // User gesture kicks off audio
-    startBtn.addEventListener('click', async () => {
-      try {
-        await audio.play();
-        gate.classList.add('hidden');
-      } catch (e) {
-        alert('Could not start audio: ' + e);
-      }
-    });
+    function scheduleBanner() {
+      if (!banner || bannerTimerId !== null) return;
+      bannerTimerId = setTimeout(() => {
+        banner.classList.add('visible');
+      }, 2000);
+    }
 
-    // If tab becomes active again and audio got paused, try to resume
-    document.addEventListener('visibilitychange', () => {
-      if (!document.hidden && gate.classList.contains('hidden')) {
-        audio.play().catch(() => {}); // ignore if blocked
-      }
-    });
+    // Try autoplay; if it works, schedule banner
+    if (audio) {
+      audio.play().then(() => {
+        scheduleBanner();
+      }).catch(() => {
+        // ignore; user gesture will start it and then schedule banner
+      });
+    }
+
+    // Music: start from beginning on first explicit user interaction
+    let audioStarted = false;
+    function startAudio() {
+      if (audioStarted || !audio) return;
+      audioStarted = true;
+      audio.currentTime = 0;
+      audio.play().catch(() => {
+        audioStarted = false;
+      });
+      scheduleBanner();
+    }
+
+    document.addEventListener('click', startAudio, { once: true });
+    document.addEventListener('keydown', startAudio, { once: true });
+
+    // Open 2026 panel when banner button is clicked
+    if (scroll2026Btn && contentPanel) {
+      scroll2026Btn.addEventListener('click', () => {
+        contentPanel.classList.add('visible');
+        banner.classList.remove('visible');
+        if (hero2026) {
+          hero2026.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    }
+
+    // Close 2026 panel
+    if (close2026Btn && contentPanel) {
+      close2026Btn.addEventListener('click', () => {
+        contentPanel.classList.remove('visible');
+        if (banner) {
+          banner.classList.add('visible');
+        }
+      });
+    }
   </script>
 </body>
 </html>
-
