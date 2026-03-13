@@ -130,20 +130,36 @@
       margin-top: 20px;
     }
 
+    /* Subtle top divider for panel */
+    #content::before {
+      content: "";
+      position: fixed;
+      top: 48px;
+      left: 10px;
+      right: 10px;
+      max-width: 820px;
+      margin: 0 auto;
+      height: 1px;
+      background: linear-gradient(to right, transparent, rgba(255,255,255,0.25), transparent);
+      pointer-events: none;
+    }
+
     .hero-title {
-      font-size: clamp(1.8rem, 4vw, 2.3rem);
-      margin: 4px 0 8px;
+      font-size: clamp(2.1rem, 4.4vw, 2.6rem);
+      margin: 0 0 6px;
+      color: #ffb347; /* LP-style warm orange */
     }
 
     .hero-sub {
-      margin: 0 0 20px;
-      /* color: var(--muted); */
-      font-size: 1.2rem;
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 0.95rem;
     }
 
     .section h2 {
-      font-size: 1.15rem;
-      margin: 0 0 8px;
+      font-size: 1.2rem;
+      margin: 0 0 6px;
+      color: var(--accent); /* Bambinitours 2026 button green */
     }
 
     .section p {
@@ -188,6 +204,14 @@
       margin: 18px 0;
     }
 
+    /* Two-column list on wider screens for main packing list */
+    @media (min-width: 700px) {
+      #sec-meenemen + ul {
+        columns: 2;
+        column-gap: 32px;
+      }
+    }
+
     @media (min-width: 600px) {
       #content {
         padding: 24px 24px 28px;
@@ -219,9 +243,10 @@
       ✕
     </button>
 
-    <h1 id="hero-2026" class="hero-title">20 jaar Bambinitours!</h1>
+    <h1 id="hero-2026" class="hero-title">20 jaar Bambinitours</h1>
     <p class="hero-sub">
-      Ooit begonnen in 2006 op Terschelling, nu onder (partieel) nieuw Management terug in 2026!
+      <span style="opacity:.65;font-size:x-large;">Terschelling 2006 → Vierhouten 2026</span><br>
+      Ooit begonnen op een eiland, nu terug met een heus all‑inclusive bosweekend.
     </p>
 
     <section class="section" aria-labelledby="sec-waarheen">
@@ -230,6 +255,9 @@
         We verblijven in groepsverblijf <strong>Pinksterbloem</strong> op het terrein van
         <strong>Paasheuvelgroep Vierhouten</strong>, direct aan de Elspeetsche heide.
       </p>
+      <p>
+        Adres: <strong>'t Frusselt 32, 8076 RE Vierhouten</strong>
+      </p>
       <ul>
         <li>Midden in een bosrijk gebied met heide, speelveld en speelplas met strandje.</li>
         <li>Eigen eet- en activiteitenruimte, recreatieruimte en binnenplaats met picknicktafels.</li>
@@ -237,31 +265,44 @@
       </ul>
     </section>
 
-    <section class="section" aria-labelledby="sec-programma">
-      <h2 id="sec-programma">Wanneer & globaal programma</h2>
+    <section class="section" aria-labelledby="sec-wanneer">
+      <h2 id="sec-wanneer">Wanneer?</h2>
       <p>
-        20 t/m 22 maart 2026
+        Van <strong>vrijdag 20 maart t/m zondag 22 maart 2026</strong>.
       </p>
       <ul>
-        <li><strong>Dag 1</strong>: aankomst (18:00), diner (18:30), borrelen.</li>
-        <li><strong>Dag 2</strong>: ontbijt, lunch, pre-borrel, Entertainment Programma, Luxe BBQ.</li>
+        <li><strong>Dag 1</strong>: aankomst (18:00), ontvangst met diner (18:30), borrelen.</li>
+        <li><strong>Dag 2</strong>: ontbijt, lunch, pre-borrel, <strong>Entertainment Programma</strong>, <strong>Luxe BBQ</strong>.</li>
         <li><strong>Dag 3</strong>: ontbijt, lunch, opruimen en vertrek (voor 17:00).</li>
       </ul>
+    </section>
+
+    <section class="section" aria-labelledby="sec-eten">
+      <h2 id="sec-eten">Wat eten we?</h2>
+      <p>
+        Dit jaar zijn kosten <s>noch moeite</s> gespaard voor een <strong>all‑inclusive eet‑arrangement</strong>.
+      </p>
+      <ul>
+        <li><strong>WEL</strong>: ontbijt, lunch & diner (incl. luxe BBQ op zaterdag).</li>
+        <li><strong>NIET</strong>: drinken, drankjes, dranque, versnaperingen en snacks.</li>
+      </ul>
+      <p class="pill-callout">
+        Neem zelf drinken en snacks naar wens mee!
+      </p>
     </section>
 
     <section class="section" aria-labelledby="sec-alleskunner">
       <h2 id="sec-alleskunner">Het Bambini Entertainment Programma</h2>
       <p>
-        Dit jaar spelen we een eigen versie van een voor sommigen wellicht bekend spel.
-        Denk aan veel kleine challenges, rare opdrachten en het risico dat je opeens iets wint
-        wat je nooit gewild hebt – of juist precies wel.
-        <br><br>
-        Hiervoor hebben we wel iedereens medewerking nodig!
+        Dit jaar spelen we een eigen versie van een voor sommigen bekend tv‑spel, hopelijk leuk voor jong en oud.
+        Verwacht korte rondes, discutabele opdrachten en de kans om iets te winnen wat je nooit gewild hebt – of juist precies wel.
+        <br>
+        Hiervoor hebben we wel iedereens medewerking nodig:
       </p>
       <p class="pill-callout">
         Neem per persoon één klein, ingepakt cadeautje mee!
       </p>
-      <p><strong>Cadeautje‑regels:</strong></p>
+      <p><strong>Cadeau‑suggesties:</strong></p>
       <ul>
         <li>Iets dat je al in huis hebt (geen nieuwe aankopen nodig).</li>
         <li>Iets dat je eigenlijk niet weg wilt gooien, maar ook nooit gebruikt:
@@ -273,27 +314,33 @@
 
     <section class="section" aria-labelledby="sec-meenemen">
       <h2 id="sec-meenemen">Wat neem je mee?</h2>
-      <p>Er zijn maar liefst 42 bedden, maar ieder bed is uitgerust met alleen een matras en een kussen. Dus zelf even aanvullen:</p>
+      <p>
+        Er zijn 42 bedden met matras en kussen. Zelf nog even meenemen:
+      </p>
       <ul>
         <li>Slaapzak of dekbed.</li>
-        <li>Onder/Hoeslaken en kussensloop.</li>
+        <li>Onder-/hoeslaken en kussensloop.</li>
         <li>(Bad)handdoek(en).</li>
-        <li>Je cadeautje (ingepakt!).</li>
-        <li>theedoeken / handdoeken (niet iedereen!)</li>
+        <li>Je ingepakte cadeautje.</li>
+        <li>Wat je wilt drinken/snacken en/of delen met je Vriendjes.</li>
       </ul>
     </section>
 
-    <section class="section" aria-labelledby="sec-route">
-      <h2 id="sec-route">Hoe kom je er?</h2>
-      <p>
-        Adres: <strong>'t Frusselt 32, 8076 RE Vierhouten</strong> (Paasheuvelgroep Vierhouten).
-      </p>
+    <section class="section" aria-labelledby="sec-helpen">
+      <h2 id="sec-helpen">Wil je helpen?</h2>
+      <p>Graag! We zoeken nog mensen die:</p>
+      <ul>
+        <li>Keukenhanddoeken/theedoeken mee willen nemen.</li>
+        <li>Een USB/Bluetooth speaker (met evt. microfoon) hebben.</li>
+        <li>Zin hebben om mee te helpen BBQ’en op zaterdag.</li>
+      </ul>
     </section>
 
     <section class="section" aria-labelledby="sec-contact">
       <h2 id="sec-contact">Contact</h2>
       <p>
-        Vragen? Neem contact op met het Bambinitours Management!
+        Vragen en/of ideeën?
+        Neem contact op met het Bambinitours 2026 Management via de gebruikelijke kanalen!
       </p>
     </section>
   </main>
