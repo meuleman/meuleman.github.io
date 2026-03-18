@@ -1,4 +1,4 @@
 # Netlify redirects
 # Automatically generated
 # Documentation: https://docs.netlify.com/routing/redirects/
-/project/dhsindex/ /research/dhsindex/
+/project/dhsindex /research/dhsindex/

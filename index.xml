@@ -7,7 +7,7 @@
     <description>meuleman.org</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://www.meuleman.org/media/icon_hu71480909d25967012c4d0d13b5f985b7_57200_512x512_fill_lanczos_center_3.png</url>
+      <url>https://www.meuleman.org/media/icon_hu_6a20d2e301934905.png</url>
       <title>meuleman.org</title>
       <link>https://www.meuleman.org/</link>
     </image>
@@ -60,10 +60,10 @@ each corresponding to a different cellular context (e.g. &amp;lsquo;cardiac&amp;
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;DHS component legend&#34; srcset=&#34;
-               /media/DHS_Vocabulary_components_WM20221007_hu3e206490677f480f3a01757800bdbab1_217268_0e4cf73c0684874f1160fb67402e6573.webp 400w,
-               /media/DHS_Vocabulary_components_WM20221007_hu3e206490677f480f3a01757800bdbab1_217268_8de9a1cf4420a68514bc9b174bedab48.webp 760w,
-               /media/DHS_Vocabulary_components_WM20221007_hu3e206490677f480f3a01757800bdbab1_217268_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;https://www.meuleman.org/media/DHS_Vocabulary_components_WM20221007_hu3e206490677f480f3a01757800bdbab1_217268_0e4cf73c0684874f1160fb67402e6573.webp&#34;
+               /media/DHS_Vocabulary_components_WM20221007_hu_3eb5fdf575a0d6be.webp 400w,
+               /media/DHS_Vocabulary_components_WM20221007_hu_a9f38f4fd8207984.webp 760w,
+               /media/DHS_Vocabulary_components_WM20221007_hu_50e4854fe07fb31e.webp 1200w&#34;
+               src=&#34;https://www.meuleman.org/media/DHS_Vocabulary_components_WM20221007_hu_3eb5fdf575a0d6be.webp&#34;
                width=&#34;760&#34;
                height=&#34;651&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -83,65 +83,65 @@ based on their accessibility confidence level and relative specificity for indiv
 &lt;p&gt;Each of these contains the genomic locations (human genome assembly hg38, first 3 columns) of accessible genome elements,
 their majority NMF component (column: &lt;code&gt;component&lt;/code&gt;, see legend figure above) as well as their 200bp nucleotide sequence (column: &lt;code&gt;raw_sequence&lt;/code&gt;).&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Column&lt;/th&gt;
-&lt;th&gt;Example&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;seqname&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;chr16&lt;/td&gt;
-&lt;td&gt;Chromosome&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;start&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;68843660&lt;/td&gt;
-&lt;td&gt;Start position&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;end&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;68843880&lt;/td&gt;
-&lt;td&gt;End position&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;DHS_width&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;220&lt;/td&gt;
-&lt;td&gt;Width of original DHS&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;summit&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;68843790&lt;/td&gt;
-&lt;td&gt;Position of center of mass of DHS&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;total_signal&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;122.770678&lt;/td&gt;
-&lt;td&gt;Sum of DNase-seq signal across biosamples&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;numsamples&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;61&lt;/td&gt;
-&lt;td&gt;Number of biosamples with the DHS&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;raw_sequence&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;GAGGCATTG&amp;hellip;&lt;/td&gt;
-&lt;td&gt;200bp extracted nucleotide sequence&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;component&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;Dominant DHS Vocabulary component&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;proportion&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;0.767371514&lt;/td&gt;
-&lt;td&gt;Proportion of NMF loadings in this component&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Column&lt;/th&gt;
+          &lt;th&gt;Example&lt;/th&gt;
+          &lt;th&gt;Description&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;seqname&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;chr16&lt;/td&gt;
+          &lt;td&gt;Chromosome&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;start&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;68843660&lt;/td&gt;
+          &lt;td&gt;Start position&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;end&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;68843880&lt;/td&gt;
+          &lt;td&gt;End position&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;DHS_width&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;220&lt;/td&gt;
+          &lt;td&gt;Width of original DHS&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;summit&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;68843790&lt;/td&gt;
+          &lt;td&gt;Position of center of mass of DHS&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;total_signal&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;122.770678&lt;/td&gt;
+          &lt;td&gt;Sum of DNase-seq signal across biosamples&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;numsamples&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;61&lt;/td&gt;
+          &lt;td&gt;Number of biosamples with the DHS&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;raw_sequence&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;GAGGCATTG&amp;hellip;&lt;/td&gt;
+          &lt;td&gt;200bp extracted nucleotide sequence&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;component&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;Dominant DHS Vocabulary component&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;proportion&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;0.767371514&lt;/td&gt;
+          &lt;td&gt;Proportion of NMF loadings in this component&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;Please refer to the DHS Index &lt;a href=&#34;https://www.meuleman.org/research/dhsindex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;project page&lt;/a&gt; for more information and details on the full dataset.&lt;/p&gt;
 </description>
@@ -180,65 +180,65 @@ and provide a new global perspective on the architecture of human gene regulatio
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;DHS Index and Vocabulary&lt;/strong&gt; of ~3.6M DHSs (&lt;a href=&#34;https://www.meuleman.org/DHS_Index_and_Vocabulary_hg38_WM20190703.txt.gz&#34;&gt;tsv&lt;/a&gt;, hg38)&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Column&lt;/th&gt;
-&lt;th&gt;Example&lt;/th&gt;
-&lt;th&gt;Description&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;seqname&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;chr1&lt;/td&gt;
-&lt;td&gt;Chromosome&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;start&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;1782520&lt;/td&gt;
-&lt;td&gt;Start position&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;end&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;1782770&lt;/td&gt;
-&lt;td&gt;End position&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;identifier&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;1.10643&lt;/td&gt;
-&lt;td&gt;Unique identifier (chr#.position%)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;mean_signal&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;1.030869481&lt;/td&gt;
-&lt;td&gt;Mean DNase-seq signal per biosample (&amp;ldquo;confidence score&amp;rdquo;)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;numsamples&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;54&lt;/td&gt;
-&lt;td&gt;Number of biosamples with a DHS&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;summit&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;1782650&lt;/td&gt;
-&lt;td&gt;Estimated DHS summit position&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;core_start&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;1782590&lt;/td&gt;
-&lt;td&gt;Start position of core-region&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;core_end&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;1782710&lt;/td&gt;
-&lt;td&gt;End position of core-region&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;component&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Digestive&lt;/td&gt;
-&lt;td&gt;Main DHS Vocabulary component&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Column&lt;/th&gt;
+          &lt;th&gt;Example&lt;/th&gt;
+          &lt;th&gt;Description&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;seqname&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;chr1&lt;/td&gt;
+          &lt;td&gt;Chromosome&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;start&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;1782520&lt;/td&gt;
+          &lt;td&gt;Start position&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;end&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;1782770&lt;/td&gt;
+          &lt;td&gt;End position&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;identifier&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;1.10643&lt;/td&gt;
+          &lt;td&gt;Unique identifier (chr#.position%)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;mean_signal&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;1.030869481&lt;/td&gt;
+          &lt;td&gt;Mean DNase-seq signal per biosample (&amp;ldquo;confidence score&amp;rdquo;)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;numsamples&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;54&lt;/td&gt;
+          &lt;td&gt;Number of biosamples with a DHS&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;summit&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;1782650&lt;/td&gt;
+          &lt;td&gt;Estimated DHS summit position&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;core_start&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;1782590&lt;/td&gt;
+          &lt;td&gt;Start position of core-region&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;core_end&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;1782710&lt;/td&gt;
+          &lt;td&gt;End position of core-region&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;component&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Digestive&lt;/td&gt;
+          &lt;td&gt;Main DHS Vocabulary component&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -658,7 +658,7 @@ better understand the movements of this virus for specific regions, countries an
   
   &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-dashboards_examples&#34; href=&#34;https://www.meuleman.org/media/albums/dashboards_examples/dashboard_earlyAlert.png&#34; data-caption=&#34;&amp;lt;a href=&amp;#34;https://www.arcgis.com/apps/opsdashboard/index.html#/20bfbf89c8e74c0494c90b1ae0fa7b78&amp;#34; target=&amp;#34;_blank&amp;#34; rel=&amp;#34;noopener&amp;#34;&amp;gt;Private company dashboard&amp;lt;/a&amp;gt;&#34;&gt;
-      &lt;img src=&#34;https://www.meuleman.org/media/albums/dashboards_examples/dashboard_earlyAlert_huba09fe3cfb659479bb3c4bec07290ae8_813456_750x750_fit_q75_h2_lanczos_3.webp&#34; loading=&#34;lazy&#34; alt=&#34;[Private company dashboard](https://www.arcgis.com/apps/opsdashboard/index.html#/20bfbf89c8e74c0494c90b1ae0fa7b78)&#34; width=&#34;750&#34; height=&#34;571&#34;&gt;
+      &lt;img src=&#34;https://www.meuleman.org/media/albums/dashboards_examples/dashboard_earlyAlert_hu_19508eac6a1ba0f1.webp&#34; loading=&#34;lazy&#34; alt=&#34;[Private company dashboard](https://www.arcgis.com/apps/opsdashboard/index.html#/20bfbf89c8e74c0494c90b1ae0fa7b78)&#34; width=&#34;750&#34; height=&#34;571&#34;&gt;
     &lt;/a&gt;
   &lt;/div&gt;
   
@@ -675,7 +675,7 @@ better understand the movements of this virus for specific regions, countries an
   
   &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-dashboards_examples&#34; href=&#34;https://www.meuleman.org/media/albums/dashboards_examples/dashboard_HongKong.png&#34; data-caption=&#34;&amp;lt;a href=&amp;#34;https://chp-dashboard.geodata.gov.hk/covid-19/en.html&amp;#34; target=&amp;#34;_blank&amp;#34; rel=&amp;#34;noopener&amp;#34;&amp;gt;Hong Kong dashboard&amp;lt;/a&amp;gt;&#34;&gt;
-      &lt;img src=&#34;https://www.meuleman.org/media/albums/dashboards_examples/dashboard_HongKong_hu57d92d840ecda856fae5ab377e42bd00_1264592_750x750_fit_q75_h2_lanczos_3.webp&#34; loading=&#34;lazy&#34; alt=&#34;[Hong Kong dashboard](https://chp-dashboard.geodata.gov.hk/covid-19/en.html)&#34; width=&#34;750&#34; height=&#34;571&#34;&gt;
+      &lt;img src=&#34;https://www.meuleman.org/media/albums/dashboards_examples/dashboard_HongKong_hu_585329af55ecee0.webp&#34; loading=&#34;lazy&#34; alt=&#34;[Hong Kong dashboard](https://chp-dashboard.geodata.gov.hk/covid-19/en.html)&#34; width=&#34;750&#34; height=&#34;571&#34;&gt;
     &lt;/a&gt;
   &lt;/div&gt;
   
@@ -692,7 +692,7 @@ better understand the movements of this virus for specific regions, countries an
   
   &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-dashboards_examples&#34; href=&#34;https://www.meuleman.org/media/albums/dashboards_examples/dashboard_Italy.png&#34; data-caption=&#34;&amp;lt;a href=&amp;#34;https://www.arcgis.com/apps/opsdashboard/index.html#/4f74fc222b7041cd9cc3c52e62af1b8c&amp;#34; target=&amp;#34;_blank&amp;#34; rel=&amp;#34;noopener&amp;#34;&amp;gt;Italy dashboard&amp;lt;/a&amp;gt;&#34;&gt;
-      &lt;img src=&#34;https://www.meuleman.org/media/albums/dashboards_examples/dashboard_Italy_huc741e18856ea0914f77b55ce0aa80a46_2173758_750x750_fit_q75_h2_lanczos_3.webp&#34; loading=&#34;lazy&#34; alt=&#34;[Italy dashboard](https://www.arcgis.com/apps/opsdashboard/index.html#/4f74fc222b7041cd9cc3c52e62af1b8c)&#34; width=&#34;750&#34; height=&#34;571&#34;&gt;
+      &lt;img src=&#34;https://www.meuleman.org/media/albums/dashboards_examples/dashboard_Italy_hu_23ad76700058999a.webp&#34; loading=&#34;lazy&#34; alt=&#34;[Italy dashboard](https://www.arcgis.com/apps/opsdashboard/index.html#/4f74fc222b7041cd9cc3c52e62af1b8c)&#34; width=&#34;750&#34; height=&#34;571&#34;&gt;
     &lt;/a&gt;
   &lt;/div&gt;
   
@@ -709,7 +709,7 @@ better understand the movements of this virus for specific regions, countries an
   
   &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-dashboards_examples&#34; href=&#34;https://www.meuleman.org/media/albums/dashboards_examples/dashboard_Japan.png&#34; data-caption=&#34;&amp;lt;a href=&amp;#34;https://www.arcgis.com/apps/opsdashboard/index.html#/641eba7fef234a47880e1e1dc4de85ce&amp;#34; target=&amp;#34;_blank&amp;#34; rel=&amp;#34;noopener&amp;#34;&amp;gt;Japan dashboard&amp;lt;/a&amp;gt;&#34;&gt;
-      &lt;img src=&#34;https://www.meuleman.org/media/albums/dashboards_examples/dashboard_Japan_hue1c7dbdbbab13030e7c8c5a87279c750_559345_750x750_fit_q75_h2_lanczos_3.webp&#34; loading=&#34;lazy&#34; alt=&#34;[Japan dashboard](https://www.arcgis.com/apps/opsdashboard/index.html#/641eba7fef234a47880e1e1dc4de85ce)&#34; width=&#34;750&#34; height=&#34;571&#34;&gt;
+      &lt;img src=&#34;https://www.meuleman.org/media/albums/dashboards_examples/dashboard_Japan_hu_185e17421fb160a2.webp&#34; loading=&#34;lazy&#34; alt=&#34;[Japan dashboard](https://www.arcgis.com/apps/opsdashboard/index.html#/641eba7fef234a47880e1e1dc4de85ce)&#34; width=&#34;750&#34; height=&#34;571&#34;&gt;
     &lt;/a&gt;
   &lt;/div&gt;
   
@@ -740,10 +740,10 @@ provided by Johns Hopkins University (JHU), displaying counts of confirmed cases
 &lt;figure  id=&#34;figure-map-view-of-the-covid-19-dashboard-provided-by-the-johns-hopkins-university&#34;&gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Map view of the COVID-19 dashboard provided by the Johns Hopkins University&#34; srcset=&#34;
-               /projects/chasingcorona/dashboards_special/dashboard_JHU_hu409f3dfb3d8d2814a8586e773c997439_231021_ad2f6e92d1d6ac68bbf30fc0f071bab5.webp 400w,
-               /projects/chasingcorona/dashboards_special/dashboard_JHU_hu409f3dfb3d8d2814a8586e773c997439_231021_d45fc9e7698f48f9db754a067eeacd01.webp 760w,
-               /projects/chasingcorona/dashboards_special/dashboard_JHU_hu409f3dfb3d8d2814a8586e773c997439_231021_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;https://www.meuleman.org/projects/chasingcorona/dashboards_special/dashboard_JHU_hu409f3dfb3d8d2814a8586e773c997439_231021_ad2f6e92d1d6ac68bbf30fc0f071bab5.webp&#34;
+               /projects/chasingcorona/dashboards_special/dashboard_JHU_hu_9d86f80bdf0e12d1.webp 400w,
+               /projects/chasingcorona/dashboards_special/dashboard_JHU_hu_8cf20011fd08925a.webp 760w,
+               /projects/chasingcorona/dashboards_special/dashboard_JHU_hu_a8a49d29f1eed821.webp 1200w&#34;
+               src=&#34;https://www.meuleman.org/projects/chasingcorona/dashboards_special/dashboard_JHU_hu_9d86f80bdf0e12d1.webp&#34;
                width=&#34;760&#34;
                height=&#34;512&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -808,10 +808,10 @@ Calculate derivatives over time and report sharp increases/deviations.
 &lt;figure  id=&#34;figure-singapore-covid-19-dashboard&#34;&gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Singapore COVID-19 dashboard&#34; srcset=&#34;
-               /projects/chasingcorona/dashboards_special/dashboard_Singapore_graph_hu2cc384526feabd3f6356098153c8797a_190352_ba7133dda125edb854bd348ea60da85e.webp 400w,
-               /projects/chasingcorona/dashboards_special/dashboard_Singapore_graph_hu2cc384526feabd3f6356098153c8797a_190352_04af47744737e7394e639430dc1ea4cc.webp 760w,
-               /projects/chasingcorona/dashboards_special/dashboard_Singapore_graph_hu2cc384526feabd3f6356098153c8797a_190352_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;https://www.meuleman.org/projects/chasingcorona/dashboards_special/dashboard_Singapore_graph_hu2cc384526feabd3f6356098153c8797a_190352_ba7133dda125edb854bd348ea60da85e.webp&#34;
+               /projects/chasingcorona/dashboards_special/dashboard_Singapore_graph_hu_80f06fea5e0f93b9.webp 400w,
+               /projects/chasingcorona/dashboards_special/dashboard_Singapore_graph_hu_606af605f26c1262.webp 760w,
+               /projects/chasingcorona/dashboards_special/dashboard_Singapore_graph_hu_4d61141ede384a37.webp 1200w&#34;
+               src=&#34;https://www.meuleman.org/projects/chasingcorona/dashboards_special/dashboard_Singapore_graph_hu_80f06fea5e0f93b9.webp&#34;
                width=&#34;626&#34;
                height=&#34;624&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -1099,9 +1099,9 @@ $$&lt;/p&gt;
 
 &lt;h2 id=&#34;custom-slide&#34;&gt;Custom Slide&lt;/h2&gt;
 &lt;p&gt;Customize the slide style and background&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;slide&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;background-image&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;/media/boards.jpg&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}}
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;slide&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;background-color&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;#0000FF&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}}
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;slide&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;my-style&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}}
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&amp;lt; slide background-image=&amp;#34;/media/boards.jpg&amp;#34; &amp;gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&amp;lt; slide background-color=&amp;#34;&lt;span class=&#34;ni&#34;&gt;#0000FF&lt;/span&gt;&amp;#34; &amp;gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&amp;lt; slide class=&amp;#34;my-style&amp;#34; &amp;gt;}}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;h2 id=&#34;custom-css-example&#34;&gt;Custom CSS Example&lt;/h2&gt;
 &lt;p&gt;Let&amp;rsquo;s make headers navy colored.&lt;/p&gt;
@@ -1318,7 +1318,7 @@ based on thousands of genomic datasets of various data modalities, namely:&lt;/p
   
   &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr01.png&#34; &gt;
-      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr01_hu0c9d05c71e532e0fc69bbb821ec7052b_3308501_750x750_fit_q75_h2_lanczos_3.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr01.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
+      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr01_hu_4fe6979e230c6c7a.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr01.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
     &lt;/a&gt;
   &lt;/div&gt;
   
@@ -1331,7 +1331,7 @@ based on thousands of genomic datasets of various data modalities, namely:&lt;/p
   
   &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr02.png&#34; &gt;
-      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr02_hubc26a12c3357ce46cba2ca674c33089c_3831824_750x750_fit_q75_h2_lanczos_3.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr02.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
+      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr02_hu_a2bedb15d50c8947.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr02.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
     &lt;/a&gt;
   &lt;/div&gt;
   
@@ -1344,7 +1344,7 @@ based on thousands of genomic datasets of various data modalities, namely:&lt;/p
   
   &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr03.png&#34; &gt;
-      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr03_hub07e8ebe07f20b2d922ee706a9a8f7a9_5437492_750x750_fit_q75_h2_lanczos_3.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr03.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
+      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr03_hu_5cafa1fa178397f9.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr03.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
     &lt;/a&gt;
   &lt;/div&gt;
   
@@ -1357,7 +1357,7 @@ based on thousands of genomic datasets of various data modalities, namely:&lt;/p
   
   &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr04.png&#34; &gt;
-      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr04_hu74be0cda4763e93344a48cb6ae5ed3b2_5366525_750x750_fit_q75_h2_lanczos_3.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr04.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
+      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr04_hu_8b767d20c03e66d5.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr04.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
     &lt;/a&gt;
   &lt;/div&gt;
   
@@ -1370,7 +1370,7 @@ based on thousands of genomic datasets of various data modalities, namely:&lt;/p
   
   &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr05.png&#34; &gt;
-      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr05_hu1fbaf8dd9047a6015b13baed2c5739a3_4225643_750x750_fit_q75_h2_lanczos_3.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr05.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
+      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr05_hu_2cdf202c0f98110d.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr05.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
     &lt;/a&gt;
   &lt;/div&gt;
   
@@ -1383,7 +1383,7 @@ based on thousands of genomic datasets of various data modalities, namely:&lt;/p
   
   &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr06.png&#34; &gt;
-      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr06_huc37aa0b5f978d66e6c709fd459201c64_2705815_750x750_fit_q75_h2_lanczos_3.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr06.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
+      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr06_hu_bab5ac83069eee32.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr06.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
     &lt;/a&gt;
   &lt;/div&gt;
   
@@ -1396,7 +1396,7 @@ based on thousands of genomic datasets of various data modalities, namely:&lt;/p
   
   &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr07.png&#34; &gt;
-      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr07_hu04c2fa65638d1d38ef68bbe65877737a_4648978_750x750_fit_q75_h2_lanczos_3.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr07.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
+      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr07_hu_711882cc97efac19.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr07.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
     &lt;/a&gt;
   &lt;/div&gt;
   
@@ -1409,7 +1409,7 @@ based on thousands of genomic datasets of various data modalities, namely:&lt;/p
   
   &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr08.png&#34; &gt;
-      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr08_hu80ef5119ab7bd1898f448f8ee2001100_3541987_750x750_fit_q75_h2_lanczos_3.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr08.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
+      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr08_hu_fc14d1cb955f1711.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr08.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
     &lt;/a&gt;
   &lt;/div&gt;
   
@@ -1422,7 +1422,7 @@ based on thousands of genomic datasets of various data modalities, namely:&lt;/p
   
   &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr09.png&#34; &gt;
-      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr09_hub87bd5ef3418262ff8d53184e0fbcfd0_5126370_750x750_fit_q75_h2_lanczos_3.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr09.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
+      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr09_hu_c29fc943f9b1aa56.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr09.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
     &lt;/a&gt;
   &lt;/div&gt;
   
@@ -1435,7 +1435,7 @@ based on thousands of genomic datasets of various data modalities, namely:&lt;/p
   
   &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr10.png&#34; &gt;
-      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr10_hue503651ec1f6b2a1cbf48653a806bb54_4754923_750x750_fit_q75_h2_lanczos_3.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr10.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
+      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr10_hu_a879f02fd1868571.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr10.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
     &lt;/a&gt;
   &lt;/div&gt;
   
@@ -1448,7 +1448,7 @@ based on thousands of genomic datasets of various data modalities, namely:&lt;/p
   
   &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr11.png&#34; &gt;
-      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr11_huef0c5d6b4196f293103c8aab7e3303d8_3138522_750x750_fit_q75_h2_lanczos_3.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr11.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
+      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr11_hu_4d4cd7dd939751df.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr11.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
     &lt;/a&gt;
   &lt;/div&gt;
   
@@ -1461,7 +1461,7 @@ based on thousands of genomic datasets of various data modalities, namely:&lt;/p
   
   &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr12.png&#34; &gt;
-      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr12_hu46472ed3198a547d0a31f7655a8b3f1f_3495014_750x750_fit_q75_h2_lanczos_3.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr12.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
+      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr12_hu_7a89e1ec5ba1605e.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr12.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
     &lt;/a&gt;
   &lt;/div&gt;
   
@@ -1474,7 +1474,7 @@ based on thousands of genomic datasets of various data modalities, namely:&lt;/p
   
   &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr13.png&#34; &gt;
-      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr13_hu5408a247d8afa4be5e7ae07a0a252097_3085140_750x750_fit_q75_h2_lanczos_3.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr13.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
+      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr13_hu_344073ce32b160f8.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr13.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
     &lt;/a&gt;
   &lt;/div&gt;
   
@@ -1487,7 +1487,7 @@ based on thousands of genomic datasets of various data modalities, namely:&lt;/p
   
   &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr14.png&#34; &gt;
-      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr14_hu1667e6b625fd63acb1521a931df98280_3298253_750x750_fit_q75_h2_lanczos_3.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr14.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
+      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr14_hu_26d395e5e5236fdb.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr14.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
     &lt;/a&gt;
   &lt;/div&gt;
   
@@ -1500,7 +1500,7 @@ based on thousands of genomic datasets of various data modalities, namely:&lt;/p
   
   &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr15.png&#34; &gt;
-      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr15_hud21a69505e19d704ad26e7b851cf63bc_5780183_750x750_fit_q75_h2_lanczos_3.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr15.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
+      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr15_hu_fb173cc599b11567.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr15.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
     &lt;/a&gt;
   &lt;/div&gt;
   
@@ -1513,7 +1513,7 @@ based on thousands of genomic datasets of various data modalities, namely:&lt;/p
   
   &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr16.png&#34; &gt;
-      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr16_hu58c65bfd4034aed54211000a38590c6d_2771253_750x750_fit_q75_h2_lanczos_3.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr16.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
+      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr16_hu_50f882e5fafa3f93.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr16.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
     &lt;/a&gt;
   &lt;/div&gt;
   
@@ -1526,7 +1526,7 @@ based on thousands of genomic datasets of various data modalities, namely:&lt;/p
   
   &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr17.png&#34; &gt;
-      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr17_hub2e468d4175161e3f216bcdbdf37471e_4727063_750x750_fit_q75_h2_lanczos_3.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr17.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
+      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr17_hu_65512ffef95968f2.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr17.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
     &lt;/a&gt;
   &lt;/div&gt;
   
@@ -1539,7 +1539,7 @@ based on thousands of genomic datasets of various data modalities, namely:&lt;/p
   
   &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr18.png&#34; &gt;
-      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr18_hubc8a150f1721360b0fe704dab4e75fe1_5005902_750x750_fit_q75_h2_lanczos_3.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr18.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
+      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr18_hu_5143134160cd1afc.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr18.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
     &lt;/a&gt;
   &lt;/div&gt;
   
@@ -1552,7 +1552,7 @@ based on thousands of genomic datasets of various data modalities, namely:&lt;/p
   
   &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr19.png&#34; &gt;
-      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr19_hu0a6a9058a4c4353d6716250bca7a4301_4420257_750x750_fit_q75_h2_lanczos_3.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr19.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
+      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr19_hu_4718e7e3133fae43.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr19.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
     &lt;/a&gt;
   &lt;/div&gt;
   
@@ -1565,7 +1565,7 @@ based on thousands of genomic datasets of various data modalities, namely:&lt;/p
   
   &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr20.png&#34; &gt;
-      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr20_hu0ceb7ced2559c92db8f11faadec44d99_4722708_750x750_fit_q75_h2_lanczos_3.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr20.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
+      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr20_hu_d5d3e60ff0010cbd.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr20.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
     &lt;/a&gt;
   &lt;/div&gt;
   
@@ -1578,7 +1578,7 @@ based on thousands of genomic datasets of various data modalities, namely:&lt;/p
   
   &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr21.png&#34; &gt;
-      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr21_hu9bd12e273c3e6db97a9ebbf28b17b84f_2499361_750x750_fit_q75_h2_lanczos_3.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr21.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
+      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr21_hu_6f4ecd3c7ebb5579.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr21.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
     &lt;/a&gt;
   &lt;/div&gt;
   
@@ -1591,7 +1591,7 @@ based on thousands of genomic datasets of various data modalities, namely:&lt;/p
   
   &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr22.png&#34; &gt;
-      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr22_hu3b9339d437211c0826b83bee8ff57687_3681353_750x750_fit_q75_h2_lanczos_3.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr22.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
+      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chr22_hu_442561c63294a122.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chr22.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
     &lt;/a&gt;
   &lt;/div&gt;
   
@@ -1604,7 +1604,7 @@ based on thousands of genomic datasets of various data modalities, namely:&lt;/p
   
   &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chrX.png&#34; &gt;
-      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chrX_hueb1f0cf46754b3956189dba67357b435_2576395_750x750_fit_q75_h2_lanczos_3.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chrX.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
+      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chrX_hu_feb8aeab1a6a46f8.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chrX.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
     &lt;/a&gt;
   &lt;/div&gt;
   
@@ -1617,7 +1617,7 @@ based on thousands of genomic datasets of various data modalities, namely:&lt;/p
   
   &lt;div class=&#34;gallery-item gallery-item--medium&#34;&gt;
     &lt;a data-fancybox=&#34;gallery-perChrom&#34; href=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chrY.png&#34; &gt;
-      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chrY_hu10724343537d51ac094fc9438b293dd8_1841762_750x750_fit_q75_h2_lanczos_3.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chrY.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
+      &lt;img src=&#34;https://www.meuleman.org/media/albums/perchrom/thumbnail_chrY_hu_cfac36677092fef7.webp&#34; loading=&#34;lazy&#34; alt=&#34;thumbnail_chrY.png&#34; width=&#34;750&#34; height=&#34;422&#34;&gt;
     &lt;/a&gt;
   &lt;/div&gt;
   
